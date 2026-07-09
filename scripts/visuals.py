@@ -438,7 +438,7 @@ for row in stations:
                     svg.Text(
                         text=name,
                         x=850,
-                        y=(offsets[d] + i) * 300 + 165,
+                        y=(offsets[d] + i) * 300 + 160,
                         dominant_baseline="middle",
                         font_size=125,
                         font_family="Altone",
@@ -447,7 +447,7 @@ for row in stations:
                     ),
                     svg.ForeignObject(
                         x=850,
-                        y=(offsets[d] + i) * 300 + 220,
+                        y=(offsets[d] + i) * 300 + 215,
                         width=1000,
                         height=100,
                         text=html_with_station(
@@ -461,7 +461,7 @@ for row in stations:
                     svg.Text(
                         text=name,
                         x=850,
-                        y=(offsets[d] + i) * 300 + 165,
+                        y=(offsets[d] + i) * 300 + 160,
                         dominant_baseline="middle",
                         font_size=125,
                         font_family="Altone",
@@ -470,7 +470,7 @@ for row in stations:
                     ),
                     svg.ForeignObject(
                         x=850,
-                        y=(offsets[d] + i) * 300 + 220,
+                        y=(offsets[d] + i) * 300 + 215,
                         width=1000,
                         height=100,
                         text=html_with_station(
@@ -501,7 +501,7 @@ for row in stations:
                     svg.Text(
                         text=name,
                         x=3150,
-                        y=(offsets[d] + i) * 300 + 165,
+                        y=(offsets[d] + i) * 300 + 160,
                         text_anchor="end",
                         dominant_baseline="middle",
                         font_size=125,
@@ -511,7 +511,7 @@ for row in stations:
                     ),
                     svg.ForeignObject(
                         x=2150,
-                        y=(offsets[d] + i) * 300 + 220,
+                        y=(offsets[d] + i) * 300 + 215,
                         width=1000,
                         height=100,
                         text=html_with_station(
@@ -527,7 +527,7 @@ for row in stations:
                     svg.Text(
                         text=name,
                         x=3150,
-                        y=(offsets[d] + i) * 300 + 165,
+                        y=(offsets[d] + i) * 300 + 160,
                         text_anchor="end",
                         dominant_baseline="middle",
                         font_size=125,
@@ -537,7 +537,7 @@ for row in stations:
                     ),
                     svg.ForeignObject(
                         x=2150,
-                        y=(offsets[d] + i) * 300 + 220,
+                        y=(offsets[d] + i) * 300 + 215,
                         width=1000,
                         height=100,
                         text=html_with_station(

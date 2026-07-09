@@ -24,8 +24,8 @@ district: fairview
 
 |name|stations|
 |-|-|
-|anticlockwise (west)|FV01, FV05...01|
-|anticlockwise (east)|FV01, FV08...06, FV02...01|
-|clockwise (east)|FV01...02, FV06...08, FV01|
-|clockwise (west)|FV01...05, FV01|
+|anticlockwise west|FV01, FV05...01|
+|anticlockwise east|FV01, FV08...06, FV02...01|
+|clockwise east|FV01...02, FV06...08, FV01|
+|clockwise west|FV01...05, FV01|
 
