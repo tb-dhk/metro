@@ -19,9 +19,9 @@ borough: 5
 |^|![[assets/codes/5B09.svg\|40]]|^|[[summit valley]]|
 |^|![[assets/codes/5B10.svg\|40]]|^|[[meadow hills]]|
 |south coast (tbc)|![[assets/codes/5B11.svg\|40]]|^|[[crescent hills]]|
-|^|![[assets/codes/5B12.svg\|40]]|^|[[empire district]]|
-|^|![[assets/codes/5B13.svg\|40]]|^|[[fawn park]]|
-|^|![[assets/codes/5B14.svg\|40]]|![[assets/codes/C15.svg\|40]]|[[south coast]]|
+|^|![[assets/codes/5B12.svg\|40]]|![[assets/codes/U02.svg\|40]]|[[empire district]]|
+|^|![[assets/codes/5B13.svg\|40]]|![[assets/codes/U03.svg\|40]]|[[fawn park]]|
+|^|![[assets/codes/5B14.svg\|40]]|![[assets/codes/C15.svg\|40]]![[assets/codes/U04.svg\|40]]|[[south coast]]|
 
 
 # services
