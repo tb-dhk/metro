@@ -116,10 +116,7 @@ cursor.execute("""
     SELECT Borough.Name, District.Name, Station.Name 
     FROM Station INNER JOIN District ON DistrictCode = District.Code
     INNER JOIN Borough ON BoroughCode = Borough.Code
-    INNER JOIN StationCode ON StationName = Station.Name
-    INNER JOIN Line ON LineCode = Line.Code
-    WHERE Line.Type = "district"
-    ORDER BY Borough.Name, District.Name, StationCode.Number
+    ORDER BY Borough.Name, District.Name, Station.Name
 """)
 stations = cursor.fetchall()
 for borough, district, station in stations:
@@ -130,7 +127,7 @@ for borough, district, station in stations:
             FROM StationCode INNER JOIN Line ON LineCode = Line.Code
             WHERE StationName = ? AND Type = ?
         """, (station, t_pe))
-        row.append("".join([rf"![[assets/codes/{row[0]}.svg\|40]]" for row in cursor.fetchall()]))
+        row.append("".join([rf"![[assets/codes/{row[0]}.svg\|100]]" for row in cursor.fetchall()]))
     station_table.append(row)
 with open("../list of stations.md", "w") as f:
     f.write(markdownify(station_table, headers=["borough", "district", "station"] + [t_pe + " codes" for t_pe in TYPES], linkify=["station"]))
