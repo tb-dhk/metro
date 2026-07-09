@@ -5,7 +5,7 @@ city lines travel across boroughs.
 
 |name|code|color|
 |-|-|-|
-|[[sunset bay loop]]|![[assets/lines/sunset bay loop.svg\|40]]|#ff3c00|
+|[[sunset bay loop]]|![[assets/lines/sunset bay loop.svg\|40]]|#ff7c00|
 |[[east coast line]]|![[assets/lines/east coast line.svg\|40]]|#0099ff|
 
 # borough
@@ -14,7 +14,7 @@ borough lines travel within boroughs, but across districts.
 |borough|name|code|color|
 |-|-|-|-|
 |5|[[line 5b]]|![[assets/lines/line 5b.svg\|40]]|#5430bf|
-|the peninsula|[[peninsula line]]|![[assets/lines/peninsula line.svg\|40]]|#02bf87|
+|the peninsula|[[peninsula line]]|![[assets/lines/peninsula line.svg\|40]]|#30bf94|
 |the islands|[[island line]]|![[assets/lines/island line.svg\|40]]|#bf7f30|
 
 ## district
