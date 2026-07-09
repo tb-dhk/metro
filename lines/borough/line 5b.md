@@ -1,7 +1,8 @@
 ---
 code: 5B
-color: 5430bf
+color (hex): 5430bf
 type: borough
+notes: also known as the pointer bay line
 borough: 5
 ---
 # stations

@@ -9,9 +9,9 @@ the following district lines open (in order):
 - [[boa island line]] 
 - [[pointer island line]]
 ## phase 1b: first borough and city lines
-around the opening of the pointer island line, the masterplan for phase 1b is released to the public, detailing plans for the [[peninsula line]], [[island line]], [[east coast line]] and [[sunset bay loop]]:
+around the opening of the pointer island line, the masterplan for phase 1b is released to the public, detailing plans for the [[peninsula line]], [[island line]], [[east coast line]], [[sunset bay loop]] and [[fairview line]]:
 
-the timeline for this phase is as follows:
+the planned timeline for this phase is as follows:
 - east coast line opens in stages with island and peninsula line
 	- stage 1 (green park to autumn hills) opens with island line
 	- stage 2 (extension to remainder of peninsula) opens with peninsula line
@@ -21,8 +21,9 @@ the timeline for this phase is as follows:
 	- stage 2 (extension to borough 2) with opening of 3 borough 2 stations
 	- stage 3 (completion) with opening of 4 borough 1 stations
 	- for stage 1 and stage 2, the line operates as a line instead of a loop
+- remainder of new borough 5 district (fairview) also has a new district line
 
-this was the actual timeline
+this was the actual timeline:
 - stage 1 of east coast line opens with island line
 - stage 2 of east coast line opens with peninsula line
 - stage 1 of sunset bay loop opens with 3 fairview stations

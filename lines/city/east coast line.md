@@ -1,7 +1,8 @@
 ---
 code: C
-color: 0099ff
+color (hex): 0099ff
 type: city
+notes: overlap with whole of peninsula line
 ---
 # stations
 

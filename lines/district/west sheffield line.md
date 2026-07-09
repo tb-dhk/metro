@@ -1,7 +1,8 @@
 ---
 code: WS
-color: 808080
+color (hex): 808080
 type: district
+notes: 
 borough: 5
 district: west sheffield
 ---

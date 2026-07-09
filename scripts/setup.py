@@ -45,6 +45,7 @@ cursor.execute("""
         Type TEXT NOT NULL CHECK (Type IN ('city', 'borough', 'district')),
         Area TEXT NOT NULL,
         Color TEXT NOT NULL CHECK (Color LIKE '#%'),
+        Notes TEXT,
         PRIMARY KEY (Code)
     )
 """)
@@ -94,7 +95,7 @@ data_pipeline = [
     {
         "file": "line.csv",
         "table": "Line",
-        "query": "INSERT INTO Line (Code, Name, Type, Area, Color) VALUES (?, ?, ?, ?, ?)",
+        "query": "INSERT INTO Line (Code, Name, Type, Area, Color, Notes) VALUES (?, ?, ?, ?, ?, ?)",
     },
     {
         "file": "service.csv",

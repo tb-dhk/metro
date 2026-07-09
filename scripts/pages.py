@@ -4,8 +4,8 @@ from misc import *
 from copy import deepcopy
 
 TYPES = ["city", "borough", "district"]
-LINES_PAGE_FIELDS = ["BoroughCode", "Area", "Line.Name", "Line.Code", "Color"]
-LINES_PAGE_HEADERS = ["borough", "district", "name", "code", "color"]
+LINES_PAGE_FIELDS = ["BoroughCode", "Area", "Line.Name", "Line.Code", "Color", "Notes"]
+LINES_PAGE_HEADERS = ["borough", "district", "name", "code", "color", "notes"]
 INDIV_LINE_FIELDS = [
     "Borough.Name",
     "District.Name",
@@ -81,7 +81,7 @@ for i, t_pe in enumerate(TYPES):
 
     cursor.execute(
         f"""
-        SELECT {", ".join(LINES_PAGE_FIELDS[-i - 3 :])} 
+        SELECT {", ".join(LINES_PAGE_FIELDS[-i - 4 :])} 
         FROM Line {inner_join_string}
         WHERE Type = ? 
     """,
@@ -90,7 +90,7 @@ for i, t_pe in enumerate(TYPES):
     lines[t_pe] = [list(i) for i in cursor.fetchall()]
     modified = deepcopy(lines[t_pe])
     for row in modified:
-        row[-2] = rf"![[assets/lines/{row[-3]}.svg\|40]]"
+        row[-3] = rf"![[assets/lines/{row[-4]}.svg\|40]]"
     tables[t_pe] = markdownify(
         modified, header=specific_headers, linkify=["name"]
     )
@@ -111,9 +111,10 @@ subprocess.run([f"sudo rm -rf ../lines/district/*"], shell=True)
 for i, t_pe in enumerate(TYPES):
     for line in lines[t_pe]:
         properties = {
-            "code": line[-2],
-            "color": line[-1][1:],
+            "code": line[-3],
+            "color (hex)": line[-2][1:],
             "type": t_pe,
+            "notes": line[-1]
         }
         if t_pe != "city":
             properties["borough"] = line[0]
@@ -183,7 +184,7 @@ for i, t_pe in enumerate(TYPES):
             services, header=["name", "stations"]
         )
 
-        filename = f"../lines/{t_pe}/{line[-3]}.md"
+        filename = f"../lines/{t_pe}/{line[-4]}.md"
         subprocess.call(["touch", filename])
         subprocess.call(["chmod", "777", filename])
         with open(filename, "w") as f:

@@ -1,7 +1,8 @@
 ---
 code: I
-color: bf7f30
+color (hex): bf7f30
 type: borough
+notes: 
 borough: the islands
 ---
 # stations

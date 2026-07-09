@@ -1,7 +1,8 @@
 ---
 code: B
-color: ff7c00
+color (hex): ff7c00
 type: city
+notes: overlap with whole of peninsula line
 ---
 # stations
 

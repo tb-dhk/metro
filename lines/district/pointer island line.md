@@ -1,7 +1,8 @@
 ---
 code: PI
-color: 808080
+color (hex): 808080
 type: district
+notes: 
 borough: I
 district: pointer island
 ---
