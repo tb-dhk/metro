@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "5b50b8c8268a780f",
+        "id": "c43bca3d757df355",
         "type": "tabs",
         "children": [
           {
@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "stations/myrtle district.md",
-                "mode": "source",
+                "file": "list of stations.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "myrtle district"
-            }
-          },
-          {
-            "id": "cba4c802452ca086",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "stations/elizabeth district.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "elizabeth district"
+              "title": "list of stations"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,23 +184,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "cba4c802452ca086",
+  "active": "84cb3d335bbe124a",
   "lastOpenFiles": [
-    "stations/myrtle district.md",
-    "assets/codes/C14.svg",
-    "assets/codes/C13.svg",
-    "assets/codes/C12.svg",
-    "assets/codes/C11.svg",
-    "assets/codes/C10.svg",
-    "assets/codes/C09.svg",
-    "assets/codes/C08.svg",
-    "assets/codes/C07.svg",
-    "assets/codes/C06.svg",
-    "assets/codes/C05.svg",
+    "assets/navigation/woodland square.svg",
+    "assets/stations/woodland square.svg",
+    "assets/navigation/victoria heights.svg",
+    "assets/stations/victoria heights.svg",
+    "assets/navigation/underhill grove.svg",
+    "assets/stations/underhill grove.svg",
+    "assets/navigation/thumb district.svg",
+    "assets/stations/thumb district.svg",
+    "assets/navigation/thornton park.svg",
+    "assets/stations/thornton park.svg",
+    "assets/navigation/sycamore heights.svg",
+    "assets/navigation",
+    "assets/stations",
+    "assets/platforms",
     "assets/codes",
     "scripts/metro.db-journal",
-    "history.md",
-    "list of lines.md",
+    "list of stations.md",
     "stations/hawthorne heights.md",
     "stations/pine hills.md",
     "stations/crest park.md",
@@ -235,12 +222,11 @@
     "stations/orchard hills.md",
     "stations/linden park.md",
     "stations/cypress square.md",
+    "stations/myrtle district.md",
     "stations/barlow heights.md",
     "stations/smith square.md",
     "stations/high park.md",
-    "assets/navigation",
-    "assets/stations",
-    "assets/platforms",
+    "stations/fairview square.md",
     "metro.db-journal",
     "metro.db",
     "scripts/refresh",

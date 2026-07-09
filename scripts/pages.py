@@ -15,18 +15,18 @@ INDIV_LINE_FIELDS = [
 INDIV_LINE_HEADERS = ["borough", "district", "code", "other codes", "name"]
 
 
-def markdownify(data, header=[], linkify=[]):
-    data = data if header else data[1:]
+def markdownify(data, headers=[], linkify=[]):
+    data = data if headers else data[1:]
     data = [list(row) for row in data]
-    header = header if header else data[0]
-    columns = len(header)
+    headers = headers if headers else data[0]
+    columns = len(headers)
     string = "\n\n"
-    string += "|" + "|".join(header) + "|" + "\n"
+    string += "|" + "|".join(headers) + "|" + "\n"
     string += "|-" * columns + "|" + "\n"
     for i, row in enumerate(data):
         row = [str(j) for j in row]
         for j in range(len(row)):
-            if header[j] in linkify and row[j] != "none":
+            if headers[j] in linkify and row[j] != "none":
                 row[j] = f"[[{row[j]}]]"
             if i > 0:
                 last_column_value = [
@@ -99,7 +99,7 @@ for i, t_pe in enumerate(TYPES):
     for row in modified:
         row[-3] = rf"![[assets/lines/{row[-4]}.svg\|40]]"
     tables[t_pe] = markdownify(
-        modified, header=specific_headers, linkify=["name"]
+        modified, headers=specific_headers, linkify=["name"]
     )
 
 lines_text = ""
@@ -108,6 +108,28 @@ for i, t_pe in enumerate(TYPES):
 
 with open("../list of lines.md", "w") as f:
     f.write(lines_text.strip())
+
+# list of stations page
+print("updating list of stations page...")
+station_table = []
+cursor.execute("""
+    SELECT Borough.Name, District.Name, Station.Name 
+    FROM Station INNER JOIN District ON DistrictCode = District.Code
+    INNER JOIN Borough ON BoroughCode = Borough.Code
+""")
+stations = cursor.fetchall()
+for borough, district, station in stations:
+    row = [borough, district, station]
+    for t_pe in TYPES:
+        cursor.execute("""
+            SELECT LineCode || Number
+            FROM StationCode INNER JOIN Line ON LineCode = Line.Code
+            WHERE StationName = ? AND Type = ?
+        """, (station, t_pe))
+        row.append("".join([rf"![[assets/codes/{row[0]}.svg\|40]]" for row in cursor.fetchall()]))
+    station_table.append(row)
+with open("../list of stations.md", "w") as f:
+    f.write(markdownify(station_table, headers=["borough", "district", "station"] + [t_pe + " codes" for t_pe in TYPES], linkify=["station"]))
 
 # individual line pages
 print("updating line pages...")
@@ -174,7 +196,7 @@ for i, t_pe in enumerate(TYPES):
             )
 
         stations_string = "# stations" + markdownify(
-            stations, header=INDIV_LINE_HEADERS[i:], linkify=["name"]
+            stations, headers=INDIV_LINE_HEADERS[i:], linkify=["name"]
         )
 
         cursor.execute(
@@ -188,7 +210,7 @@ for i, t_pe in enumerate(TYPES):
         )
         services = cursor.fetchall()
         services_string = "# services" + markdownify(
-            services, header=["name", "stations"]
+            services, headers=["name", "stations"]
         )
 
         filename = f"../lines/{t_pe}/{line[-4]}.md"
@@ -252,7 +274,7 @@ for borough, district, station in stations:
 
     platforms_string = "# services" + markdownify(
         platform_data,
-        header=[
+        headers=[
             "platform",
             "line",
             "<",
