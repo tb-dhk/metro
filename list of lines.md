@@ -7,7 +7,6 @@ city lines travel across boroughs.
 |-|-|-|
 |[[sunset bay loop]]|![[assets/lines/sunset bay loop.svg\|40]]|#ff7c00|
 |[[east coast line]]|![[assets/lines/east coast line.svg\|40]]|#0099ff|
-|[[U line]]|![[assets/lines/U line.svg\|40]]|#6a00ff|
 
 # borough
 borough lines travel within boroughs, but across districts.
