@@ -1,6 +1,6 @@
 ---
 code: 5B
-color: #5c45a1
+color: #5430bf
 type: borough
 borough: 5
 ---

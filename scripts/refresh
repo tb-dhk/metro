@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+python3 setup.py && python3 visuals.py && python3 pages.py

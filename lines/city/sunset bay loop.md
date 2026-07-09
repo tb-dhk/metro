@@ -1,6 +1,6 @@
 ---
 code: B
-color: #fb6f43
+color: #ff3c00
 type: city
 ---
 # stations

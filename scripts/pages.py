@@ -37,24 +37,21 @@ connection = sqlite3.connect("metro.db")
 cursor = connection.cursor()
 
 # list of lines page
+print("updating list of lines page...")
 lines_fragments = [
     """
-there are three tiers of metro lines; city, borough and district. each station has up to three tracks, where trains of each tier share the same track.
-
-the number of trains delegated to each line is equal to the total number of stations along that line. each service is given a number of trains roughly proportional to the number of stations it serves. if several lines share tracks for 3 or more consecutive stations, they are to be considered one unit with any interchanges counted as a single station.
-
-each line and station has a logo. this symbol is in the line color and shape. see [[graphic design|here]] for more on metro-related design.
+there are three tiers of metro lines; city, borough and district. each station has up to three tracks, where trains of each tier share the same track. each line and station has a logo. this symbol is in the line color and shape. see [[graphic design|here]] for more on metro-related design.
 
 # city
-city lines travel across boroughs. city line codes are a single letter.
+city lines travel across boroughs.
     """.strip(),
     """
 # borough
-each borough has its own lines that travel around the borough, usually between districts. each borough is assigned a single letter or number, but another alphanumeric character can be affixed to differentiate between different lines.
+borough lines travel within boroughs, but across districts.
     """.strip(),
     """
 ## district
-all districts have their own line, except for oak and maple island (only one station each) and the peninsula (only one district). district line codes are two letters.
+each district has its own line, except for oak and maple island (only one station each) and the peninsula (only one district). district line codes are two letters.
     """.strip()
 ]
 
@@ -81,7 +78,7 @@ for i, t_pe in enumerate(TYPES):
     lines[t_pe] = [list(i) for i in cursor.fetchall()]
     modified = deepcopy(lines[t_pe])
     for row in modified:
-        row[-2] = f"![[assets/lines/{row[-3]}.svg\|40]]"
+        row[-2] = fr"![[assets/lines/{row[-3]}.svg\|40]]"
     tables[t_pe] = markdownify(modified, header=specific_headers, linkify=["name"])
 
 lines_text = ""
@@ -90,9 +87,9 @@ for i, t_pe in enumerate(TYPES):
 
 with open("../list of lines.md", "w") as f:
     f.write(lines_text.strip())
-print("successfully updated list of lines.md")
 
 # individual line pages
+print("updating line pages...")
 subprocess.run([f"sudo rm -rf ../lines/city/*"], shell=True)
 subprocess.run([f"sudo rm -rf ../lines/borough/*"], shell=True)
 subprocess.run([f"sudo rm -rf ../lines/district/*"], shell=True)
@@ -121,7 +118,7 @@ for i, t_pe in enumerate(TYPES):
         """, (line[i+1],))
         stations = [list(i) for i in cursor.fetchall()]
         for row in stations:
-            row[-2] = f"![[assets/codes/{row[-2]}.svg\|40]]"
+            row[-2] = fr"![[assets/codes/{row[-2]}.svg\|40]]"
             cursor.execute("""
                 SELECT LineCode, Number 
                 FROM StationCode INNER JOIN Line ON LineCode = Line.Code
@@ -134,7 +131,7 @@ for i, t_pe in enumerate(TYPES):
                 END ASC
             """, (row[-1], line[i+1]))
             codes = cursor.fetchall()
-            row.insert(-1, "".join([f"![[assets/codes/{line}{number}.svg\|40]]" for line, number in codes]))
+            row.insert(-1, "".join([fr"![[assets/codes/{line}{number}.svg\|40]]" for line, number in codes]))
 
         stations_string = "# stations" + markdownify(stations, header=INDIV_LINE_HEADERS[i:], linkify=["name"])
 
@@ -152,9 +149,9 @@ for i, t_pe in enumerate(TYPES):
         subprocess.call(['chmod', '777', filename])
         with open(filename, "w") as f:
             f.write(properties_string + "\n" + stations_string + "\n" + services_string)
-        print("successfully updated", filename[3:])
 
 # station pages
+print("updating station pages...")
 cursor.execute("""
     SELECT Borough.Name, District.Name, Station.Name
     FROM Station INNER JOIN District ON Station.DistrictCode = District.Code 
@@ -181,9 +178,9 @@ for borough, district, station in stations:
             surrounding = surrounding_stations(station, code, service)
             for prev, next in surrounding:
                 platform_data.append([
-                    i+1, line, f"![[assets/lines/{line}.svg\|40]]", service, 
-                    get_station_from_code(prev), f"![[assets/codes/{prev}.svg\|40]]" if prev != "none" else "<", 
-                    get_station_from_code(next), f"![[assets/codes/{next}.svg\|40]]" if next != "none" else "<"
+                    i+1, line, fr"![[assets/lines/{line}.svg\|40]]", service, 
+                    get_station_from_code(prev), fr"![[assets/codes/{prev}.svg\|40]]" if prev != "none" else "<", 
+                    get_station_from_code(next), fr"![[assets/codes/{next}.svg\|40]]" if next != "none" else "<"
                 ])
 
     platforms_string = "# services" + markdownify(platform_data, header=["platform", "line", "<", "service", "previous station", "<", "next station", "<"], linkify=["line", "previous station", "next station"])
@@ -193,6 +190,5 @@ for borough, district, station in stations:
     subprocess.call(['chmod', '777', filename])
     with open(filename, "w") as f:
         f.write(properties_string + f"\n![[assets/stations/{station}.svg]]\n" + platforms_string + f"\n![[assets/navigation/{station}.svg]]")
-    print("successfully updated", filename[3:])
 
 connection.close()

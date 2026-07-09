@@ -1,9 +1,9 @@
 Code,Name,Type,Area,Color
-B,sunset bay loop,city,all,#fb6f43
-C,east coast line,city,all,#0e88db
-5B,line 5b,borough,5,#5c45a1
-P,peninsula line,borough,the peninsula,#00a86a
-I,island line,borough,the islands,#e1b074
+B,sunset bay loop,city,all,#ff3c00
+C,east coast line,city,all,#0099ff
+5B,line 5b,borough,5,#5430bf
+P,peninsula line,borough,the peninsula,#02bf87
+I,island line,borough,the islands,#bf7f30
 EI,east ivy line,district,east ivy,#808080
 LI,long island line,district,long island,#808080
 ES,east sheffield line,district,east sheffield,#808080

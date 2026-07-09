@@ -1,6 +1,6 @@
 ---
 code: I
-color: #e1b074
+color: #bf7f30
 type: borough
 borough: the islands
 ---

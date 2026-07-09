@@ -1,6 +1,6 @@
 ---
 code: C
-color: #0e88db
+color: #0099ff
 type: city
 ---
 # stations
