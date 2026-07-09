@@ -17,7 +17,12 @@ the timeline for this phase is as follows:
 	- stage 2 (extension to remainder of peninsula) opens with peninsula line
 	- stage 3 (completion) with opening of north and south coast
 - sunset bay loop opens in phases with progressive opening of other stages
-	- stage 1 (peninsula to briar rose heights) with opening of 3 borough 5 stations
+	- stage 1 (peninsula to briar rose heights) with opening of 3 borough 5 stations (fairview)
 	- stage 2 (extension to borough 2) with opening of 3 borough 2 stations
 	- stage 3 (completion) with opening of 4 borough 1 stations
 	- for stage 1 and stage 2, the line operates as a line instead of a loop
+
+this was the actual timeline
+- stage 1 of east coast line opens with island line
+- stage 2 of east coast line opens with peninsula line
+- stage 1 of sunset bay loop opens with 3 fairview stations

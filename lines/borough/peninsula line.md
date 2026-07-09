@@ -1,6 +1,6 @@
 ---
 code: P
-color: #30bf94
+color: 30bf94
 type: borough
 borough: the peninsula
 ---

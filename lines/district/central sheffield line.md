@@ -1,6 +1,6 @@
 ---
 code: CS
-color: #808080
+color: 808080
 type: district
 borough: 5
 district: central sheffield

@@ -111,8 +111,8 @@ subprocess.run([f"sudo rm -rf ../lines/district/*"], shell=True)
 for i, t_pe in enumerate(TYPES):
     for line in lines[t_pe]:
         properties = {
-            "code": line[i + 1],
-            "color": line[i + 2],
+            "code": line[-2],
+            "color": line[-1][1:],
             "type": t_pe,
         }
         if t_pe != "city":

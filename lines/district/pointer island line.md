@@ -1,6 +1,6 @@
 ---
 code: PI
-color: #808080
+color: 808080
 type: district
 borough: I
 district: pointer island
