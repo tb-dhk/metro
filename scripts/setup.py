@@ -76,24 +76,48 @@ connection.commit()
 print("tables created successfully! adding data...")
 
 data_pipeline = [
-    {"file": "borough.csv", "table": "Borough", "query": "INSERT INTO Borough (Code, Name) VALUES (?, ?)"},
-    {"file": "district.csv", "table": "District", "query": "INSERT INTO District (Code, Name, BoroughCode) VALUES (?, ?, ?)"},
-    {"file": "station.csv", "table": "Station", "query": "INSERT INTO Station (Name, DistrictCode, Operating) VALUES (?, ?, ?)"},
-    {"file": "line.csv", "table": "Line", "query": "INSERT INTO Line (Code, Name, Type, Area, Color) VALUES (?, ?, ?, ?, ?)"},
-    {"file": "service.csv", "table": "Service", "query": "INSERT INTO Service (Name, LineCode, Stations, Platform) VALUES (?, ?, ?, ?)"},
-    {"file": "stationcode.csv", "table": "StationCode", "query": "INSERT INTO StationCode (LineCode, Number, StationName) VALUES (?, ?, ?)"}
+    {
+        "file": "borough.csv",
+        "table": "Borough",
+        "query": "INSERT INTO Borough (Code, Name) VALUES (?, ?)",
+    },
+    {
+        "file": "district.csv",
+        "table": "District",
+        "query": "INSERT INTO District (Code, Name, BoroughCode) VALUES (?, ?, ?)",
+    },
+    {
+        "file": "station.csv",
+        "table": "Station",
+        "query": "INSERT INTO Station (Name, DistrictCode, Operating) VALUES (?, ?, ?)",
+    },
+    {
+        "file": "line.csv",
+        "table": "Line",
+        "query": "INSERT INTO Line (Code, Name, Type, Area, Color) VALUES (?, ?, ?, ?, ?)",
+    },
+    {
+        "file": "service.csv",
+        "table": "Service",
+        "query": "INSERT INTO Service (Name, LineCode, Stations, Platform) VALUES (?, ?, ?, ?)",
+    },
+    {
+        "file": "stationcode.csv",
+        "table": "StationCode",
+        "query": "INSERT INTO StationCode (LineCode, Number, StationName) VALUES (?, ?, ?)",
+    },
 ]
 
 for step in data_pipeline:
     file_path = step["file"]
     table_name = step["table"]
     insert_query = step["query"]
-    
+
     with open(file_path, mode="r", encoding="utf-8-sig") as csv_file:
         csv_reader = csv.reader(csv_file)
         header = next(csv_reader)
         data_rows = [tuple(row) for row in csv_reader]
-        
+
         if data_rows:
             cursor.executemany(insert_query, data_rows)
 

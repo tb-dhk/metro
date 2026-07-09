@@ -6,8 +6,14 @@ from copy import deepcopy
 TYPES = ["city", "borough", "district"]
 LINES_PAGE_FIELDS = ["BoroughCode", "Area", "Line.Name", "Line.Code", "Color"]
 LINES_PAGE_HEADERS = ["borough", "district", "name", "code", "color"]
-INDIV_LINE_FIELDS = ["Borough.Name", "District.Name", "LineCode || Number", "Station.Name"]
+INDIV_LINE_FIELDS = [
+    "Borough.Name",
+    "District.Name",
+    "LineCode || Number",
+    "Station.Name",
+]
 INDIV_LINE_HEADERS = ["borough", "district", "code", "other codes", "name"]
+
 
 def markdownify(data, header=[], linkify=[]):
     data = data if header else data[1:]
@@ -19,16 +25,19 @@ def markdownify(data, header=[], linkify=[]):
     string += "|-" * columns + "|" + "\n"
     for i, row in enumerate(data):
         row = [str(j) for j in row]
-        for j in range(len(row)): 
+        for j in range(len(row)):
             if header[j] in linkify and row[j] != "none":
                 row[j] = f"[[{row[j]}]]"
             if i > 0:
-                last_column_value = [data[r][j] for r in range(i) if data[r][j] != "^"][-1]
+                last_column_value = [
+                    data[r][j] for r in range(i) if data[r][j] != "^"
+                ][-1]
                 if str(last_column_value) in [row[j], row[j][2:-2]]:
                     row[j] = "^"
         string += "|" + "|".join(row) + "|" + "\n"
     string += "\n"
-    return string 
+    return string
+
 
 print("clearing old files...")
 subprocess.run(["sudo rm -rf ../stations/*"], shell=True)
@@ -52,7 +61,7 @@ borough lines travel within boroughs, but across districts.
     """
 ## district
 each district has its own line, except for oak and maple island (only one station each) and the peninsula (only one district). district line codes are two letters.
-    """.strip()
+    """.strip(),
 ]
 
 lines = {}
@@ -70,16 +79,21 @@ for i, t_pe in enumerate(TYPES):
     else:
         inner_join_string = ""
 
-    cursor.execute(f"""
-        SELECT {", ".join(LINES_PAGE_FIELDS[-i-3:])} 
+    cursor.execute(
+        f"""
+        SELECT {", ".join(LINES_PAGE_FIELDS[-i - 3 :])} 
         FROM Line {inner_join_string}
         WHERE Type = ? 
-    """, (t_pe,))
+    """,
+        (t_pe,),
+    )
     lines[t_pe] = [list(i) for i in cursor.fetchall()]
     modified = deepcopy(lines[t_pe])
     for row in modified:
-        row[-2] = fr"![[assets/lines/{row[-3]}.svg\|40]]"
-    tables[t_pe] = markdownify(modified, header=specific_headers, linkify=["name"])
+        row[-2] = rf"![[assets/lines/{row[-3]}.svg\|40]]"
+    tables[t_pe] = markdownify(
+        modified, header=specific_headers, linkify=["name"]
+    )
 
 lines_text = ""
 for i, t_pe in enumerate(TYPES):
@@ -97,17 +111,22 @@ subprocess.run([f"sudo rm -rf ../lines/district/*"], shell=True)
 for i, t_pe in enumerate(TYPES):
     for line in lines[t_pe]:
         properties = {
-            "code": line[i+1],
-            "color": line[i+2],
+            "code": line[i + 1],
+            "color": line[i + 2],
             "type": t_pe,
         }
         if t_pe != "city":
             properties["borough"] = line[0]
         if t_pe == "district":
             properties["district"] = line[1]
-        properties_string = "---\n" + "\n".join([f"{k}: {v}" for k, v in properties.items()]) + "\n---"
-        
-        cursor.execute(f"""
+        properties_string = (
+            "---\n"
+            + "\n".join([f"{k}: {v}" for k, v in properties.items()])
+            + "\n---"
+        )
+
+        cursor.execute(
+            f"""
             SELECT {",".join(INDIV_LINE_FIELDS[i:])}
             FROM StationCode 
             INNER JOIN Station ON StationCode.StationName = Station.Name
@@ -115,11 +134,14 @@ for i, t_pe in enumerate(TYPES):
             INNER JOIN Borough ON District.BoroughCode = Borough.Code
             WHERE LineCode = ?
             ORDER BY Number ASC
-        """, (line[i+1],))
+        """,
+            (line[i + 1],),
+        )
         stations = [list(i) for i in cursor.fetchall()]
         for row in stations:
-            row[-2] = fr"![[assets/codes/{row[-2]}.svg\|40]]"
-            cursor.execute("""
+            row[-2] = rf"![[assets/codes/{row[-2]}.svg\|40]]"
+            cursor.execute(
+                """
                 SELECT LineCode, Number 
                 FROM StationCode INNER JOIN Line ON LineCode = Line.Code
                 WHERE StationName = ? AND LineCode != ?
@@ -129,26 +151,49 @@ for i, t_pe in enumerate(TYPES):
                     WHEN 'district'    THEN 3
                     ELSE 4 -- Catches any other values
                 END ASC
-            """, (row[-1], line[i+1]))
+            """,
+                (row[-1], line[i + 1]),
+            )
             codes = cursor.fetchall()
-            row.insert(-1, "".join([fr"![[assets/codes/{line}{number}.svg\|40]]" for line, number in codes]))
+            row.insert(
+                -1,
+                "".join(
+                    [
+                        rf"![[assets/codes/{line}{number}.svg\|40]]"
+                        for line, number in codes
+                    ]
+                ),
+            )
 
-        stations_string = "# stations" + markdownify(stations, header=INDIV_LINE_HEADERS[i:], linkify=["name"])
+        stations_string = "# stations" + markdownify(
+            stations, header=INDIV_LINE_HEADERS[i:], linkify=["name"]
+        )
 
-        cursor.execute("""
+        cursor.execute(
+            """
             SELECT Name, Stations
             FROM Service
             WHERE LineCode = ?
             ORDER BY Stations ASC
-        """, (line[i+1],))
+        """,
+            (line[i + 1],),
+        )
         services = cursor.fetchall()
-        services_string = "# services" + markdownify(services, header=["name", "stations"])
+        services_string = "# services" + markdownify(
+            services, header=["name", "stations"]
+        )
 
         filename = f"../lines/{t_pe}/{line[-3]}.md"
-        subprocess.call(['touch', filename])
-        subprocess.call(['chmod', '777', filename])
+        subprocess.call(["touch", filename])
+        subprocess.call(["chmod", "777", filename])
         with open(filename, "w") as f:
-            f.write(properties_string + "\n" + stations_string + "\n" + services_string)
+            f.write(
+                properties_string
+                + "\n"
+                + stations_string
+                + "\n"
+                + services_string
+            )
 
 # station pages
 print("updating station pages...")
@@ -160,35 +205,67 @@ cursor.execute("""
 stations = cursor.fetchall()
 for borough, district, station in stations:
     properties_string = f"---\nborough: {borough}\ndistrict: {district}\n---"
-    
+
     lines_split = []
     for t_pe in TYPES:
-        cursor.execute("""
+        cursor.execute(
+            """
             SELECT Name, LineCode || Number 
             FROM StationCode INNER JOIN Line ON LineCode = Line.Code
             WHERE StationName = ? AND Type = ?
-        """, (station, t_pe))
+        """,
+            (station, t_pe),
+        )
         lines_split.append(cursor.fetchall())
     lines_split = [i for i in lines_split if i]
-    
+
     services = get_station_services(station)
     platform_data = []
     for i, platform in enumerate(services):
         for service, code, line in platform:
             surrounding = surrounding_stations(station, code, service)
             for prev, next in surrounding:
-                platform_data.append([
-                    i+1, line, fr"![[assets/lines/{line}.svg\|40]]", service, 
-                    get_station_from_code(prev), fr"![[assets/codes/{prev}.svg\|40]]" if prev != "none" else "<", 
-                    get_station_from_code(next), fr"![[assets/codes/{next}.svg\|40]]" if next != "none" else "<"
-                ])
+                platform_data.append(
+                    [
+                        i + 1,
+                        line,
+                        rf"![[assets/lines/{line}.svg\|40]]",
+                        service,
+                        get_station_from_code(prev),
+                        rf"![[assets/codes/{prev}.svg\|40]]"
+                        if prev != "none"
+                        else "<",
+                        get_station_from_code(next),
+                        rf"![[assets/codes/{next}.svg\|40]]"
+                        if next != "none"
+                        else "<",
+                    ]
+                )
 
-    platforms_string = "# services" + markdownify(platform_data, header=["platform", "line", "<", "service", "previous station", "<", "next station", "<"], linkify=["line", "previous station", "next station"])
+    platforms_string = "# services" + markdownify(
+        platform_data,
+        header=[
+            "platform",
+            "line",
+            "<",
+            "service",
+            "previous station",
+            "<",
+            "next station",
+            "<",
+        ],
+        linkify=["line", "previous station", "next station"],
+    )
 
     filename = f"../stations/{station}.md"
-    subprocess.call(['touch', filename])
-    subprocess.call(['chmod', '777', filename])
+    subprocess.call(["touch", filename])
+    subprocess.call(["chmod", "777", filename])
     with open(filename, "w") as f:
-        f.write(properties_string + f"\n![[assets/stations/{station}.svg]]\n" + platforms_string + f"\n![[assets/navigation/{station}.svg]]")
+        f.write(
+            properties_string
+            + f"\n![[assets/stations/{station}.svg]]\n"
+            + platforms_string
+            + f"\n![[assets/navigation/{station}.svg]]"
+        )
 
 connection.close()
