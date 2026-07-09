@@ -4,6 +4,7 @@ import subprocess
 import base64
 from misc import *
 
+print("clearing old assets...")
 subprocess.run(["sudo rm -rf ../assets/*"], shell=True)
 connection = sqlite3.connect("metro.db")
 cursor = connection.cursor()
@@ -44,7 +45,15 @@ def href(filename):
     with open(filename, "rb") as f:
         return f"data:image/svg+xml;base64,{base64.b64encode(f.read()).decode()}"
 
-def html_with_station(text, name, code, right=False):
+def html_with_station(text, station=None, right=False):
+    if station:
+        name, code = station
+        station_text = f"""
+        <span>{text} {name}</span>
+        <img src="{href(f"../assets/codes/{code}.svg")}" style="height: 100px; width: auto;" />
+        """
+    else:
+        station_text = "ends here"
     return f"""
     <div xmlns="http://www.w3.org/1999/xhtml" 
          style="display: flex; 
@@ -57,8 +66,7 @@ def html_with_station(text, name, code, right=False):
                 color: white; 
                 white-space: nowrap;
                 height: 100%;">
-        <span>{text} {name}</span>
-        <img src="{href(f"../assets/codes/{code}.svg")}" style="height: 100px; width: auto;" />
+         {station_text}
     </div>
     """
 
@@ -79,10 +87,10 @@ for name, code, color, t_pe in lines:
             svg.Text(
                 text=code,
                 x=100,
-                y=105,
+                y=110,
                 text_anchor="middle",
                 dominant_baseline="middle",
-                font_size="110px",
+                font_size="90px",
                 fill="white",
                 font_family="Altone",
                 font_weight=700
@@ -454,7 +462,7 @@ for row in stations:
                         y=(offsets[d] + i) * 300 + 220,
                         width=1000,
                         height=100,
-                        text=html_with_station("via", station_name, station_code)
+                        text=html_with_station("via", station=[station_name, station_code])
                     )
                 ]
             else:
@@ -475,7 +483,7 @@ for row in stations:
                         y=(offsets[d] + i) * 300 + 220,
                         width=1000,
                         height=100,
-                        text=html_with_station("towards", station_name, station_code)
+                        text=html_with_station("towards", station=[station_name, station_code] if station_name != station else None)
                     )
                 ]
 
@@ -511,7 +519,7 @@ for row in stations:
                         y=(offsets[d] + i) * 300 + 220,
                         width=1000,
                         height=100,
-                        text=html_with_station("via", station_name, station_code, right=True)
+                        text=html_with_station("via", station=[station_name, station_code], right=True)
                     )
                 ]
             else:
@@ -533,7 +541,7 @@ for row in stations:
                         y=(offsets[d] + i) * 300 + 220,
                         width=1000,
                         height=100,
-                        text=html_with_station("towards", station_name, station_code, right=True)
+                        text=html_with_station("towards", station=[station_name, station_code] if station_name != station else None, right=True)
                     )
                 ]
 
