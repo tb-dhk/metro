@@ -116,6 +116,10 @@ cursor.execute("""
     SELECT Borough.Name, District.Name, Station.Name 
     FROM Station INNER JOIN District ON DistrictCode = District.Code
     INNER JOIN Borough ON BoroughCode = Borough.Code
+    INNER JOIN StationCode ON StationName = Station.Name
+    INNER JOIN Line ON LineCode = Line.Code
+    WHERE Line.Type = "district"
+    ORDER BY Borough.Name, District.Name, StationCode.Number
 """)
 stations = cursor.fetchall()
 for borough, district, station in stations:
