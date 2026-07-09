@@ -1,0 +1,25 @@
+name,line,stations,platform
+southbound,P,P01...08,1
+northbound,P,P08...01,2
+westbound,I,I01...06,1
+eastbound,I,I06...01,2
+clockwise,EI,"EI01...06, EI02...01",1
+anticlockwise,EI,"EI01...02, EI06...01",2
+clockwise,LI,"LI01...06, LI01",1
+anticlockwise,LI,"LI01, LI06...01",2
+clockwise,ES,"ES01...09, ES01",1
+anticlockwise,ES,"ES01, ES09...01",2
+clockwise,CS,"CS01...08, CS01",1
+anticlockwise,CS,"CS01, CS08...01",2
+clockwise,WS,"WS01...06, WS01",1
+anticlockwise,WS,"WS01, WS06...01",2
+clockwise,BI,"BI01...05, BI01",1
+anticlockwise,BI,"BI01, BI05...01",2
+clockwise,PI,"PI01...04, PI01",1
+anticlockwise,PI,"PI01, PI04...01",2
+clockwise,B,"B01...26, B01",1
+anticlockwise,B,"B01, B26...01",2
+southbound,C,C01...15,1
+northbound,C,C15...01,2
+southbound,5B,5B01...14,1
+northbound,5B,5B14...01,2

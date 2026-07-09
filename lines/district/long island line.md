@@ -1,0 +1,26 @@
+---
+code: LI
+color: #808080
+type: district
+borough: 5
+district: long island
+---
+# stations
+
+|code|other codes|name|
+|-|-|-|
+|![[assets/codes/LI01.svg\|40]]||[[belmont district]]|
+|![[assets/codes/LI02.svg\|40]]|![[assets/codes/B19.svg\|40]]|[[birch park]]|
+|![[assets/codes/LI03.svg\|40]]|![[assets/codes/B18.svg\|40]]|[[spruce district]]|
+|![[assets/codes/LI04.svg\|40]]|![[assets/codes/B17.svg\|40]]|[[poplar square]]|
+|![[assets/codes/LI05.svg\|40]]||[[thornton park]]|
+|![[assets/codes/LI06.svg\|40]]|^|[[moore square]]|
+
+
+# services
+
+|name|stations|
+|-|-|
+|anticlockwise|LI01, LI06...01|
+|clockwise|LI01...06, LI01|
+
