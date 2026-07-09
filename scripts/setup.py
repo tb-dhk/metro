@@ -33,7 +33,6 @@ cursor.execute("""
     CREATE TABLE Station (
         Name TEXT PRIMARY KEY,
         DistrictCode TEXT NOT NULL,
-        Operating INTEGER CHECK (Operating IN (0, 1)),
         FOREIGN KEY (DistrictCode) REFERENCES District(Code)
     )
 """)
@@ -90,7 +89,7 @@ data_pipeline = [
     {
         "file": "station.csv",
         "table": "Station",
-        "query": "INSERT INTO Station (Name, DistrictCode, Operating) VALUES (?, ?, ?)",
+        "query": "INSERT INTO Station (Name, DistrictCode) VALUES (?, ?)",
     },
     {
         "file": "line.csv",

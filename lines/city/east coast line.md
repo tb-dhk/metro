@@ -2,7 +2,7 @@
 code: C
 color (hex): 0099ff
 type: city
-notes: overlap with whole of peninsula line
+notes: overlap with whole of peninsula line; to be extended into circle line
 ---
 # stations
 

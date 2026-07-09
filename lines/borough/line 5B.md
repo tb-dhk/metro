@@ -9,10 +9,10 @@ borough: 5
 
 |district|code|other codes|name|
 |-|-|-|-|
-|fairview|![[assets/codes/5B01.svg\|40]]|![[assets/codes/B13.svg\|40]]|[[fairview square]]|
-|^|![[assets/codes/5B02.svg\|40]]||[[myrtle district]]|
-|^|![[assets/codes/5B03.svg\|40]]|^|[[cypress square]]|
-|holly heights|![[assets/codes/5B04.svg\|40]]|^|[[linden park]]|
+|fairview|![[assets/codes/5B01.svg\|40]]|![[assets/codes/B13.svg\|40]]![[assets/codes/FV06.svg\|40]]|[[fairview square]]|
+|^|![[assets/codes/5B02.svg\|40]]|![[assets/codes/FV02.svg\|40]]|[[myrtle district]]|
+|^|![[assets/codes/5B03.svg\|40]]|![[assets/codes/FV03.svg\|40]]|[[cypress square]]|
+|holly heights|![[assets/codes/5B04.svg\|40]]||[[linden park]]|
 |^|![[assets/codes/5B05.svg\|40]]|^|[[holly park]]|
 |^|![[assets/codes/5B06.svg\|40]]|^|[[orchard hills]]|
 |unknown district in borough 5|![[assets/codes/5B07.svg\|40]]|^|[[primrose park]]|

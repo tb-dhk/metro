@@ -240,7 +240,7 @@ for row in stations:
     for platform in raw_services:
         services.append([])
         for raw_service in platform:
-            if raw_service[0][-4:] == "wise":
+            if "wise" in raw_service[0]:
                 next_stations = [
                     i[1]
                     for i in surrounding_stations(
@@ -433,7 +433,7 @@ for row in stations:
                 )
             )
             # loop line
-            if name[-4:] == "wise":
+            if "wise" in name:
                 elements += [
                     svg.Text(
                         text=name,
@@ -495,7 +495,7 @@ for row in stations:
                 )
             )
             # loop line
-            if name[-4:] == "wise":
+            if "wise" in name:
                 length = 4 + len(name)
                 elements += [
                     svg.Text(

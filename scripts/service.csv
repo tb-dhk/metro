@@ -23,3 +23,7 @@ southbound,C,C01...15,1
 northbound,C,C15...01,2
 southbound,5B,5B01...14,1
 northbound,5B,5B14...01,2
+clockwise (west),FV,"FV01...05, FV01",1
+anticlockwise (west),FV,"FV01, FV05...01",2
+clockwise (east),FV,"FV01...02, FV06...08, FV01",1
+anticlockwise (east),FV,"FV01, FV08...06, FV02...01",2

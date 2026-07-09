@@ -55,7 +55,7 @@ def surrounding_stations(station, line, service):
     code = cursor.fetchall()[0][0]
     stations = list_of_service_stations(line, service)
 
-    loop = service[-4:] == "wise"
+    loop = "wise" in service
     if loop and stations[-1] == stations[0]:
         stations.pop(-1)
 

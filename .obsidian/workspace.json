@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b18c23c7b47d33fe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "services.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "services"
-            }
-          },
-          {
             "id": "a9885e95e43aeca5",
             "type": "leaf",
             "state": {
@@ -41,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lines/city/sunset bay loop.md",
+                "file": "stations/myrtle district.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sunset bay loop"
+              "title": "myrtle district"
+            }
+          },
+          {
+            "id": "452910ca9854bb89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "list of lines.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "list of lines"
             }
           }
         ],
@@ -213,10 +213,36 @@
       "bases:Create new base": false
     }
   },
-  "active": "ea88ba8bef6ad68b",
+  "active": "452910ca9854bb89",
   "lastOpenFiles": [
+    "assets/codes/CS04.svg",
+    "assets/codes/CS03.svg",
+    "assets/codes/CS02.svg",
+    "assets/codes/CS01.svg",
+    "assets/codes/C15.svg",
+    "assets/codes/C14.svg",
+    "assets/codes/C13.svg",
+    "assets/codes/C12.svg",
+    "assets/codes/C11.svg",
+    "assets/codes/C10.svg",
+    "assets/codes/C09.svg",
+    "assets/codes",
+    "scripts/metro.db-journal",
+    "stations/myrtle district.md",
+    "assets/navigation",
+    "assets/stations",
+    "assets/platforms",
+    "list of lines.md",
     "history.md",
+    "lines/city/east coast line.md",
+    "services.md",
+    "stations/pine hills.md",
+    "stations/fairview square.md",
+    "lines/borough/line 5b.md",
+    "stations/smith square.md",
+    "stations/high park.md",
     "lines/city/sunset bay loop.md",
+    "stations/hawthorne heights.md",
     "stations/crest park.md",
     "stations/broad park.md",
     "stations/woodland square.md",
@@ -230,32 +256,6 @@
     "stations/meadow hills.md",
     "stations/summit valley.md",
     "stations/cherry hills.md",
-    "stations/primrose park.md",
-    "stations/orchard hills.md",
-    "stations/linden park.md",
-    "stations/cypress square.md",
-    "stations/myrtle district.md",
-    "stations/barlow heights.md",
-    "stations/smith square.md",
-    "stations/high park.md",
-    "stations/fairview square.md",
-    "stations/south coast.md",
-    "stations/north coast.md",
-    "assets/navigation/woodland square.svg",
-    "assets/stations/woodland square.svg",
-    "assets/navigation/victoria heights.svg",
-    "assets/stations/victoria heights.svg",
-    "assets/navigation/underhill grove.svg",
-    "assets/stations/underhill grove.svg",
-    "assets/navigation/thumb district.svg",
-    "assets/stations/thumb district.svg",
-    "assets/navigation/thornton park.svg",
-    "assets/stations/thornton park.svg",
-    "assets/navigation",
-    "assets/stations",
-    "assets/platforms",
-    "assets/codes",
-    "scripts/metro.db-journal",
     "metro.db-journal",
     "metro.db",
     "scripts/refresh",

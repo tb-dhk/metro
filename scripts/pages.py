@@ -69,21 +69,28 @@ tables = {}
 
 for i, t_pe in enumerate(TYPES):
     specific_headers = deepcopy(LINES_PAGE_HEADERS)
-    if t_pe != "district":
-        specific_headers.pop(1)
     if t_pe == "city":
         specific_headers.pop(0)
-
-    if t_pe == "district":
-        inner_join_string = "INNER JOIN District ON Area = District.Name"
-    else:
+        specific_headers.pop(1)
         inner_join_string = ""
+        sort_string = ""
+    elif t_pe == "borough":
+        specific_headers.pop(1)
+        inner_join_string = ""
+        sort_string = "ORDER BY Area ASC"
+    else:
+        inner_join_string = """
+            INNER JOIN District ON Area = District.Name
+            INNER JOIN Borough ON District.BoroughCode = Borough.Code
+        """
+        sort_string = "ORDER BY BoroughCode, Area ASC"
 
     cursor.execute(
         f"""
         SELECT {", ".join(LINES_PAGE_FIELDS[-i - 4 :])} 
         FROM Line {inner_join_string}
         WHERE Type = ? 
+        {sort_string} 
     """,
         (t_pe,),
     )
