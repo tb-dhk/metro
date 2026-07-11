@@ -4,16 +4,16 @@ color (hex): 808080
 type: district
 notes: 
 borough: 5
-district: long island
+district: LI
 ---
 # stations
 
 |code|other codes|name|
 |-|-|-|
 |![[assets/codes/LI01.svg\|40]]||[[belmont district]]|
-|![[assets/codes/LI02.svg\|40]]|![[assets/codes/B19.svg\|40]]|[[birch park]]|
-|![[assets/codes/LI03.svg\|40]]|![[assets/codes/B18.svg\|40]]|[[spruce district]]|
-|![[assets/codes/LI04.svg\|40]]|![[assets/codes/B17.svg\|40]]|[[poplar square]]|
+|![[assets/codes/LI02.svg\|40]]|![[assets/codes/B15.svg\|40]]|[[birch park]]|
+|![[assets/codes/LI03.svg\|40]]|![[assets/codes/B14.svg\|40]]|[[spruce district]]|
+|![[assets/codes/LI04.svg\|40]]|![[assets/codes/B13.svg\|40]]|[[poplar square]]|
 |![[assets/codes/LI05.svg\|40]]||[[thornton park]]|
 |![[assets/codes/LI06.svg\|40]]|^|[[moore square]]|
 

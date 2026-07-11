@@ -4,7 +4,14 @@ from misc import *
 from copy import deepcopy
 
 TYPES = ["city", "borough", "district"]
-LINES_PAGE_FIELDS = ["BoroughCode", "Area", "Line.Name", "Line.Code", "Color", "Notes"]
+LINES_PAGE_FIELDS = [
+    "BoroughCode",
+    "Area",
+    "Line.Name",
+    "Line.Code",
+    "Color",
+    "Notes",
+]
 LINES_PAGE_HEADERS = ["borough", "district", "name", "code", "color", "notes"]
 INDIV_LINE_FIELDS = [
     "Borough.Name",
@@ -70,17 +77,16 @@ tables = {}
 for i, t_pe in enumerate(TYPES):
     specific_headers = deepcopy(LINES_PAGE_HEADERS)
     if t_pe == "city":
-        specific_headers.pop(0)
-        specific_headers.pop(1)
+        specific_headers = specific_headers[2:]
         inner_join_string = ""
         sort_string = ""
     elif t_pe == "borough":
-        specific_headers.pop(1)
+        specific_headers = specific_headers[1:]
         inner_join_string = ""
         sort_string = "ORDER BY Area ASC"
     else:
         inner_join_string = """
-            INNER JOIN District ON Area = District.Name
+            INNER JOIN District ON Area = District.Code
             INNER JOIN Borough ON District.BoroughCode = Borough.Code
         """
         sort_string = "ORDER BY BoroughCode, Area ASC"
@@ -116,21 +122,37 @@ cursor.execute("""
     SELECT Borough.Name, District.Name, Station.Name 
     FROM Station INNER JOIN District ON DistrictCode = District.Code
     INNER JOIN Borough ON BoroughCode = Borough.Code
-    ORDER BY Borough.Name, District.Name, Station.Name
 """)
 stations = cursor.fetchall()
 for borough, district, station in stations:
     row = [borough, district, station]
     for t_pe in TYPES:
-        cursor.execute("""
+        cursor.execute(
+            """
             SELECT LineCode || Number
             FROM StationCode INNER JOIN Line ON LineCode = Line.Code
             WHERE StationName = ? AND Type = ?
-        """, (station, t_pe))
-        row.append("".join([rf"![[assets/codes/{row[0]}.svg\|100]]" for row in cursor.fetchall()]))
+        """,
+            (station, t_pe),
+        )
+        row.append(
+            "".join(
+                [
+                    rf"![[assets/codes/{row[0]}.svg\|100]]"
+                    for row in cursor.fetchall()
+                ]
+            )
+        )
     station_table.append(row)
 with open("../list of stations.md", "w") as f:
-    f.write(markdownify(station_table, headers=["borough", "district", "station"] + [t_pe + " codes" for t_pe in TYPES], linkify=["station"]))
+    f.write(
+        markdownify(
+            sorted(station_table, key=lambda x: [x[0:2], x[5:2:-1]]),
+            headers=["borough", "district", "station"]
+            + [t_pe + " codes" for t_pe in TYPES],
+            linkify=["station"],
+        )
+    )
 
 # individual line pages
 print("updating line pages...")
@@ -144,7 +166,7 @@ for i, t_pe in enumerate(TYPES):
             "code": line[-3],
             "color (hex)": line[-2][1:],
             "type": t_pe,
-            "notes": line[-1]
+            "notes": line[-1],
         }
         if t_pe != "city":
             properties["borough"] = line[0]

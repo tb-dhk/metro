@@ -4,13 +4,13 @@ color (hex): 808080
 type: district
 notes: 
 borough: 3
-district: east ivy
+district: EI
 ---
 # stations
 
 |code|other codes|name|
 |-|-|-|
-|![[assets/codes/EI01.svg\|40]]|![[assets/codes/B20.svg\|40]]|[[briar rose heights]]|
+|![[assets/codes/EI01.svg\|40]]|![[assets/codes/B16.svg\|40]]![[assets/codes/A02.svg\|40]]|[[briar rose heights]]|
 |![[assets/codes/EI02.svg\|40]]||[[robin cross]]|
 |![[assets/codes/EI03.svg\|40]]|^|[[applegate hills]]|
 |![[assets/codes/EI04.svg\|40]]|^|[[beechwood park]]|

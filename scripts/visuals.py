@@ -25,7 +25,7 @@ def shape(t_pe, fill):
                 width=200 * scale,
                 height=200 * scale,
                 fill=fill,
-                transform=f"rotate(45, 100, 100)",
+                transform="rotate(45, 100, 100)",
             ),
         )
     else:
@@ -90,7 +90,7 @@ for name, code, color, t_pe in lines:
             svg.Text(
                 text=code,
                 x=100,
-                y=110,
+                y=105,
                 text_anchor="middle",
                 dominant_baseline="middle",
                 font_size="90px",
@@ -194,8 +194,15 @@ for row in stations:
     station = row[0]
     cursor.execute(
         """
-        SELECT LineCode, Number FROM StationCode
+        SELECT LineCode, Number 
+        FROM StationCode INNER JOIN Line on LineCode = Line.Code
         WHERE StationName = ?
+        ORDER BY CASE Type
+            WHEN 'city'   THEN 1
+            WHEN 'borough' THEN 2
+            WHEN 'district'    THEN 3
+            ELSE 4 -- Catches any other values
+        END ASC
     """,
         (station,),
     )
@@ -275,7 +282,7 @@ for row in stations:
     height = (top_rows + bottom_rows) * 300 + 100
 
     elements = [
-        svg.Rect(width=4000, height=height, x=0, y=0, fill="black"),
+        svg.Rect(width=5000, height=height, x=0, y=0, fill="black"),
         # left arrow
         svg.Rect(
             width=37.5,
@@ -304,23 +311,23 @@ for row in stations:
         svg.Rect(
             width=37.5,
             height=125,
-            x=3925,
+            x=4925,
             y=75,
             fill="white",
-            transform="rotate(-135 3925 200)",
+            transform="rotate(-135 4925 200)",
         ),
         svg.Rect(
             width=37.5,
             height=125,
-            x=3925,
+            x=4925,
             y=200,
             fill="white",
-            transform="rotate(135 3925 200)",
+            transform="rotate(135 4925 200)",
         ),
         svg.Rect(
             width=110,
             height=37.5,
-            x=3765,
+            x=4765,
             y=200 - 37.5 / 2,
             fill="white",
         ),
@@ -352,23 +359,23 @@ for row in stations:
         svg.Rect(
             width=37.5,
             height=150,
-            x=3925 - 37.5,
+            x=4925 - 37.5,
             y=top_rows * 300 + 125 - 37.5,
             fill="white",
-            transform=f"rotate(-45 {4000 - (75 + 37.5 / 2)} {top_rows * 300 + 275 - 37.5 / 2})",
+            transform=f"rotate(-45 {5000 - (75 + 37.5 / 2)} {top_rows * 300 + 275 - 37.5 / 2})",
         ),
         svg.Rect(
             width=37.5,
             height=150,
-            x=3925 - 37.5,
+            x=4925 - 37.5,
             y=top_rows * 300 + 125,
             fill="white",
-            transform=f"rotate(-90 {4000 - (75 + 37.5 / 2)} {top_rows * 300 + 275 - 37.5 / 2})",
+            transform=f"rotate(-90 {5000 - (75 + 37.5 / 2)} {top_rows * 300 + 275 - 37.5 / 2})",
         ),
         svg.Rect(
             width=37.5,
             height=150,
-            x=3925 - 37.5,
+            x=4925 - 37.5,
             y=top_rows * 300 + 125,
             fill="white",
         ),
@@ -384,7 +391,7 @@ for row in stations:
             href=href(f"../assets/platforms/{platform_directions[3][0]}.svg"),
             width=200,
             height=200,
-            x=3500,
+            x=4500,
             y=100,
         ),
     ]
@@ -412,7 +419,7 @@ for row in stations:
                     href=href(f"../assets/platforms/{platform}.svg"),
                     width=200,
                     height=200,
-                    x=3500,
+                    x=4500,
                     y=(top_rows + rows) * 300 + 100,
                 )
             )
@@ -448,7 +455,7 @@ for row in stations:
                     svg.ForeignObject(
                         x=850,
                         y=(offsets[d] + i) * 300 + 215,
-                        width=1000,
+                        width=1500,
                         height=100,
                         text=html_with_station(
                             "via", station=[station_name, station_code]
@@ -471,7 +478,7 @@ for row in stations:
                     svg.ForeignObject(
                         x=850,
                         y=(offsets[d] + i) * 300 + 215,
-                        width=1000,
+                        width=1500,
                         height=100,
                         text=html_with_station(
                             "towards",
@@ -490,7 +497,7 @@ for row in stations:
                     href=href(f"../assets/lines/{line}.svg"),
                     width=200,
                     height=200,
-                    x=3225,
+                    x=4225,
                     y=(offsets[d] + i) * 300 + 100,
                 )
             )
@@ -500,7 +507,7 @@ for row in stations:
                 elements += [
                     svg.Text(
                         text=name,
-                        x=3150,
+                        x=4150,
                         y=(offsets[d] + i) * 300 + 160,
                         text_anchor="end",
                         dominant_baseline="middle",
@@ -510,9 +517,9 @@ for row in stations:
                         fill="white",
                     ),
                     svg.ForeignObject(
-                        x=2150,
+                        x=2650,
                         y=(offsets[d] + i) * 300 + 215,
-                        width=1000,
+                        width=1500,
                         height=100,
                         text=html_with_station(
                             "via",
@@ -526,7 +533,7 @@ for row in stations:
                 elements += [
                     svg.Text(
                         text=name,
-                        x=3150,
+                        x=4150,
                         y=(offsets[d] + i) * 300 + 160,
                         text_anchor="end",
                         dominant_baseline="middle",
@@ -536,9 +543,9 @@ for row in stations:
                         fill="white",
                     ),
                     svg.ForeignObject(
-                        x=2150,
+                        x=2650,
                         y=(offsets[d] + i) * 300 + 215,
-                        width=1000,
+                        width=1500,
                         height=100,
                         text=html_with_station(
                             "towards",
@@ -550,7 +557,7 @@ for row in stations:
                     ),
                 ]
 
-    navigation_drawing = svg.SVG(width=4000, height=height, elements=elements)
+    navigation_drawing = svg.SVG(width=5000, height=height, elements=elements)
 
     filename = f"../assets/navigation/{station}.svg"
     subprocess.call(["/usr/bin/sudo", "touch", filename])

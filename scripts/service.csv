@@ -17,13 +17,15 @@ clockwise,BI,"BI01...05, BI01",1
 anticlockwise,BI,"BI01, BI05...01",2
 clockwise,PI,"PI01...04, PI01",1
 anticlockwise,PI,"PI01, PI04...01",2
-clockwise,B,"B01...26, B01",1
-anticlockwise,B,"B01, B26...01",2
-southbound,C,C01...15,1
-northbound,C,C15...01,2
+clockwise,B,"B01...22, B01",1
+anticlockwise,B,"B01, B22...01",2
+southbound,C,C01...11,1
+northbound,C,C11...01,2
 southbound,5B,5B01...14,1
 northbound,5B,5B14...01,2
 clockwise west,FV,"FV01...05, FV01",1
 anticlockwise west,FV,"FV01, FV05...01",2
-clockwise east,FV,"FV01...02, FV06...08, FV01",1
-anticlockwise east,FV,"FV01, FV08...06, FV02...01",2
+clockwise east,FV,"FV01, FV08...06, FV02...01",1
+anticlockwise east,FV,"FV01...02, FV06...08, FV01",2
+southbound,A,A01...14,1
+northbound,A,A14...01,2

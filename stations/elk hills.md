@@ -7,10 +7,8 @@ district: the peninsula
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
-|1|[[sunset bay loop]]|![[assets/lines/sunset bay loop.svg\|40]]|clockwise|[[beechwood heights]]|![[assets/codes/B05.svg\|40]]|[[garland square]]|![[assets/codes/B07.svg\|40]]|
-|^|[[east coast line]]|![[assets/lines/east coast line.svg\|40]]|southbound|^|![[assets/codes/C05.svg\|40]]|^|![[assets/codes/C07.svg\|40]]|
-|2|[[sunset bay loop]]|![[assets/lines/sunset bay loop.svg\|40]]|anticlockwise|[[garland square]]|![[assets/codes/B07.svg\|40]]|[[beechwood heights]]|![[assets/codes/B05.svg\|40]]|
-|^|[[east coast line]]|![[assets/lines/east coast line.svg\|40]]|northbound|^|![[assets/codes/C07.svg\|40]]|^|![[assets/codes/C05.svg\|40]]|
+|1|[[sunset bay loop]]|![[assets/lines/sunset bay loop.svg\|40]]|clockwise|[[hickory park]]|![[assets/codes/B03.svg\|40]]|[[green park]]|![[assets/codes/B05.svg\|40]]|
+|2|^|^|anticlockwise|[[green park]]|![[assets/codes/B05.svg\|40]]|[[hickory park]]|![[assets/codes/B03.svg\|40]]|
 |3|[[peninsula line]]|![[assets/lines/peninsula line.svg\|40]]|southbound|[[beechwood heights]]|![[assets/codes/P04.svg\|40]]|[[garland square]]|![[assets/codes/P06.svg\|40]]|
 |4|^|^|northbound|[[garland square]]|![[assets/codes/P06.svg\|40]]|[[beechwood heights]]|![[assets/codes/P04.svg\|40]]|
 
