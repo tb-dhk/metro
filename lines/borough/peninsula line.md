@@ -3,7 +3,7 @@ code: P
 color (hex): 30bf94
 type: borough
 notes: full overlap with both sunset bay loop and east coast line
-borough: P
+borough: the peninsula
 ---
 # stations
 

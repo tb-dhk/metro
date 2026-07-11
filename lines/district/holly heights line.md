@@ -4,7 +4,7 @@ color (hex): 808080
 type: district
 notes: 
 borough: 5
-district: HH
+district: holly heights
 ---
 # stations
 

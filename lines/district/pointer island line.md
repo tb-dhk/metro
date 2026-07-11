@@ -3,8 +3,8 @@ code: PI
 color (hex): 808080
 type: district
 notes: 
-borough: I
-district: PI
+borough: the islands
+district: pointer island
 ---
 # stations
 

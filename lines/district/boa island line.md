@@ -3,8 +3,8 @@ code: BI
 color (hex): 808080
 type: district
 notes: 
-borough: I
-district: BI
+borough: the islands
+district: boa island
 ---
 # stations
 

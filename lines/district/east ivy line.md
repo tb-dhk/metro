@@ -4,7 +4,7 @@ color (hex): 808080
 type: district
 notes: 
 borough: 3
-district: EI
+district: east ivy
 ---
 # stations
 

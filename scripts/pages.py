@@ -169,9 +169,15 @@ for i, t_pe in enumerate(TYPES):
             "notes": line[-1],
         }
         if t_pe != "city":
-            properties["borough"] = line[0]
+            cursor.execute("""
+                SELECT Name FROM Borough WHERE Code = ?
+            """, (line[0],))
+            properties["borough"] = cursor.fetchall()[0][0]
         if t_pe == "district":
-            properties["district"] = line[1]
+            cursor.execute("""
+                SELECT Name FROM District WHERE Code = ?
+            """, (line[1],))
+            properties["district"] = cursor.fetchall()[0][0]
         properties_string = (
             "---\n"
             + "\n".join([f"{k}: {v}" for k, v in properties.items()])
