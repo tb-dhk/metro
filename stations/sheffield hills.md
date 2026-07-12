@@ -1,9 +1,7 @@
 ---
 borough: 5
 district: east sheffield
----
-![[assets/stations/sheffield hills.svg]]
-# services
+---\n![[assets/stations/sheffield hills.svg\|2500]]\n# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,5 +10,4 @@ district: east sheffield
 |3|[[east sheffield line]]|![[assets/lines/east sheffield line.svg\|40]]|clockwise|[[briarwood district]]|![[assets/codes/ES08.svg\|40]]|^|![[assets/codes/ES01.svg\|40]]|
 |4|^|^|anticlockwise|[[brook park]]|![[assets/codes/ES01.svg\|40]]|[[briarwood district]]|![[assets/codes/ES08.svg\|40]]|
 
-
-![[assets/navigation/sheffield hills.svg]]
+\n![[assets/navigation/sheffield hills.svg\|2500]]

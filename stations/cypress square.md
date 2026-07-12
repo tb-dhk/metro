@@ -1,9 +1,7 @@
 ---
 borough: 5
 district: fairview
----
-![[assets/stations/cypress square.svg]]
-# services
+---\n![[assets/stations/cypress square.svg\|2500]]\n# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,5 +10,4 @@ district: fairview
 |3|[[fairview line]]|![[assets/lines/fairview line.svg\|40]]|clockwise west|[[myrtle district]]|![[assets/codes/FV02.svg\|40]]|[[hawthorne heights]]|![[assets/codes/FV04.svg\|40]]|
 |4|^|^|anticlockwise west|[[hawthorne heights]]|![[assets/codes/FV04.svg\|40]]|[[myrtle district]]|![[assets/codes/FV02.svg\|40]]|
 
-
-![[assets/navigation/cypress square.svg]]
+\n![[assets/navigation/cypress square.svg\|2500]]

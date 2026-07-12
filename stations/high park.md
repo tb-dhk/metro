@@ -1,9 +1,7 @@
 ---
 borough: 5
 district: fairview
----
-![[assets/stations/high park.svg]]
-# services
+---\n![[assets/stations/high park.svg\|2500]]\n# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,5 +10,4 @@ district: fairview
 |3|[[fairview line]]|![[assets/lines/fairview line.svg\|40]]|clockwise east|^|![[assets/codes/FV08.svg\|40]]|^|![[assets/codes/FV06.svg\|40]]|
 |4|^|^|anticlockwise east|[[fairview square]]|![[assets/codes/FV06.svg\|40]]|[[smith square]]|![[assets/codes/FV08.svg\|40]]|
 
-
-![[assets/navigation/high park.svg]]
+\n![[assets/navigation/high park.svg\|2500]]

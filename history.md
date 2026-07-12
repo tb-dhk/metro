@@ -10,11 +10,14 @@ the following district lines open (in order):
 - [[pointer island line]]
 ## phase 1b: first borough and city lines
 around the opening of the pointer island line, the masterplan for phase 1b is released to the public. this includes plans for the following:
-- [[peninsula line]]
-- [[island line]]
-- [[east coast line]]
-- [[sunset bay loop]]
-- [[fairview line]]
+- city lines
+	- [[east coast line]] - a line going up and down the east coast, overlapping with the peninsula line
+	- [[sunset bay loop]] - a line circling the sunset bay, overlapping with the peninsula line
+- borough lines
+	- [[peninsula line]] - a line that runs up and down the peninsula
+	- [[island line]] - a line that links maple island and oak island with pointer island and boa island, cutting across the latter two
+- district lines
+	- [[fairview line]] - a line that runs in two loops around fairview; the first line to have more than two services
 
 the planned timeline for this phase is as follows:
 - east coast line opens in stages with island and peninsula line
@@ -28,14 +31,16 @@ the planned timeline for this phase is as follows:
 	- for stage 1 and stage 2, the line operates as a line instead of a loop
 - remainder of new borough 5 district (fairview) also has a new district line
 
-this is the actual timeline:
-- stage 1 of east coast line opens with island line
-- stage 2 of east coast line opens with peninsula line
-- stage 1 of sunset bay loop opens with 3 fairview stations
-- (still ongoing)
-# future phases
-the following lines are slated for future phases:
-- [[line 5B]]
-- [[holly heights]] line
-- extension of [[east coast line]] into circle line
-- another borough 5 line (possibly line 5S) to improve connection within northeastern borough 5, especially sheffield
+as planned, the first two stages of the east coast line opened with the island and peninsula line respectively. while both the east coast line and sunset bay loop were initially slated to stop at all stations along the peninsula, this plan was changed such that both lines would provide express services across the peninsula. when the sunset bay loop opened, it took the even-numbered stations while the east coast line took the odd-numbered stations.
+
+it was then decided that the fairview line would take precedence over the remaining stages of the two city lines, and it was completed first. it was around this time that the plan for phase 2 was released
+# phase 2
+## phase 2a: further expansion and a new city line
+the masterplan for phase 2a was released right after the opening of the fairview line.
+- city lines
+	- [[across bay line]] - a line that cuts both the sunset and pointer bays, passing through sheffield and holly heights in the process
+- borough lines
+	- [[line 5B]] - a line that goes around pointer bay; also known as the pointer bay line
+- district lines
+	- [[holly heights line]]
+	- [[south coast line]]

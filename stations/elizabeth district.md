@@ -1,9 +1,7 @@
 ---
 borough: the islands
 district: boa island
----
-![[assets/stations/elizabeth district.svg]]
-# services
+---\n![[assets/stations/elizabeth district.svg\|2500]]\n# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -16,5 +14,4 @@ district: boa island
 |5|[[boa island line]]|![[assets/lines/boa island line.svg\|40]]|clockwise|[[elm heights]]|![[assets/codes/BI05.svg\|40]]|[[prospect square]]|![[assets/codes/BI02.svg\|40]]|
 |6|^|^|anticlockwise|[[prospect square]]|![[assets/codes/BI02.svg\|40]]|[[elm heights]]|![[assets/codes/BI05.svg\|40]]|
 
-
-![[assets/navigation/elizabeth district.svg]]
+\n![[assets/navigation/elizabeth district.svg\|2500]]

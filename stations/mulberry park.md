@@ -1,9 +1,7 @@
 ---
 borough: 5
 district: central sheffield
----
-![[assets/stations/mulberry park.svg]]
-# services
+---\n![[assets/stations/mulberry park.svg\|2500]]\n# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,5 +10,4 @@ district: central sheffield
 |3|[[central sheffield line]]|![[assets/lines/central sheffield line.svg\|40]]|clockwise|[[holly square]]|![[assets/codes/CS05.svg\|40]]|^|![[assets/codes/CS07.svg\|40]]|
 |4|^|^|anticlockwise|[[maple park]]|![[assets/codes/CS07.svg\|40]]|[[holly square]]|![[assets/codes/CS05.svg\|40]]|
 
-
-![[assets/navigation/mulberry park.svg]]
+\n![[assets/navigation/mulberry park.svg\|2500]]

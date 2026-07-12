@@ -1,9 +1,7 @@
 ---
 borough: 5
 district: fairview
----
-![[assets/stations/pine hills.svg]]
-# services
+---\n![[assets/stations/pine hills.svg\|2500]]\n# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,5 +10,4 @@ district: fairview
 |2|^|^|anticlockwise west|^|^|[[barlow heights]]|![[assets/codes/FV05.svg\|40]]|
 |^|^|^|anticlockwise east|[[smith square]]|![[assets/codes/FV08.svg\|40]]|[[myrtle district]]|![[assets/codes/FV02.svg\|40]]|
 
-
-![[assets/navigation/pine hills.svg]]
+\n![[assets/navigation/pine hills.svg\|2500]]

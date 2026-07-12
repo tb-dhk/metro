@@ -1,9 +1,7 @@
 ---
 borough: 5
 district: south coast (tbc)
----
-![[assets/stations/empire district.svg]]
-# services
+---\n![[assets/stations/empire district.svg\|2500]]\n# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,5 +10,4 @@ district: south coast (tbc)
 |3|[[line 5B]]|![[assets/lines/line 5B.svg\|40]]|southbound|[[crescent hills]]|![[assets/codes/5B11.svg\|40]]|[[fawn park]]|![[assets/codes/5B13.svg\|40]]|
 |4|^|^|northbound|[[fawn park]]|![[assets/codes/5B13.svg\|40]]|[[crescent hills]]|![[assets/codes/5B11.svg\|40]]|
 
-
-![[assets/navigation/empire district.svg]]
+\n![[assets/navigation/empire district.svg\|2500]]

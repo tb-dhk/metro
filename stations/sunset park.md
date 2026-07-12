@@ -1,9 +1,7 @@
 ---
 borough: 5
 district: west sheffield
----
-![[assets/stations/sunset park.svg]]
-# services
+---\n![[assets/stations/sunset park.svg\|2500]]\n# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,5 +10,4 @@ district: west sheffield
 |3|[[west sheffield line]]|![[assets/lines/west sheffield line.svg\|40]]|clockwise|[[moore park]]|![[assets/codes/WS02.svg\|40]]|[[concord hills]]|![[assets/codes/WS04.svg\|40]]|
 |4|^|^|anticlockwise|[[concord hills]]|![[assets/codes/WS04.svg\|40]]|[[moore park]]|![[assets/codes/WS02.svg\|40]]|
 
-
-![[assets/navigation/sunset park.svg]]
+\n![[assets/navigation/sunset park.svg\|2500]]

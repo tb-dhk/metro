@@ -1,9 +1,7 @@
 ---
 borough: 5
 district: long island
----
-![[assets/stations/birch park.svg]]
-# services
+---\n![[assets/stations/birch park.svg\|2500]]\n# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,5 +10,4 @@ district: long island
 |3|[[long island line]]|![[assets/lines/long island line.svg\|40]]|clockwise|[[belmont district]]|![[assets/codes/LI01.svg\|40]]|^|![[assets/codes/LI03.svg\|40]]|
 |4|^|^|anticlockwise|[[spruce district]]|![[assets/codes/LI03.svg\|40]]|[[belmont district]]|![[assets/codes/LI01.svg\|40]]|
 
-
-![[assets/navigation/birch park.svg]]
+\n![[assets/navigation/birch park.svg\|2500]]

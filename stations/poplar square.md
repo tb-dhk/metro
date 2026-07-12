@@ -1,9 +1,7 @@
 ---
 borough: 5
 district: long island
----
-![[assets/stations/poplar square.svg]]
-# services
+---\n![[assets/stations/poplar square.svg\|2500]]\n# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,5 +10,4 @@ district: long island
 |3|[[long island line]]|![[assets/lines/long island line.svg\|40]]|clockwise|^|![[assets/codes/LI03.svg\|40]]|[[thornton park]]|![[assets/codes/LI05.svg\|40]]|
 |4|^|^|anticlockwise|[[thornton park]]|![[assets/codes/LI05.svg\|40]]|[[spruce district]]|![[assets/codes/LI03.svg\|40]]|
 
-
-![[assets/navigation/poplar square.svg]]
+\n![[assets/navigation/poplar square.svg\|2500]]

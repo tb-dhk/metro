@@ -3,11 +3,11 @@ there are three tiers of metro lines; city, borough and district. each station h
 # city
 city lines travel across boroughs.
 
-| name                | code                                      | color   | notes                                                                |
-| ------------------- | ----------------------------------------- | ------- | -------------------------------------------------------------------- |
-| [[sunset bay loop]] | ![[assets/lines/sunset bay loop.svg\|40]] | #ff7c00 | express service across peninsula line                                |
-| [[east coast line]] | ![[assets/lines/east coast line.svg\|40]] | #0099ff | express service across peninsula line; to be extended into city loop |
-| [[across bay line]] | ![[assets/lines/across bay line.svg\|40]] | #ff0000 |                                                                      |
+|name|code|color|notes|
+|-|-|-|-|
+|[[sunset bay loop]]|![[assets/lines/sunset bay loop.svg\|40]]|#ff7c00|express service across peninsula line|
+|[[east coast line]]|![[assets/lines/east coast line.svg\|40]]|#0099ff|express service across peninsula line; to be extended into city loop|
+|[[across bay line]]|![[assets/lines/across bay line.svg\|40]]|#ff0000||
 
 # borough
 borough lines travel within boroughs, but across districts.

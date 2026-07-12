@@ -322,9 +322,9 @@ for borough, district, station in stations:
     with open(filename, "w") as f:
         f.write(
             properties_string
-            + f"\n![[assets/stations/{station}.svg]]\n"
+            + rf"\n![[assets/stations/{station}.svg\|2500]]\n"
             + platforms_string
-            + f"\n![[assets/navigation/{station}.svg]]"
+            + rf"\n![[assets/navigation/{station}.svg\|2500]]"
         )
 
 connection.close()

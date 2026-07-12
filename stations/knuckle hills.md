@@ -1,9 +1,7 @@
 ---
 borough: the islands
 district: pointer island
----
-![[assets/stations/knuckle hills.svg]]
-# services
+---\n![[assets/stations/knuckle hills.svg\|2500]]\n# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,5 +10,4 @@ district: pointer island
 |3|[[pointer island line]]|![[assets/lines/pointer island line.svg\|40]]|clockwise|[[pointer park]]|![[assets/codes/PI01.svg\|40]]|[[thumb district]]|![[assets/codes/PI03.svg\|40]]|
 |4|^|^|anticlockwise|[[thumb district]]|![[assets/codes/PI03.svg\|40]]|[[pointer park]]|![[assets/codes/PI01.svg\|40]]|
 
-
-![[assets/navigation/knuckle hills.svg]]
+\n![[assets/navigation/knuckle hills.svg\|2500]]

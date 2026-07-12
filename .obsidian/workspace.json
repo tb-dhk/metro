@@ -22,63 +22,31 @@
             }
           },
           {
-            "id": "bf1dd8677f062b7a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "stations/elizabeth district.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "elizabeth district"
-            }
-          },
-          {
             "id": "a5bf0a3ca02a4b7a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "lines/city/across bay line.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "across bay line"
+              "title": "New tab"
             }
           },
           {
-            "id": "c6199a9998bdd605",
+            "id": "c8d6819ba1d38afb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "lines/district/pointer island line.md",
+                "file": "history.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "pointer island line"
-            }
-          },
-          {
-            "id": "e2666eb00930e607",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "lines/district/east sheffield line.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "east sheffield line"
+              "title": "history"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -240,19 +208,8 @@
       "bases:Create new base": false
     }
   },
-  "active": "c6199a9998bdd605",
+  "active": "a5bf0a3ca02a4b7a",
   "lastOpenFiles": [
-    "stations/knuckle hills.md",
-    "lines/borough/island line.md",
-    "lines/city/across bay line.md",
-    "stations/elizabeth district.md",
-    "lines/city/sunset bay loop.md",
-    "list of lines.md",
-    "services.md",
-    "design.md",
-    "central sheffield line.md",
-    "Pasted image 20260709193612.png",
-    "lines/district/east sheffield line.md",
     "stations/magnolia district.md",
     "stations/chester square.md",
     "stations/hawthorne heights.md",
@@ -269,6 +226,17 @@
     "stations/crescent hills.md",
     "stations/meadow hills.md",
     "stations/summit valley.md",
+    "stations/cherry hills.md",
+    "stations/primrose park.md",
+    "stations/orchard hills.md",
+    "stations/linden park.md",
+    "stations/cypress square.md",
+    "stations/myrtle district.md",
+    "stations/barlow heights.md",
+    "stations/smith square.md",
+    "stations/high park.md",
+    "stations/fairview square.md",
+    "Pasted image 20260709193612.png",
     "assets/navigation/woodland square.svg",
     "assets/stations/woodland square.svg",
     "assets/navigation/victoria heights.svg",

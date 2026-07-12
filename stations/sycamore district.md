@@ -1,9 +1,7 @@
 ---
 borough: the peninsula
 district: the peninsula
----
-![[assets/stations/sycamore district.svg]]
-# services
+---\n![[assets/stations/sycamore district.svg\|2500]]\n# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,5 +10,4 @@ district: the peninsula
 |3|[[peninsula line]]|![[assets/lines/peninsula line.svg\|40]]|southbound|[[oriental heights]]|![[assets/codes/P01.svg\|40]]|[[hickory park]]|![[assets/codes/P03.svg\|40]]|
 |4|^|^|northbound|[[hickory park]]|![[assets/codes/P03.svg\|40]]|[[oriental heights]]|![[assets/codes/P01.svg\|40]]|
 
-
-![[assets/navigation/sycamore district.svg]]
+\n![[assets/navigation/sycamore district.svg\|2500]]
