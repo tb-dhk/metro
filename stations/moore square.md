@@ -1,11 +1,14 @@
 ---
 borough: 5
 district: long island
----\n![[assets/stations/moore square.svg\|2500]]\n# services
+---
+![[assets/stations/moore square.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
 |1|[[long island line]]|![[assets/lines/long island line.svg\|40]]|clockwise|[[thornton park]]|![[assets/codes/LI05.svg\|40]]|[[belmont district]]|![[assets/codes/LI01.svg\|40]]|
 |2|^|^|anticlockwise|[[belmont district]]|![[assets/codes/LI01.svg\|40]]|[[thornton park]]|![[assets/codes/LI05.svg\|40]]|
 
-\n![[assets/navigation/moore square.svg\|2500]]
+
+![[assets/navigation/moore square.svg\|2500]]

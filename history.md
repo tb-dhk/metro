@@ -31,9 +31,11 @@ the planned timeline for this phase is as follows:
 	- for stage 1 and stage 2, the line operates as a line instead of a loop
 - remainder of new borough 5 district (fairview) also has a new district line
 
-as planned, the first two stages of the east coast line opened with the island and peninsula line respectively. while both the east coast line and sunset bay loop were initially slated to stop at all stations along the peninsula, this plan was changed such that both lines would provide express services across the peninsula. when the sunset bay loop opened, it took the even-numbered stations while the east coast line took the odd-numbered stations.
+as planned, the first two stages of the east coast line opened with the island and peninsula line respectively. while both the east coast line and sunset bay loop were initially slated to stop at all stations along the peninsula, this plan was changed such that both lines would provide express services across the peninsula. stage 1 of the sunset bay loop opened before stage 3 of the east coast line and took the even-numbered stations while the east coast line took the odd-numbered stations.
 
-it was then decided that the fairview line would take precedence over the remaining stages of the two city lines, and it was completed first. it was around this time that the plan for phase 2 was released
+it was then decided that the fairview line would take precedence over the remaining stages of the two city lines, and it was completed and opened first. it was around this time that the plan for phase 2 was released.
+
+
 # phase 2
 ## phase 2a: further expansion and a new city line
 the masterplan for phase 2a was released right after the opening of the fairview line.

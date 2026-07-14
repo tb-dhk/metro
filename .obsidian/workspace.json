@@ -13,22 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "services.md",
+                "file": "history.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "services"
-            }
-          },
-          {
-            "id": "a5bf0a3ca02a4b7a",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "title": "history"
             }
           },
           {
@@ -37,12 +27,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "history.md",
+                "file": "lines/city/across bay line.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "across bay line"
+            }
+          },
+          {
+            "id": "08ea3eccbd7f3cb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "stations/beechwood heights.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "beechwood heights"
+            }
+          },
+          {
+            "id": "c59a9ee45e2cf8e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "stations/elizabeth district.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "history"
+              "title": "elizabeth district"
             }
           }
         ],
@@ -78,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\\n",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -208,12 +226,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "a5bf0a3ca02a4b7a",
+  "active": "c8d6819ba1d38afb",
   "lastOpenFiles": [
+    "history.md",
+    "lines/city/across bay line.md",
+    "stations/beechwood heights.md",
+    "stations/elizabeth district.md",
+    "assets/platforms/6.svg",
+    "assets/platforms/5.svg",
+    "assets/platforms/4.svg",
+    "assets/platforms/3.svg",
+    "assets/platforms/2.svg",
+    "assets/platforms/1.svg",
+    "assets/platforms",
+    "assets/codes/WS06.svg",
+    "assets/codes/WS05.svg",
+    "assets/codes/WS04.svg",
+    "assets/codes/WS03.svg",
+    "assets/codes",
+    "assets/service_map",
+    "stations/holly park.md",
+    "lines/borough/line 5B.md",
+    "stations/myrtle district.md",
+    "lines/district/fairview line.md",
+    "stations/pine hills.md",
+    "stations/barlow heights.md",
     "stations/magnolia district.md",
     "stations/chester square.md",
     "stations/hawthorne heights.md",
-    "stations/pine hills.md",
     "stations/crest park.md",
     "stations/broad park.md",
     "stations/woodland square.md",
@@ -227,34 +267,12 @@
     "stations/meadow hills.md",
     "stations/summit valley.md",
     "stations/cherry hills.md",
-    "stations/primrose park.md",
-    "stations/orchard hills.md",
-    "stations/linden park.md",
-    "stations/cypress square.md",
-    "stations/myrtle district.md",
-    "stations/barlow heights.md",
-    "stations/smith square.md",
-    "stations/high park.md",
-    "stations/fairview square.md",
-    "Pasted image 20260709193612.png",
-    "assets/navigation/woodland square.svg",
-    "assets/stations/woodland square.svg",
-    "assets/navigation/victoria heights.svg",
-    "assets/stations/victoria heights.svg",
-    "assets/navigation/underhill grove.svg",
-    "assets/stations/underhill grove.svg",
-    "assets/navigation/thumb district.svg",
-    "assets/stations/thumb district.svg",
-    "assets/navigation/thornton park.svg",
     "assets/navigation",
     "assets/stations",
-    "assets/platforms",
-    "assets/codes",
     "scripts/metro.db-journal",
     "metro.db-journal",
     "metro.db",
     "scripts/refresh",
-    "scripts/__pycache__/misc.cpython-314.pyc",
-    "scripts/__pycache__"
+    "scripts/__pycache__/misc.cpython-314.pyc"
   ]
 }

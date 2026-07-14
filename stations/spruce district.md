@@ -1,7 +1,9 @@
 ---
 borough: 5
 district: long island
----\n![[assets/stations/spruce district.svg\|2500]]\n# services
+---
+![[assets/stations/spruce district.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -10,4 +12,5 @@ district: long island
 |3|[[long island line]]|![[assets/lines/long island line.svg\|40]]|clockwise|^|![[assets/codes/LI02.svg\|40]]|^|![[assets/codes/LI04.svg\|40]]|
 |4|^|^|anticlockwise|[[poplar square]]|![[assets/codes/LI04.svg\|40]]|[[birch park]]|![[assets/codes/LI02.svg\|40]]|
 
-\n![[assets/navigation/spruce district.svg\|2500]]
+
+![[assets/navigation/spruce district.svg\|2500]]

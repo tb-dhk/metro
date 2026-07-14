@@ -9,7 +9,7 @@ borough: 5
 
 |district|code|other codes|name|
 |-|-|-|-|
-|fairview|![[assets/codes/5B01.svg\|40]]|![[assets/codes/B09.svg\|40]]![[assets/codes/FV06.svg\|40]]|[[fairview square]]|
+|fairview|![[assets/codes/5B01.svg\|40]]|![[assets/codes/B09.svg\|40]]![[assets/codes/FV08.svg\|40]]|[[fairview square]]|
 |^|![[assets/codes/5B02.svg\|40]]|![[assets/codes/FV02.svg\|40]]|[[myrtle district]]|
 |^|![[assets/codes/5B03.svg\|40]]|![[assets/codes/FV03.svg\|40]]|[[cypress square]]|
 |holly heights|![[assets/codes/5B04.svg\|40]]||[[linden park]]|

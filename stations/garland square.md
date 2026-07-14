@@ -1,7 +1,9 @@
 ---
 borough: the peninsula
 district: the peninsula
----\n![[assets/stations/garland square.svg\|2500]]\n# services
+---
+![[assets/stations/garland square.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -10,4 +12,5 @@ district: the peninsula
 |3|[[peninsula line]]|![[assets/lines/peninsula line.svg\|40]]|southbound|[[elk hills]]|![[assets/codes/P05.svg\|40]]|[[green park]]|![[assets/codes/P07.svg\|40]]|
 |4|^|^|northbound|[[green park]]|![[assets/codes/P07.svg\|40]]|[[elk hills]]|![[assets/codes/P05.svg\|40]]|
 
-\n![[assets/navigation/garland square.svg\|2500]]
+
+![[assets/navigation/garland square.svg\|2500]]

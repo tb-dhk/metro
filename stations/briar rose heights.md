@@ -1,7 +1,9 @@
 ---
 borough: 3
 district: east ivy
----\n![[assets/stations/briar rose heights.svg\|2500]]\n# services
+---
+![[assets/stations/briar rose heights.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,4 +14,5 @@ district: east ivy
 |3|[[east ivy line]]|![[assets/lines/east ivy line.svg\|40]]|clockwise|[[robin cross]]|![[assets/codes/EI02.svg\|40]]|[[robin cross]]|![[assets/codes/EI02.svg\|40]]|
 |4|^|^|anticlockwise|^|^|^|^|
 
-\n![[assets/navigation/briar rose heights.svg\|2500]]
+
+![[assets/navigation/briar rose heights.svg\|2500]]

@@ -16,9 +16,9 @@ notes: express service across peninsula line
 |the islands|oak island|![[assets/codes/B06.svg\|40]]|![[assets/codes/C06.svg\|40]]![[assets/codes/I01.svg\|40]]|[[oak island]]|
 |^|maple island|![[assets/codes/B07.svg\|40]]|![[assets/codes/C07.svg\|40]]![[assets/codes/I02.svg\|40]]|[[maple island]]|
 |^|boa island|![[assets/codes/B08.svg\|40]]|![[assets/codes/C08.svg\|40]]![[assets/codes/I03.svg\|40]]![[assets/codes/BI01.svg\|40]]|[[elizabeth district]]|
-|5|fairview|![[assets/codes/B09.svg\|40]]|![[assets/codes/5B01.svg\|40]]![[assets/codes/FV06.svg\|40]]|[[fairview square]]|
+|5|fairview|![[assets/codes/B09.svg\|40]]|![[assets/codes/5B01.svg\|40]]![[assets/codes/FV08.svg\|40]]|[[fairview square]]|
 |^|^|![[assets/codes/B10.svg\|40]]|![[assets/codes/FV07.svg\|40]]|[[high park]]|
-|^|^|![[assets/codes/B11.svg\|40]]|![[assets/codes/FV08.svg\|40]]|[[smith square]]|
+|^|^|![[assets/codes/B11.svg\|40]]|![[assets/codes/FV06.svg\|40]]|[[smith square]]|
 |^|east sheffield|![[assets/codes/B12.svg\|40]]|![[assets/codes/ES05.svg\|40]]|[[dale hills]]|
 |^|long island|![[assets/codes/B13.svg\|40]]|![[assets/codes/LI04.svg\|40]]|[[poplar square]]|
 |^|^|![[assets/codes/B14.svg\|40]]|![[assets/codes/LI03.svg\|40]]|[[spruce district]]|

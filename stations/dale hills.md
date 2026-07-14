@@ -1,7 +1,9 @@
 ---
 borough: 5
 district: east sheffield
----\n![[assets/stations/dale hills.svg\|2500]]\n# services
+---
+![[assets/stations/dale hills.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -10,4 +12,5 @@ district: east sheffield
 |3|[[east sheffield line]]|![[assets/lines/east sheffield line.svg\|40]]|clockwise|[[poplar heights]]|![[assets/codes/ES04.svg\|40]]|[[victoria heights]]|![[assets/codes/ES06.svg\|40]]|
 |4|^|^|anticlockwise|[[victoria heights]]|![[assets/codes/ES06.svg\|40]]|[[poplar heights]]|![[assets/codes/ES04.svg\|40]]|
 
-\n![[assets/navigation/dale hills.svg\|2500]]
+
+![[assets/navigation/dale hills.svg\|2500]]

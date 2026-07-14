@@ -1,11 +1,14 @@
 ---
 borough: 5
 district: unknown district in borough 5
----\n![[assets/stations/summit valley.svg\|2500]]\n# services
+---
+![[assets/stations/summit valley.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
 |1|[[line 5B]]|![[assets/lines/line 5B.svg\|40]]|southbound|[[cherry hills]]|![[assets/codes/5B08.svg\|40]]|[[meadow hills]]|![[assets/codes/5B10.svg\|40]]|
 |2|^|^|northbound|[[meadow hills]]|![[assets/codes/5B10.svg\|40]]|[[cherry hills]]|![[assets/codes/5B08.svg\|40]]|
 
-\n![[assets/navigation/summit valley.svg\|2500]]
+
+![[assets/navigation/summit valley.svg\|2500]]

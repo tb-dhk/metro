@@ -1,7 +1,9 @@
 ---
 borough: 5
 district: holly heights
----\n![[assets/stations/holly park.svg\|2500]]\n# services
+---
+![[assets/stations/holly park.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -10,4 +12,5 @@ district: holly heights
 |3|[[line 5B]]|![[assets/lines/line 5B.svg\|40]]|southbound|[[linden park]]|![[assets/codes/5B04.svg\|40]]|[[orchard hills]]|![[assets/codes/5B06.svg\|40]]|
 |4|^|^|northbound|[[orchard hills]]|![[assets/codes/5B06.svg\|40]]|[[linden park]]|![[assets/codes/5B04.svg\|40]]|
 
-\n![[assets/navigation/holly park.svg\|2500]]
+
+![[assets/navigation/holly park.svg\|2500]]

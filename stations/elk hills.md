@@ -1,7 +1,9 @@
 ---
 borough: the peninsula
 district: the peninsula
----\n![[assets/stations/elk hills.svg\|2500]]\n# services
+---
+![[assets/stations/elk hills.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -10,4 +12,5 @@ district: the peninsula
 |3|[[peninsula line]]|![[assets/lines/peninsula line.svg\|40]]|southbound|[[beechwood heights]]|![[assets/codes/P04.svg\|40]]|[[garland square]]|![[assets/codes/P06.svg\|40]]|
 |4|^|^|northbound|[[garland square]]|![[assets/codes/P06.svg\|40]]|[[beechwood heights]]|![[assets/codes/P04.svg\|40]]|
 
-\n![[assets/navigation/elk hills.svg\|2500]]
+
+![[assets/navigation/elk hills.svg\|2500]]

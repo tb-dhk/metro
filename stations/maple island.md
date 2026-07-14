@@ -1,7 +1,9 @@
 ---
 borough: the islands
 district: maple island
----\n![[assets/stations/maple island.svg\|2500]]\n# services
+---
+![[assets/stations/maple island.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -12,4 +14,5 @@ district: maple island
 |3|[[island line]]|![[assets/lines/island line.svg\|40]]|westbound|[[oak island]]|![[assets/codes/I01.svg\|40]]|[[elizabeth district]]|![[assets/codes/I03.svg\|40]]|
 |4|^|^|eastbound|[[elizabeth district]]|![[assets/codes/I03.svg\|40]]|[[oak island]]|![[assets/codes/I01.svg\|40]]|
 
-\n![[assets/navigation/maple island.svg\|2500]]
+
+![[assets/navigation/maple island.svg\|2500]]

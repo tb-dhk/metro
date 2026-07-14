@@ -1,7 +1,9 @@
 ---
 borough: the peninsula
 district: the peninsula
----\n![[assets/stations/green park.svg\|2500]]\n# services
+---
+![[assets/stations/green park.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -10,4 +12,5 @@ district: the peninsula
 |3|[[peninsula line]]|![[assets/lines/peninsula line.svg\|40]]|southbound|[[garland square]]|![[assets/codes/P06.svg\|40]]|[[briarwood heights]]|![[assets/codes/P08.svg\|40]]|
 |4|^|^|northbound|[[briarwood heights]]|![[assets/codes/P08.svg\|40]]|[[garland square]]|![[assets/codes/P06.svg\|40]]|
 
-\n![[assets/navigation/green park.svg\|2500]]
+
+![[assets/navigation/green park.svg\|2500]]

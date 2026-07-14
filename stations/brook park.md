@@ -1,7 +1,9 @@
 ---
 borough: 5
 district: east sheffield
----\n![[assets/stations/brook park.svg\|2500]]\n# services
+---
+![[assets/stations/brook park.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -10,4 +12,5 @@ district: east sheffield
 |3|[[east sheffield line]]|![[assets/lines/east sheffield line.svg\|40]]|clockwise|^|![[assets/codes/ES09.svg\|40]]|[[olive heights]]|![[assets/codes/ES02.svg\|40]]|
 |4|^|^|anticlockwise|[[olive heights]]|![[assets/codes/ES02.svg\|40]]|[[sheffield hills]]|![[assets/codes/ES09.svg\|40]]|
 
-\n![[assets/navigation/brook park.svg\|2500]]
+
+![[assets/navigation/brook park.svg\|2500]]

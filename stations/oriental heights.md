@@ -1,7 +1,9 @@
 ---
 borough: the peninsula
 district: the peninsula
----\n![[assets/stations/oriental heights.svg\|2500]]\n# services
+---
+![[assets/stations/oriental heights.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -10,4 +12,5 @@ district: the peninsula
 |3|[[peninsula line]]|![[assets/lines/peninsula line.svg\|40]]|southbound|none|<|[[sycamore district]]|![[assets/codes/P02.svg\|40]]|
 |4|^|^|northbound|[[sycamore district]]|![[assets/codes/P02.svg\|40]]|none|<|
 
-\n![[assets/navigation/oriental heights.svg\|2500]]
+
+![[assets/navigation/oriental heights.svg\|2500]]

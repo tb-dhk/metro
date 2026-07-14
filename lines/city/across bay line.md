@@ -20,7 +20,7 @@ notes:
 |^|holly heights|![[assets/codes/A10.svg\|40]]||[[magnolia district]]|
 |^|^|![[assets/codes/A11.svg\|40]]|![[assets/codes/5B05.svg\|40]]|[[holly park]]|
 |the islands|pointer island|![[assets/codes/A12.svg\|40]]|![[assets/codes/PI01.svg\|40]]|[[pointer park]]|
-|^|^|![[assets/codes/A13.svg\|40]]|![[assets/codes/PI03.svg\|40]]|[[thumb district]]|
+|^|^|![[assets/codes/A13.svg\|40]]|![[assets/codes/I05.svg\|40]]![[assets/codes/PI02.svg\|40]]|[[knuckle hills]]|
 |5|south coast (tbc)|![[assets/codes/A14.svg\|40]]|![[assets/codes/5B12.svg\|40]]|[[empire district]]|
 
 

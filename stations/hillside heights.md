@@ -1,9 +1,12 @@
 ---
 borough: 3
 district: west ivy
----\n![[assets/stations/hillside heights.svg\|2500]]\n# services
+---
+![[assets/stations/hillside heights.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
 
-\n![[assets/navigation/hillside heights.svg\|2500]]
+
+![[assets/navigation/hillside heights.svg\|2500]]

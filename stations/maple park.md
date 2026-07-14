@@ -1,7 +1,9 @@
 ---
 borough: 5
 district: central sheffield
----\n![[assets/stations/maple park.svg\|2500]]\n# services
+---
+![[assets/stations/maple park.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -10,4 +12,5 @@ district: central sheffield
 |3|[[central sheffield line]]|![[assets/lines/central sheffield line.svg\|40]]|clockwise|^|![[assets/codes/CS06.svg\|40]]|[[amity heights]]|![[assets/codes/CS08.svg\|40]]|
 |4|^|^|anticlockwise|[[amity heights]]|![[assets/codes/CS08.svg\|40]]|[[mulberry park]]|![[assets/codes/CS06.svg\|40]]|
 
-\n![[assets/navigation/maple park.svg\|2500]]
+
+![[assets/navigation/maple park.svg\|2500]]

@@ -1,7 +1,9 @@
 ---
 borough: 3
 district: east ivy
----\n![[assets/stations/robin cross.svg\|2500]]\n# services
+---
+![[assets/stations/robin cross.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -10,4 +12,5 @@ district: east ivy
 |2|^|^|anticlockwise|[[briar rose heights]]|![[assets/codes/EI01.svg\|40]]|[[florence heights]]|![[assets/codes/EI06.svg\|40]]|
 |^|^|^|^|[[applegate hills]]|![[assets/codes/EI03.svg\|40]]|[[briar rose heights]]|![[assets/codes/EI01.svg\|40]]|
 
-\n![[assets/navigation/robin cross.svg\|2500]]
+
+![[assets/navigation/robin cross.svg\|2500]]

@@ -1,7 +1,9 @@
 ---
 borough: the islands
 district: boa island
----\n![[assets/stations/autumn hills.svg\|2500]]\n# services
+---
+![[assets/stations/autumn hills.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -10,4 +12,5 @@ district: boa island
 |3|[[boa island line]]|![[assets/lines/boa island line.svg\|40]]|clockwise|[[prospect square]]|![[assets/codes/BI02.svg\|40]]|[[sycamore heights]]|![[assets/codes/BI04.svg\|40]]|
 |4|^|^|anticlockwise|[[sycamore heights]]|![[assets/codes/BI04.svg\|40]]|[[prospect square]]|![[assets/codes/BI02.svg\|40]]|
 
-\n![[assets/navigation/autumn hills.svg\|2500]]
+
+![[assets/navigation/autumn hills.svg\|2500]]

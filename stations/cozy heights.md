@@ -1,7 +1,9 @@
 ---
 borough: 5
 district: central sheffield
----\n![[assets/stations/cozy heights.svg\|2500]]\n# services
+---
+![[assets/stations/cozy heights.svg\|2500]]
+# services
 
 |platform|line|<|service|previous station|<|next station|<|
 |-|-|-|-|-|-|-|-|
@@ -10,4 +12,5 @@ district: central sheffield
 |3|[[central sheffield line]]|![[assets/lines/central sheffield line.svg\|40]]|clockwise|[[amity heights]]|![[assets/codes/CS08.svg\|40]]|[[underhill grove]]|![[assets/codes/CS02.svg\|40]]|
 |4|^|^|anticlockwise|[[underhill grove]]|![[assets/codes/CS02.svg\|40]]|[[amity heights]]|![[assets/codes/CS08.svg\|40]]|
 
-\n![[assets/navigation/cozy heights.svg\|2500]]
+
+![[assets/navigation/cozy heights.svg\|2500]]

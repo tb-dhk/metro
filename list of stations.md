@@ -43,10 +43,10 @@
 |^|^|[[cypress square]]|^|![[assets/codes/5B03.svg\|100]]|![[assets/codes/FV03.svg\|100]]|
 |^|^|[[hawthorne heights]]|^||![[assets/codes/FV04.svg\|100]]|
 |^|^|[[barlow heights]]|^|^|![[assets/codes/FV05.svg\|100]]|
-|^|^|[[fairview square]]|![[assets/codes/B09.svg\|100]]|![[assets/codes/5B01.svg\|100]]|![[assets/codes/FV06.svg\|100]]|
-|^|^|[[high park]]|![[assets/codes/B10.svg\|100]]||![[assets/codes/FV07.svg\|100]]|
-|^|^|[[smith square]]|![[assets/codes/B11.svg\|100]]|^|![[assets/codes/FV08.svg\|100]]|
-|^|holly heights|[[chester square]]||^||
+|^|^|[[smith square]]|![[assets/codes/B11.svg\|100]]|^|![[assets/codes/FV06.svg\|100]]|
+|^|^|[[high park]]|![[assets/codes/B10.svg\|100]]|^|![[assets/codes/FV07.svg\|100]]|
+|^|^|[[fairview square]]|![[assets/codes/B09.svg\|100]]|![[assets/codes/5B01.svg\|100]]|![[assets/codes/FV08.svg\|100]]|
+|^|holly heights|[[chester square]]||||
 |^|^|[[magnolia district]]|![[assets/codes/A10.svg\|100]]|^|^|
 |^|^|[[linden park]]||![[assets/codes/5B04.svg\|100]]|^|
 |^|^|[[holly park]]|![[assets/codes/A11.svg\|100]]|![[assets/codes/5B05.svg\|100]]|^|
@@ -79,9 +79,9 @@
 |^|maple island|[[maple island]]|![[assets/codes/B07.svg\|100]]![[assets/codes/C07.svg\|100]]|![[assets/codes/I02.svg\|100]]||
 |^|oak island|[[oak island]]|![[assets/codes/B06.svg\|100]]![[assets/codes/C06.svg\|100]]|![[assets/codes/I01.svg\|100]]|^|
 |^|pointer island|[[pointer park]]|![[assets/codes/A12.svg\|100]]||![[assets/codes/PI01.svg\|100]]|
-|^|^|[[knuckle hills]]||![[assets/codes/I05.svg\|100]]|![[assets/codes/PI02.svg\|100]]|
-|^|^|[[thumb district]]|![[assets/codes/A13.svg\|100]]||![[assets/codes/PI03.svg\|100]]|
-|^|^|[[finger park]]||![[assets/codes/I06.svg\|100]]|![[assets/codes/PI04.svg\|100]]|
+|^|^|[[knuckle hills]]|![[assets/codes/A13.svg\|100]]|![[assets/codes/I05.svg\|100]]|![[assets/codes/PI02.svg\|100]]|
+|^|^|[[thumb district]]|||![[assets/codes/PI03.svg\|100]]|
+|^|^|[[finger park]]|^|![[assets/codes/I06.svg\|100]]|![[assets/codes/PI04.svg\|100]]|
 |the peninsula|the peninsula|[[oriental heights]]|![[assets/codes/B02.svg\|100]]|![[assets/codes/P01.svg\|100]]||
 |^|^|[[sycamore district]]|![[assets/codes/C02.svg\|100]]|![[assets/codes/P02.svg\|100]]|^|
 |^|^|[[hickory park]]|![[assets/codes/B03.svg\|100]]|![[assets/codes/P03.svg\|100]]|^|
