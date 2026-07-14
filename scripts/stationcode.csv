@@ -109,9 +109,9 @@ FV,02,myrtle district
 FV,03,cypress square
 FV,04,hawthorne heights
 FV,05,barlow heights
-FV,06,fairview square
+FV,08,fairview square
 FV,07,high park
-FV,08,smith square
+FV,06,smith square
 A,01,beechwood heights
 A,02,briar rose heights
 A,03,brook park
@@ -124,5 +124,5 @@ A,09,sunset park
 A,10,magnolia district
 A,11,holly park
 A,12,pointer park
-A,13,thumb district
+A,13,knuckle hills
 A,14,empire district

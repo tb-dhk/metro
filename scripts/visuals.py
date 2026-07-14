@@ -73,494 +73,511 @@ def html_with_station(text, station=None, right=False):
     """
 
 
-print("making line logos...")
-cursor.execute("""
-    SELECT Name, Code, Color, Type
-    FROM Line
-""")
-lines = cursor.fetchall()
+def line_logos():
+    print("making line logos...")
+    cursor.execute("""
+        SELECT Name, Code, Color, Type
+        FROM Line
+    """)
+    lines = cursor.fetchall()
 
-subprocess.call(["/usr/bin/sudo", "mkdir", "../assets/lines"])
-for name, code, color, t_pe in lines:
-    drawing = svg.SVG(
-        width=200,
-        height=200,
-        elements=[
-            shape(t_pe, color),
+    subprocess.call(["/usr/bin/sudo", "mkdir", "../assets/lines"])
+    for name, code, color, t_pe in lines:
+        drawing = svg.SVG(
+            width=200,
+            height=200,
+            elements=[
+                shape(t_pe, color),
+                svg.Text(
+                    text=code,
+                    x=100,
+                    y=105,
+                    text_anchor="middle",
+                    dominant_baseline="middle",
+                    font_size="90px",
+                    fill="white",
+                    font_family="Altone",
+                    font_weight=700,
+                ),
+            ],
+        )
+
+        filename = f"../assets/lines/{name}.svg"
+        subprocess.call(["/usr/bin/sudo", "touch", filename])
+        subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
+        with open(filename, "w") as f:
+            f.write(str(drawing))
+
+
+def station_codes():
+    print("making station codes...")
+    cursor.execute("""
+        SELECT Number, LineCode, Color, Type
+        FROM StationCode INNER JOIN Line ON StationCode.LineCode = Line.Code
+    """)
+    codes = cursor.fetchall()
+
+    subprocess.call(["/usr/bin/sudo", "mkdir", "../assets/codes"])
+    for number, line, color, t_pe in codes:
+        drawing = svg.SVG(
+            width=200,
+            height=200,
+            elements=[
+                shape(t_pe, color),
+                svg.Text(
+                    text=line,
+                    x=100,
+                    y=95,
+                    text_anchor="middle",
+                    font_size="85px",
+                    fill="white",
+                    font_family="Altone",
+                    font_weight=700,
+                ),
+                svg.Text(
+                    text=number.ljust(2, "0"),
+                    x=100,
+                    y=165,
+                    text_anchor="middle",
+                    font_size="60px",
+                    fill="white",
+                    font_family="Altone",
+                    font_weight=700,
+                ),
+            ],
+        )
+
+        filename = f"../assets/codes/{line}{number.ljust(2, '0')}.svg"
+        subprocess.call(["/usr/bin/sudo", "touch", filename])
+        subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
+        with open(filename, "w") as f:
+            f.write(str(drawing))
+
+
+def platform_logos():
+    print("making platform logos...")
+    subprocess.call(["/usr/bin/sudo", "mkdir", "../assets/platforms"])
+    for i in range(6):
+        number = i + 1
+
+        drawing = svg.SVG(
+            width=200,
+            height=200,
+            elements=[
+                svg.Rect(x=0, y=0, width=200, height=200, fill="white"),
+                svg.Rect(x=25, y=25, width=150, height=150, fill="black"),
+                svg.Text(
+                    text=number,
+                    x=100,
+                    y=105,
+                    text_anchor="middle",
+                    dominant_baseline="middle",
+                    font_size="110px",
+                    fill="white",
+                    font_family="Altone",
+                    font_weight=700,
+                ),
+            ],
+        )
+
+        filename = f"../assets/platforms/{number}.svg"
+        subprocess.call(["/usr/bin/sudo", "touch", filename])
+        subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
+        with open(filename, "w") as f:
+            f.write(str(drawing))
+
+
+def station_navigation():
+    print("making station banners and navigation signs...")
+    cursor.execute("""
+        SELECT Name FROM Station
+    """)
+    stations = cursor.fetchall()
+
+    subprocess.call(["/usr/bin/sudo", "mkdir", "../assets/stations"])
+    subprocess.call(["/usr/bin/sudo", "mkdir", "../assets/navigation"])
+
+    for row in stations:
+        station = row[0]
+        cursor.execute(
+            """
+            SELECT LineCode, Number 
+            FROM StationCode INNER JOIN Line on LineCode = Line.Code
+            WHERE StationName = ?
+            ORDER BY CASE Type
+                WHEN 'city'   THEN 1
+                WHEN 'borough' THEN 2
+                WHEN 'district'    THEN 3
+                ELSE 4 -- Catches any other values
+            END ASC
+        """,
+            (station,),
+        )
+        codes = cursor.fetchall()
+
+        elements = [
+            svg.Rect(x=0, y=0, width=2250, height=300, fill="black"),
             svg.Text(
-                text=code,
+                text=station,
                 x=100,
-                y=105,
-                text_anchor="middle",
-                dominant_baseline="middle",
-                font_size="90px",
-                fill="white",
-                font_family="Altone",
-                font_weight=700,
-            ),
-        ],
-    )
-
-    filename = f"../assets/lines/{name}.svg"
-    subprocess.call(["/usr/bin/sudo", "touch", filename])
-    subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
-    with open(filename, "w") as f:
-        f.write(str(drawing))
-
-print("making station codes...")
-cursor.execute("""
-    SELECT Number, LineCode, Color, Type
-    FROM StationCode INNER JOIN Line ON StationCode.LineCode = Line.Code
-""")
-codes = cursor.fetchall()
-
-subprocess.call(["/usr/bin/sudo", "mkdir", "../assets/codes"])
-for number, line, color, t_pe in codes:
-    drawing = svg.SVG(
-        width=200,
-        height=200,
-        elements=[
-            shape(t_pe, color),
-            svg.Text(
-                text=line,
-                x=100,
-                y=95,
-                text_anchor="middle",
-                font_size="85px",
-                fill="white",
-                font_family="Altone",
-                font_weight=700,
-            ),
-            svg.Text(
-                text=number.ljust(2, "0"),
-                x=100,
-                y=165,
-                text_anchor="middle",
-                font_size="60px",
-                fill="white",
-                font_family="Altone",
-                font_weight=700,
-            ),
-        ],
-    )
-
-    filename = f"../assets/codes/{line}{number.ljust(2, '0')}.svg"
-    subprocess.call(["/usr/bin/sudo", "touch", filename])
-    subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
-    with open(filename, "w") as f:
-        f.write(str(drawing))
-
-print("making platform logos...")
-subprocess.call(["/usr/bin/sudo", "mkdir", "../assets/platforms"])
-for i in range(6):
-    number = i + 1
-
-    drawing = svg.SVG(
-        width=200,
-        height=200,
-        elements=[
-            svg.Rect(x=0, y=0, width=200, height=200, fill="white"),
-            svg.Rect(x=25, y=25, width=150, height=150, fill="black"),
-            svg.Text(
-                text=number,
-                x=100,
-                y=105,
-                text_anchor="middle",
+                y=155,
                 dominant_baseline="middle",
                 font_size="110px",
                 fill="white",
                 font_family="Altone",
-                font_weight=700,
+                font_weight=500,
             ),
-        ],
-    )
+        ]
 
-    filename = f"../assets/platforms/{number}.svg"
-    subprocess.call(["/usr/bin/sudo", "touch", filename])
-    subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
-    with open(filename, "w") as f:
-        f.write(str(drawing))
+        starting_x = 2250 - 50 - len(codes) * 225
+        for i, (line, number) in enumerate(codes):
+            elements.append(
+                svg.Image(
+                    href=href(f"../assets/codes/{line}{number}.svg"),
+                    x=starting_x + i * 225,
+                    y=50,
+                    width=200,
+                    height=200,
+                )
+            )
 
-print("making station banners and navigation signs...")
-cursor.execute("""
-    SELECT Name FROM Station
-""")
-stations = cursor.fetchall()
+        station_drawing = svg.SVG(width=2250, height=300, elements=elements)
 
-subprocess.call(["/usr/bin/sudo", "mkdir", "../assets/stations"])
-subprocess.call(["/usr/bin/sudo", "mkdir", "../assets/navigation"])
+        filename = f"../assets/stations/{station}.svg"
+        subprocess.call(["/usr/bin/sudo", "touch", filename])
+        subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
+        with open(filename, "w") as f:
+            f.write(str(station_drawing))
 
-for row in stations:
-    station = row[0]
-    cursor.execute(
-        """
-        SELECT LineCode, Number 
-        FROM StationCode INNER JOIN Line on LineCode = Line.Code
-        WHERE StationName = ?
-        ORDER BY CASE Type
-            WHEN 'city'   THEN 1
-            WHEN 'borough' THEN 2
-            WHEN 'district'    THEN 3
-            ELSE 4 -- Catches any other values
-        END ASC
-    """,
-        (station,),
-    )
-    codes = cursor.fetchall()
+        services = []
+        raw_services = get_station_services(station, with_next=True)
+        for platform in raw_services:
+            services.append([])
+            for raw_service in platform:
+                if "wise" in raw_service[0]:
+                    next_stations = [
+                        i[1]
+                        for i in surrounding_stations(
+                            station, raw_service[1], raw_service[0]
+                        )
+                    ]
+                else:
+                    next_stations = [
+                        end_destination(raw_service[1], raw_service[0])
+                    ]
+                for next_station in next_stations:
+                    services[-1].append([*raw_service, next_station])
 
-    elements = [
-        svg.Rect(x=0, y=0, width=2250, height=300, fill="black"),
-        svg.Text(
-            text=station,
-            x=100,
-            y=155,
-            dominant_baseline="middle",
-            font_size="110px",
-            fill="white",
-            font_family="Altone",
-            font_weight=500,
-        ),
-    ]
+        if not services:
+            continue
 
-    starting_x = 2250 - 50 - len(codes) * 225
-    for i, (line, number) in enumerate(codes):
-        elements.append(
+        if len(services) == 2:
+            platform_directions = [[1], [], [], [2]]
+        elif len(services) == 4:
+            platform_directions = [[1], [2], [3], [4]]
+        else:
+            platform_directions = [[1], [2, 3], [5, 4], [6]]
+
+        directions = [
+            [service for i in d for service in services[i - 1]]
+            for d in platform_directions
+        ]
+
+        top_rows = max(len(directions[0]), len(directions[3]))
+        bottom_rows = max(len(directions[1]), len(directions[2]))
+
+        height = (top_rows + bottom_rows) * 300 + 100
+
+        elements = [
+            svg.Rect(width=5000, height=height, x=0, y=0, fill="black"),
+            # left arrow
+            svg.Rect(
+                width=37.5,
+                height=125,
+                x=75,
+                y=75,
+                fill="white",
+                transform="rotate(45 75 200)",
+            ),
+            svg.Rect(
+                width=37.5,
+                height=125,
+                x=75,
+                y=200,
+                fill="white",
+                transform="rotate(-45 75 200)",
+            ),
+            svg.Rect(
+                width=110,
+                height=37.5,
+                x=125,
+                y=200 - 37.5 / 2,
+                fill="white",
+            ),
+            # right arrow
+            svg.Rect(
+                width=37.5,
+                height=125,
+                x=4925,
+                y=75,
+                fill="white",
+                transform="rotate(-135 4925 200)",
+            ),
+            svg.Rect(
+                width=37.5,
+                height=125,
+                x=4925,
+                y=200,
+                fill="white",
+                transform="rotate(135 4925 200)",
+            ),
+            svg.Rect(
+                width=110,
+                height=37.5,
+                x=4765,
+                y=200 - 37.5 / 2,
+                fill="white",
+            ),
+            # left down arrow
+            svg.Rect(
+                width=37.5,
+                height=150,
+                x=75,
+                y=top_rows * 300 + 125 - 37.5,
+                fill="white",
+                transform=f"rotate(45 {75 + 37.5 / 2} {top_rows * 300 + 275 - 37.5 / 2})",
+            ),
+            svg.Rect(
+                width=37.5,
+                height=150,
+                x=75,
+                y=top_rows * 300 + 125,
+                fill="white",
+                transform=f"rotate(90 {75 + 37.5 / 2} {top_rows * 300 + 275 - 37.5 / 2})",
+            ),
+            svg.Rect(
+                width=37.5,
+                height=150,
+                x=75,
+                y=top_rows * 300 + 125,
+                fill="white",
+            ),
+            # right down arrow
+            svg.Rect(
+                width=37.5,
+                height=150,
+                x=4925 - 37.5,
+                y=top_rows * 300 + 125 - 37.5,
+                fill="white",
+                transform=f"rotate(-45 {5000 - (75 + 37.5 / 2)} {top_rows * 300 + 275 - 37.5 / 2})",
+            ),
+            svg.Rect(
+                width=37.5,
+                height=150,
+                x=4925 - 37.5,
+                y=top_rows * 300 + 125,
+                fill="white",
+                transform=f"rotate(-90 {5000 - (75 + 37.5 / 2)} {top_rows * 300 + 275 - 37.5 / 2})",
+            ),
+            svg.Rect(
+                width=37.5,
+                height=150,
+                x=4925 - 37.5,
+                y=top_rows * 300 + 125,
+                fill="white",
+            ),
+            # platforms
             svg.Image(
-                href=href(f"../assets/codes/{line}{number}.svg"),
-                x=starting_x + i * 225,
-                y=50,
+                href=href("../assets/platforms/1.svg"),
                 width=200,
                 height=200,
-            )
+                x=300,
+                y=100,
+            ),
+            svg.Image(
+                href=href(
+                    f"../assets/platforms/{platform_directions[3][0]}.svg"
+                ),
+                width=200,
+                height=200,
+                x=4500,
+                y=100,
+            ),
+        ]
+
+        # other platforms
+        if platform_directions[1]:
+            rows = 0
+            for platform in platform_directions[1]:
+                elements.append(
+                    svg.Image(
+                        href=href(f"../assets/platforms/{platform}.svg"),
+                        width=200,
+                        height=200,
+                        x=300,
+                        y=(top_rows + rows) * 300 + 100,
+                    )
+                )
+                rows += len(services[platform - 1])
+
+        if platform_directions[2]:
+            rows = 0
+            for platform in platform_directions[2]:
+                elements.append(
+                    svg.Image(
+                        href=href(f"../assets/platforms/{platform}.svg"),
+                        width=200,
+                        height=200,
+                        x=4500,
+                        y=(top_rows + rows) * 300 + 100,
+                    )
+                )
+                rows += len(services[platform - 1])
+
+        # services
+        offsets = [0, top_rows, top_rows, 0]
+        for d in range(2):
+            for i, (name, code, line, station_code) in enumerate(directions[d]):
+                station_name = get_station_from_code(station_code)
+                elements.append(
+                    svg.Image(
+                        href=href(f"../assets/lines/{line}.svg"),
+                        width=200,
+                        height=200,
+                        x=575,
+                        y=(offsets[d] + i) * 300 + 100,
+                    )
+                )
+                # loop line
+                if "wise" in name:
+                    elements += [
+                        svg.Text(
+                            text=name,
+                            x=850,
+                            y=(offsets[d] + i) * 300 + 160,
+                            dominant_baseline="middle",
+                            font_size=125,
+                            font_family="Altone",
+                            font_weight=500,
+                            fill="white",
+                        ),
+                        svg.ForeignObject(
+                            x=850,
+                            y=(offsets[d] + i) * 300 + 215,
+                            width=1500,
+                            height=100,
+                            text=html_with_station(
+                                "via", station=[station_name, station_code]
+                            ),
+                        ),
+                    ]
+                else:
+                    length = 8 + len(name)
+                    elements += [
+                        svg.Text(
+                            text=name,
+                            x=850,
+                            y=(offsets[d] + i) * 300 + 160,
+                            dominant_baseline="middle",
+                            font_size=125,
+                            font_family="Altone",
+                            font_weight=500,
+                            fill="white",
+                        ),
+                        svg.ForeignObject(
+                            x=850,
+                            y=(offsets[d] + i) * 300 + 215,
+                            width=1500,
+                            height=100,
+                            text=html_with_station(
+                                "towards",
+                                station=[station_name, station_code]
+                                if station_name != station
+                                else None,
+                            ),
+                        ),
+                    ]
+
+        for d in range(3, 1, -1):
+            for i, (name, code, line, station_code) in enumerate(directions[d]):
+                station_name = get_station_from_code(station_code)
+                elements.append(
+                    svg.Image(
+                        href=href(f"../assets/lines/{line}.svg"),
+                        width=200,
+                        height=200,
+                        x=4225,
+                        y=(offsets[d] + i) * 300 + 100,
+                    )
+                )
+                # loop line
+                if "wise" in name:
+                    length = 4 + len(name)
+                    elements += [
+                        svg.Text(
+                            text=name,
+                            x=4150,
+                            y=(offsets[d] + i) * 300 + 160,
+                            text_anchor="end",
+                            dominant_baseline="middle",
+                            font_size=125,
+                            font_family="Altone",
+                            font_weight=500,
+                            fill="white",
+                        ),
+                        svg.ForeignObject(
+                            x=2650,
+                            y=(offsets[d] + i) * 300 + 215,
+                            width=1500,
+                            height=100,
+                            text=html_with_station(
+                                "via",
+                                station=[station_name, station_code],
+                                right=True,
+                            ),
+                        ),
+                    ]
+                else:
+                    length = 8 + len(name)
+                    elements += [
+                        svg.Text(
+                            text=name,
+                            x=4150,
+                            y=(offsets[d] + i) * 300 + 160,
+                            text_anchor="end",
+                            dominant_baseline="middle",
+                            font_size=125,
+                            font_family="Altone",
+                            font_weight=500,
+                            fill="white",
+                        ),
+                        svg.ForeignObject(
+                            x=2650,
+                            y=(offsets[d] + i) * 300 + 215,
+                            width=1500,
+                            height=100,
+                            text=html_with_station(
+                                "towards",
+                                station=[station_name, station_code]
+                                if station_name != station
+                                else None,
+                                right=True,
+                            ),
+                        ),
+                    ]
+
+        navigation_drawing = svg.SVG(
+            width=5000, height=height, elements=elements
         )
 
-    station_drawing = svg.SVG(width=2250, height=300, elements=elements)
+        filename = f"../assets/navigation/{station}.svg"
+        subprocess.call(["/usr/bin/sudo", "touch", filename])
+        subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
+        with open(filename, "w") as f:
+            f.write(str(navigation_drawing))
 
-    filename = f"../assets/stations/{station}.svg"
-    subprocess.call(["/usr/bin/sudo", "touch", filename])
-    subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
-    with open(filename, "w") as f:
-        f.write(str(station_drawing))
 
-    services = []
-    raw_services = get_station_services(station, with_next=True)
-    for platform in raw_services:
-        services.append([])
-        for raw_service in platform:
-            if "wise" in raw_service[0]:
-                next_stations = [
-                    i[1]
-                    for i in surrounding_stations(
-                        station, raw_service[1], raw_service[0]
-                    )
-                ]
-            else:
-                next_stations = [
-                    end_destination(raw_service[1], raw_service[0])
-                ]
-            for next_station in next_stations:
-                services[-1].append([*raw_service, next_station])
-
-    if not services:
-        continue
-
-    if len(services) == 2:
-        platform_directions = [[1], [], [], [2]]
-    elif len(services) == 4:
-        platform_directions = [[1], [2], [3], [4]]
-    else:
-        platform_directions = [[1], [2, 3], [5, 4], [6]]
-
-    directions = [
-        [service for i in d for service in services[i - 1]]
-        for d in platform_directions
-    ]
-
-    top_rows = max(len(directions[0]), len(directions[3]))
-    bottom_rows = max(len(directions[1]), len(directions[2]))
-
-    height = (top_rows + bottom_rows) * 300 + 100
-
-    elements = [
-        svg.Rect(width=5000, height=height, x=0, y=0, fill="black"),
-        # left arrow
-        svg.Rect(
-            width=37.5,
-            height=125,
-            x=75,
-            y=75,
-            fill="white",
-            transform="rotate(45 75 200)",
-        ),
-        svg.Rect(
-            width=37.5,
-            height=125,
-            x=75,
-            y=200,
-            fill="white",
-            transform="rotate(-45 75 200)",
-        ),
-        svg.Rect(
-            width=110,
-            height=37.5,
-            x=125,
-            y=200 - 37.5 / 2,
-            fill="white",
-        ),
-        # right arrow
-        svg.Rect(
-            width=37.5,
-            height=125,
-            x=4925,
-            y=75,
-            fill="white",
-            transform="rotate(-135 4925 200)",
-        ),
-        svg.Rect(
-            width=37.5,
-            height=125,
-            x=4925,
-            y=200,
-            fill="white",
-            transform="rotate(135 4925 200)",
-        ),
-        svg.Rect(
-            width=110,
-            height=37.5,
-            x=4765,
-            y=200 - 37.5 / 2,
-            fill="white",
-        ),
-        # left down arrow
-        svg.Rect(
-            width=37.5,
-            height=150,
-            x=75,
-            y=top_rows * 300 + 125 - 37.5,
-            fill="white",
-            transform=f"rotate(45 {75 + 37.5 / 2} {top_rows * 300 + 275 - 37.5 / 2})",
-        ),
-        svg.Rect(
-            width=37.5,
-            height=150,
-            x=75,
-            y=top_rows * 300 + 125,
-            fill="white",
-            transform=f"rotate(90 {75 + 37.5 / 2} {top_rows * 300 + 275 - 37.5 / 2})",
-        ),
-        svg.Rect(
-            width=37.5,
-            height=150,
-            x=75,
-            y=top_rows * 300 + 125,
-            fill="white",
-        ),
-        # right down arrow
-        svg.Rect(
-            width=37.5,
-            height=150,
-            x=4925 - 37.5,
-            y=top_rows * 300 + 125 - 37.5,
-            fill="white",
-            transform=f"rotate(-45 {5000 - (75 + 37.5 / 2)} {top_rows * 300 + 275 - 37.5 / 2})",
-        ),
-        svg.Rect(
-            width=37.5,
-            height=150,
-            x=4925 - 37.5,
-            y=top_rows * 300 + 125,
-            fill="white",
-            transform=f"rotate(-90 {5000 - (75 + 37.5 / 2)} {top_rows * 300 + 275 - 37.5 / 2})",
-        ),
-        svg.Rect(
-            width=37.5,
-            height=150,
-            x=4925 - 37.5,
-            y=top_rows * 300 + 125,
-            fill="white",
-        ),
-        # platforms
-        svg.Image(
-            href=href("../assets/platforms/1.svg"),
-            width=200,
-            height=200,
-            x=300,
-            y=100,
-        ),
-        svg.Image(
-            href=href(f"../assets/platforms/{platform_directions[3][0]}.svg"),
-            width=200,
-            height=200,
-            x=4500,
-            y=100,
-        ),
-    ]
-
-    # other platforms
-    if platform_directions[1]:
-        rows = 0
-        for platform in platform_directions[1]:
-            elements.append(
-                svg.Image(
-                    href=href(f"../assets/platforms/{platform}.svg"),
-                    width=200,
-                    height=200,
-                    x=300,
-                    y=(top_rows + rows) * 300 + 100,
-                )
-            )
-            rows += len(services[platform - 1])
-
-    if platform_directions[2]:
-        rows = 0
-        for platform in platform_directions[2]:
-            elements.append(
-                svg.Image(
-                    href=href(f"../assets/platforms/{platform}.svg"),
-                    width=200,
-                    height=200,
-                    x=4500,
-                    y=(top_rows + rows) * 300 + 100,
-                )
-            )
-            rows += len(services[platform - 1])
-
-    # services
-    offsets = [0, top_rows, top_rows, 0]
-    for d in range(2):
-        for i, (name, code, line, station_code) in enumerate(directions[d]):
-            station_name = get_station_from_code(station_code)
-            elements.append(
-                svg.Image(
-                    href=href(f"../assets/lines/{line}.svg"),
-                    width=200,
-                    height=200,
-                    x=575,
-                    y=(offsets[d] + i) * 300 + 100,
-                )
-            )
-            # loop line
-            if "wise" in name:
-                elements += [
-                    svg.Text(
-                        text=name,
-                        x=850,
-                        y=(offsets[d] + i) * 300 + 160,
-                        dominant_baseline="middle",
-                        font_size=125,
-                        font_family="Altone",
-                        font_weight=500,
-                        fill="white",
-                    ),
-                    svg.ForeignObject(
-                        x=850,
-                        y=(offsets[d] + i) * 300 + 215,
-                        width=1500,
-                        height=100,
-                        text=html_with_station(
-                            "via", station=[station_name, station_code]
-                        ),
-                    ),
-                ]
-            else:
-                length = 8 + len(name)
-                elements += [
-                    svg.Text(
-                        text=name,
-                        x=850,
-                        y=(offsets[d] + i) * 300 + 160,
-                        dominant_baseline="middle",
-                        font_size=125,
-                        font_family="Altone",
-                        font_weight=500,
-                        fill="white",
-                    ),
-                    svg.ForeignObject(
-                        x=850,
-                        y=(offsets[d] + i) * 300 + 215,
-                        width=1500,
-                        height=100,
-                        text=html_with_station(
-                            "towards",
-                            station=[station_name, station_code]
-                            if station_name != station
-                            else None,
-                        ),
-                    ),
-                ]
-
-    for d in range(3, 1, -1):
-        for i, (name, code, line, station_code) in enumerate(directions[d]):
-            station_name = get_station_from_code(station_code)
-            elements.append(
-                svg.Image(
-                    href=href(f"../assets/lines/{line}.svg"),
-                    width=200,
-                    height=200,
-                    x=4225,
-                    y=(offsets[d] + i) * 300 + 100,
-                )
-            )
-            # loop line
-            if "wise" in name:
-                length = 4 + len(name)
-                elements += [
-                    svg.Text(
-                        text=name,
-                        x=4150,
-                        y=(offsets[d] + i) * 300 + 160,
-                        text_anchor="end",
-                        dominant_baseline="middle",
-                        font_size=125,
-                        font_family="Altone",
-                        font_weight=500,
-                        fill="white",
-                    ),
-                    svg.ForeignObject(
-                        x=2650,
-                        y=(offsets[d] + i) * 300 + 215,
-                        width=1500,
-                        height=100,
-                        text=html_with_station(
-                            "via",
-                            station=[station_name, station_code],
-                            right=True,
-                        ),
-                    ),
-                ]
-            else:
-                length = 8 + len(name)
-                elements += [
-                    svg.Text(
-                        text=name,
-                        x=4150,
-                        y=(offsets[d] + i) * 300 + 160,
-                        text_anchor="end",
-                        dominant_baseline="middle",
-                        font_size=125,
-                        font_family="Altone",
-                        font_weight=500,
-                        fill="white",
-                    ),
-                    svg.ForeignObject(
-                        x=2650,
-                        y=(offsets[d] + i) * 300 + 215,
-                        width=1500,
-                        height=100,
-                        text=html_with_station(
-                            "towards",
-                            station=[station_name, station_code]
-                            if station_name != station
-                            else None,
-                            right=True,
-                        ),
-                    ),
-                ]
-
-    navigation_drawing = svg.SVG(width=5000, height=height, elements=elements)
-
-    filename = f"../assets/navigation/{station}.svg"
-    subprocess.call(["/usr/bin/sudo", "touch", filename])
-    subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
-    with open(filename, "w") as f:
-        f.write(str(navigation_drawing))
+line_logos()
+station_codes()
+platform_logos()
+station_navigation()

@@ -169,14 +169,20 @@ for i, t_pe in enumerate(TYPES):
             "notes": line[-1],
         }
         if t_pe != "city":
-            cursor.execute("""
+            cursor.execute(
+                """
                 SELECT Name FROM Borough WHERE Code = ?
-            """, (line[0],))
+            """,
+                (line[0],),
+            )
             properties["borough"] = cursor.fetchall()[0][0]
         if t_pe == "district":
-            cursor.execute("""
+            cursor.execute(
+                """
                 SELECT Name FROM District WHERE Code = ?
-            """, (line[1],))
+            """,
+                (line[1],),
+            )
             properties["district"] = cursor.fetchall()[0][0]
         properties_string = (
             "---\n"
@@ -322,9 +328,12 @@ for borough, district, station in stations:
     with open(filename, "w") as f:
         f.write(
             properties_string
-            + rf"\n![[assets/stations/{station}.svg\|2500]]\n"
+            + "\n"
+            + rf"![[assets/stations/{station}.svg\|2500]]"
+            + "\n"
             + platforms_string
-            + rf"\n![[assets/navigation/{station}.svg\|2500]]"
+            + "\n"
+            + rf"![[assets/navigation/{station}.svg\|2500]]"
         )
 
 connection.close()
