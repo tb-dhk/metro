@@ -20,8 +20,8 @@ district: east ivy
 
 # services
 
-|name|stations|
-|-|-|
-|anticlockwise|EI01...02, EI06...01|
-|clockwise|EI01...06, EI02...01|
+|name|stations|diagram|
+|-|-|-|
+|anticlockwise|EI01...02, EI06...01|![[assets/service_map/east ivy line anticlockwise.svg]]|
+|clockwise|EI01...06, EI02...01|![[assets/service_map/east ivy line clockwise.svg]]|
 

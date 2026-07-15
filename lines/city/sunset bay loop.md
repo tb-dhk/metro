@@ -34,8 +34,8 @@ notes: express service across peninsula line
 
 # services
 
-|name|stations|
-|-|-|
-|anticlockwise|B01, B22...01|
-|clockwise|B01...22, B01|
+|name|stations|diagram|
+|-|-|-|
+|anticlockwise|B01, B22...01|![[assets/service_map/sunset bay loop anticlockwise.svg]]|
+|clockwise|B01...22, B01|![[assets/service_map/sunset bay loop clockwise.svg]]|
 

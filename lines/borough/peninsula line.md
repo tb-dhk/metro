@@ -21,8 +21,8 @@ borough: the peninsula
 
 # services
 
-|name|stations|
-|-|-|
-|southbound|P01...08|
-|northbound|P08...01|
+|name|stations|diagram|
+|-|-|-|
+|southbound|P01...08|![[assets/service_map/peninsula line southbound.svg]]|
+|northbound|P08...01|![[assets/service_map/peninsula line northbound.svg]]|
 

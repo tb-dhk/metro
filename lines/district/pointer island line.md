@@ -18,8 +18,8 @@ district: pointer island
 
 # services
 
-|name|stations|
-|-|-|
-|anticlockwise|PI01, PI04...01|
-|clockwise|PI01...04, PI01|
+|name|stations|diagram|
+|-|-|-|
+|anticlockwise|PI01, PI04...01|![[assets/service_map/pointer island line anticlockwise.svg]]|
+|clockwise|PI01...04, PI01|![[assets/service_map/pointer island line clockwise.svg]]|
 

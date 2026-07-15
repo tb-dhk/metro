@@ -243,9 +243,12 @@ for i, t_pe in enumerate(TYPES):
         """,
             (line[i + 1],),
         )
-        services = cursor.fetchall()
+        services = [
+            [*i, f"![[assets/service_map/{line[-4]} {i[0]}.svg]]"]
+            for i in cursor.fetchall()
+        ]
         services_string = "# services" + markdownify(
-            services, headers=["name", "stations"]
+            services, headers=["name", "stations", "diagram"]
         )
 
         filename = f"../lines/{t_pe}/{line[-4]}.md"

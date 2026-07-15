@@ -19,8 +19,8 @@ borough: the islands
 
 # services
 
-|name|stations|
-|-|-|
-|westbound|I01...06|
-|eastbound|I06...01|
+|name|stations|diagram|
+|-|-|-|
+|westbound|I01...06|![[assets/service_map/island line westbound.svg]]|
+|eastbound|I06...01|![[assets/service_map/island line eastbound.svg]]|
 

@@ -26,8 +26,8 @@ notes:
 
 # services
 
-|name|stations|
-|-|-|
-|southbound|A01...14|
-|northbound|A14...01|
+|name|stations|diagram|
+|-|-|-|
+|southbound|A01...14|![[assets/service_map/across bay line southbound.svg]]|
+|northbound|A14...01|![[assets/service_map/across bay line northbound.svg]]|
 

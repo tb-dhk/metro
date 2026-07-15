@@ -20,8 +20,8 @@ district: long island
 
 # services
 
-|name|stations|
-|-|-|
-|anticlockwise|LI01, LI06...01|
-|clockwise|LI01...06, LI01|
+|name|stations|diagram|
+|-|-|-|
+|anticlockwise|LI01, LI06...01|![[assets/service_map/long island line anticlockwise.svg]]|
+|clockwise|LI01...06, LI01|![[assets/service_map/long island line clockwise.svg]]|
 

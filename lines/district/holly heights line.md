@@ -14,6 +14,6 @@ district: holly heights
 
 # services
 
-|name|stations|
-|-|-|
+|name|stations|diagram|
+|-|-|-|
 

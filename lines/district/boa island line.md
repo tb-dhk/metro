@@ -19,8 +19,8 @@ district: boa island
 
 # services
 
-|name|stations|
-|-|-|
-|anticlockwise|BI01, BI05...01|
-|clockwise|BI01...05, BI01|
+|name|stations|diagram|
+|-|-|-|
+|anticlockwise|BI01, BI05...01|![[assets/service_map/boa island line anticlockwise.svg]]|
+|clockwise|BI01...05, BI01|![[assets/service_map/boa island line clockwise.svg]]|
 

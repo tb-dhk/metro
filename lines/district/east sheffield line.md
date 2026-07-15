@@ -23,8 +23,8 @@ district: east sheffield
 
 # services
 
-|name|stations|
-|-|-|
-|anticlockwise|ES01, ES09...01|
-|clockwise|ES01...09, ES01|
+|name|stations|diagram|
+|-|-|-|
+|anticlockwise|ES01, ES09...01|![[assets/service_map/east sheffield line anticlockwise.svg]]|
+|clockwise|ES01...09, ES01|![[assets/service_map/east sheffield line clockwise.svg]]|
 

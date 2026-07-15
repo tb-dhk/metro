@@ -72,6 +72,7 @@ def html_with_station(text, station=None, right=False):
     </div>
     """
 
+
 def html_line_service(name, service):
     station_text = f"""
     <img src="{href(f"../assets/lines/{name}.svg")}" style="height: 100px; width: auto;" />
@@ -209,62 +210,65 @@ def platform_logos():
 
 
 subprocess.call(["mkdir", "../assets/service_map"])
+
+
 def service_maps():
     def service_map(service):
         name, line, stations, color = service
         station_list = service_string_to_list(stations)
         elements = [
             svg.Rect(
-                x=0, 
-                y=0, 
-                width=300*len(station_list)+500,
-                height=1200, 
-                fill="black"
+                x=0,
+                y=0,
+                width=300 * len(station_list) + 500,
+                height=1200,
+                fill="black",
             ),
             svg.Rect(
-                x=350, 
-                y=680, 
-                width=300*len(station_list)-300,
-                height=40, 
-                fill=color
+                x=350,
+                y=680,
+                width=300 * len(station_list) - 300,
+                height=40,
+                fill=color,
             ),
             svg.ForeignObject(
                 x=0,
                 y=900,
-                width=300*len(station_list)+500,
+                width=300 * len(station_list) + 500,
                 height=200,
                 text=html_line_service(line, name),
             ),
         ]
         for i, station in enumerate(station_list):
-            cursor.execute("""
+            cursor.execute(
+                """
                 SELECT StationName FROM StationCode WHERE LineCode || Number = ?
-            """, (station,))
+            """,
+                (station,),
+            )
 
             elements += [
                 svg.Image(
                     href=href(f"../assets/codes/{station}.svg"),
                     width=200,
                     height=200,
-                    x=300*i+250,
+                    x=300 * i + 250,
                     y=600,
                 ),
                 svg.Text(
                     text=cursor.fetchone()[0],
-                    x=300*i+350,
+                    x=300 * i + 350,
                     y=600,
                     dominant_baseline="middle",
                     font_size="60px",
                     fill="white",
                     font_family="Altone",
                     font_weight=500,
-                    transform=f"rotate(-45 {300*i+250} 600)"
-                )
+                    transform=f"rotate(-45 {300 * i + 250} 600)",
+                ),
             ]
         drawing = svg.SVG(
-            width=300*len(station_list)+500,
-            height=1200, 
-            elements=elements
+            width=300 * len(station_list) + 500, height=1200, elements=elements
         )
 
         filename = f"../assets/service_map/{line} {name}.svg"
@@ -282,6 +286,7 @@ def service_maps():
     for service in services:
         service_map(service)
 
+
 def station_navigation():
     print("making station banners and navigation signs...")
     cursor.execute("""
@@ -292,8 +297,9 @@ def station_navigation():
     subprocess.call(["/usr/bin/sudo", "mkdir", "../assets/stations"])
     subprocess.call(["/usr/bin/sudo", "mkdir", "../assets/navigation"])
 
-    for row in stations:
+    for i, row in enumerate(stations):
         station = row[0]
+        print(f"making for {station}... ({i}/{len(stations)})")
         cursor.execute(
             """
             SELECT LineCode, Number 
@@ -676,4 +682,4 @@ line_logos()
 station_codes()
 platform_logos()
 service_maps()
-# station_navigation()
+station_navigation()
