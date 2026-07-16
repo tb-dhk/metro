@@ -243,7 +243,10 @@ for i, t_pe in enumerate(TYPES):
             (line[i + 1],),
         )
         services = [
-            [*i, rf"![[assets/service_maps/general/{line[-4]} {i[0]}.svg\|1500]]"]
+            [
+                *i,
+                rf"![[assets/service_maps/general/{line[-4]} {i[0]}.svg\|1500]]",
+            ]
             for i in cursor.fetchall()
         ]
         services_string = "# services" + markdownify(

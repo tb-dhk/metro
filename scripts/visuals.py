@@ -95,6 +95,7 @@ def html_line_service(name, service):
     </div>
     """
 
+
 def html_station_name(name, current_station, blur):
     return f"""
     <div xmlns="http://www.w3.org/1999/xhtml" 
@@ -229,10 +230,15 @@ def platform_logos():
         with open(filename, "w") as f:
             f.write(str(drawing))
 
+
 def blurred(i, station_info, service_name, current_station):
     if i < 0 and "wise" not in service_name:
         return True
-    if i >= len(station_info) and "wise" in service_name and blurred(i-1, station_info, service_name, current_station):
+    if (
+        i >= len(station_info)
+        and "wise" in service_name
+        and blurred(i - 1, station_info, service_name, current_station)
+    ):
         return True
     if not current_station:
         return False
@@ -240,11 +246,22 @@ def blurred(i, station_info, service_name, current_station):
         return False
     length = len(station_info)
     if "wise" in service_name:
-        return current_station not in [station_info[(i - j) % length][1] for j in range(length // 2 + 1)]
+        return current_station not in [
+            station_info[(i - j) % length][1] for j in range(length // 2 + 1)
+        ]
     else:
-        return i < [j for j in range(length) if station_info[j][1] == current_station][0] 
+        return (
+            i
+            < [
+                j
+                for j in range(length)
+                if station_info[j][1] == current_station
+            ][0]
+        )
+
 
 subprocess.call(["mkdir", "-p", "../assets/service_maps/general"])
+
 
 def service_map(name, line, stations, color, current_station=None):
     station_list = service_string_to_list(stations)
@@ -277,7 +294,6 @@ def service_map(name, line, stations, color, current_station=None):
         )
         station_names.append(cursor.fetchone()[0])
 
-    
     station_info = list(zip(station_list, station_names))
     if "wise" in name:
         station_info = station_info[:-1]
@@ -287,7 +303,7 @@ def service_map(name, line, stations, color, current_station=None):
     length = len(station_info)
 
     into_blur = svg.LinearGradient(
-        id="into_blur", 
+        id="into_blur",
         x1="0%",
         y1="0%",
         x2="100%",
@@ -299,7 +315,7 @@ def service_map(name, line, stations, color, current_station=None):
         ],
     )
     outof_blur = svg.LinearGradient(
-        id="outof_blur", 
+        id="outof_blur",
         x1="100%",
         y1="0%",
         x2="0%",
@@ -311,7 +327,7 @@ def service_map(name, line, stations, color, current_station=None):
         ],
     )
     inandoutof_blur = svg.LinearGradient(
-        id="inandoutof_blur", 
+        id="inandoutof_blur",
         x1="0%",
         y1="0%",
         x2="100%",
@@ -324,7 +340,7 @@ def service_map(name, line, stations, color, current_station=None):
         ],
     )
     return_blur = svg.LinearGradient(
-        id="return_blur", 
+        id="return_blur",
         x1="0%",
         y1="100%",
         x2="100%",
@@ -338,9 +354,11 @@ def service_map(name, line, stations, color, current_station=None):
     )
 
     full_width = 300 * length + 1400
-    full_height = 200 * height + 1300 
+    full_height = 200 * height + 1300
     elements = [
-        svg.Defs(elements=[into_blur, outof_blur, inandoutof_blur, return_blur]),
+        svg.Defs(
+            elements=[into_blur, outof_blur, inandoutof_blur, return_blur]
+        ),
         svg.Rect(
             x=0,
             y=0,
@@ -367,27 +385,27 @@ def service_map(name, line, stations, color, current_station=None):
                 fill="black",
                 style=f"stroke: {color}; stroke-width: 20px",
                 rx=20,
-                ry=20
+                ry=20,
             ),
             svg.Rect(
                 x=(full_width - 40) / 2,
                 y=full_height - 410,
-                width=40 * 2 ** 0.5,
+                width=40 * 2**0.5,
                 height=20,
                 fill=color,
                 rx=10,
                 ry=10,
-                transform=f"rotate(-45 {(full_width - 40) / 2} {full_height - 400})"
+                transform=f"rotate(-45 {(full_width - 40) / 2} {full_height - 400})",
             ),
             svg.Rect(
                 x=(full_width - 40) / 2,
                 y=full_height - 410,
-                width=40 * 2 ** 0.5,
+                width=40 * 2**0.5,
                 height=20,
                 fill=color,
                 rx=10,
                 ry=10,
-                transform=f"rotate(45 {(full_width - 40) / 2} {full_height - 400})"
+                transform=f"rotate(45 {(full_width - 40) / 2} {full_height - 400})",
             ),
         ]
     else:
@@ -429,7 +447,7 @@ def service_map(name, line, stations, color, current_station=None):
                 width=200,
                 height=200,
                 x=300 * i + 750,
-                y=600
+                y=600,
             )
         )
 
@@ -439,10 +457,8 @@ def service_map(name, line, stations, color, current_station=None):
                 y=650,
                 width=1000,
                 height=100,
-                text=html_station_name(
-                    station_name, current_station, blur
-                ),
-                transform=f"rotate(-45 {300 * i + 650} 700)"
+                text=html_station_name(station_name, current_station, blur),
+                transform=f"rotate(-45 {300 * i + 650} 700)",
             ),
         )
 
@@ -458,7 +474,7 @@ def service_map(name, line, stations, color, current_station=None):
             )
 
         if i:
-            arrow_length = 40 * 2 ** 0.5
+            arrow_length = 40 * 2**0.5
             elements += [
                 svg.Rect(
                     x=300 * i + 720 - arrow_length,
@@ -468,7 +484,7 @@ def service_map(name, line, stations, color, current_station=None):
                     fill=color,
                     rx=10,
                     ry=10,
-                    transform=f"rotate(-45 {300 * i + 720} {700})"
+                    transform=f"rotate(-45 {300 * i + 720} {700})",
                 ),
                 svg.Rect(
                     x=300 * i + 720 - arrow_length,
@@ -478,13 +494,13 @@ def service_map(name, line, stations, color, current_station=None):
                     fill=color,
                     rx=10,
                     ry=10,
-                    transform=f"rotate(45 {300 * i + 720} {700})"
-                )
+                    transform=f"rotate(45 {300 * i + 720} {700})",
+                ),
             ]
 
         if blur:
-            prev_blur = blurred(i-1, station_info, name, current_station)
-            post_blur = blurred(i+1, station_info, name, current_station)
+            prev_blur = blurred(i - 1, station_info, name, current_station)
+            post_blur = blurred(i + 1, station_info, name, current_station)
             if prev_blur and post_blur:
                 fill = "#00000080"
             elif prev_blur and not post_blur:
@@ -500,32 +516,34 @@ def service_map(name, line, stations, color, current_station=None):
                     y=600,
                     width=300,
                     height=full_height - 1100,
-                    fill=fill
+                    fill=fill,
                 )
             )
 
-    if "wise" in name and blurred(length-1, station_info, name, current_station):
+    if "wise" in name and blurred(
+        length - 1, station_info, name, current_station
+    ):
         elements += [
             svg.Rect(
                 x=300 * length + 675,
                 y=600,
                 width=300,
                 height=full_height - 1100,
-                fill="#00000080"
+                fill="#00000080",
             ),
             svg.Rect(
                 x=0,
                 y=full_height - 500,
                 width=full_width,
                 height=200,
-                fill="#00000080"
+                fill="#00000080",
             ),
             svg.Rect(
                 x=525,
                 y=600,
                 width=150,
                 height=full_height - 1100,
-                fill="url(#return_blur)"
+                fill="url(#return_blur)",
             ),
         ]
 
@@ -537,6 +555,7 @@ def service_map(name, line, stations, color, current_station=None):
 
     return drawing
 
+
 def service_maps():
     cursor.execute("""
         SELECT Service.Name, Line.Name, Stations, Line.Color
@@ -546,7 +565,7 @@ def service_maps():
     services = cursor.fetchall()
     for service in services:
         name, line, stations, color = service
-        drawing = service_map(name, line, stations, color)        
+        drawing = service_map(name, line, stations, color)
         filename = f"../assets/service_maps/general/{line} {name}.svg"
         subprocess.call(["/usr/bin/sudo", "touch", filename])
         subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
@@ -946,14 +965,19 @@ def station_navigation():
         subprocess.call(["mkdir", "-p", f"../assets/service_maps/{station}"])
         flat_services = [s for p in services for s in p]
         for name, line_code, line, _ in flat_services:
-            cursor.execute("""
+            cursor.execute(
+                """
                 SELECT Stations, Color
                 FROM Service INNER JOIN Line
                 ON LineCode = Line.Code
                 WHERE Service.Name = ? AND LineCode = ?
-            """, (name, line_code))
+            """,
+                (name, line_code),
+            )
             service_stations, color = cursor.fetchone()
-            drawing = service_map(name, line, service_stations, color, current_station=station)        
+            drawing = service_map(
+                name, line, service_stations, color, current_station=station
+            )
             filename = f"../assets/service_maps/{station}/{line} {name}.svg"
             subprocess.call(["/usr/bin/sudo", "touch", filename])
             subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
