@@ -25,6 +25,6 @@ notes: express service across peninsula line; to be extended into city loop
 
 |name|stations|diagram|
 |-|-|-|
-|southbound|C01...11|![[assets/service_maps/east coast line southbound.svg]]|
-|northbound|C11...01|![[assets/service_maps/east coast line northbound.svg]]|
+|southbound|C01...11|![[assets/service_maps/general/east coast line southbound.svg\|1500]]|
+|northbound|C11...01|![[assets/service_maps/general/east coast line northbound.svg\|1500]]|
 

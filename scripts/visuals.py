@@ -229,6 +229,20 @@ def platform_logos():
         with open(filename, "w") as f:
             f.write(str(drawing))
 
+def blurred(i, station_info, service_name, current_station):
+    if i < 0 and "wise" not in service_name:
+        return True
+    if i >= len(station_info) and "wise" in service_name and blurred(i-1, station_info, service_name, current_station):
+        return True
+    if not current_station:
+        return False
+    if i not in range(len(station_info)):
+        return False
+    length = len(station_info)
+    if "wise" in service_name:
+        return current_station not in [station_info[(i - j) % length][1] for j in range(length // 2 + 1)]
+    else:
+        return i < [j for j in range(length) if station_info[j][1] == current_station][0] 
 
 subprocess.call(["mkdir", "-p", "../assets/service_maps/general"])
 
@@ -265,28 +279,74 @@ def service_map(name, line, stations, color, current_station=None):
 
     
     station_info = list(zip(station_list, station_names))
-    if "wise" in name and current_station:
+    if "wise" in name:
         station_info = station_info[:-1]
-        index = station_names.index(current_station)
-        station_info = station_info[index:] + station_info[:index]
+        if current_station:
+            index = station_names.index(current_station)
+            station_info = station_info[index:] + station_info[:index]
     length = len(station_info)
 
-    full_width = 300 * length + 1200
-    full_height = 200 * height + 1000
+    into_blur = svg.LinearGradient(
+        id="into_blur", 
+        x1="0%",
+        y1="0%",
+        x2="100%",
+        y2="0%",
+        elements=[
+            svg.Stop(offset="0%", stop_color="#00000000"),
+            svg.Stop(offset="25%", stop_color="#00000040"),
+            svg.Stop(offset="100%", stop_color="#00000080"),
+        ],
+    )
+    outof_blur = svg.LinearGradient(
+        id="outof_blur", 
+        x1="100%",
+        y1="0%",
+        x2="0%",
+        y2="0%",
+        elements=[
+            svg.Stop(offset="0%", stop_color="#00000000"),
+            svg.Stop(offset="75%", stop_color="#00000040"),
+            svg.Stop(offset="100%", stop_color="#00000080"),
+        ],
+    )
+    inandoutof_blur = svg.LinearGradient(
+        id="inandoutof_blur", 
+        x1="0%",
+        y1="0%",
+        x2="100%",
+        y2="0%",
+        elements=[
+            svg.Stop(offset="0%", stop_color="#00000000"),
+            svg.Stop(offset="10%", stop_color="#00000080"),
+            svg.Stop(offset="90%", stop_color="#00000080"),
+            svg.Stop(offset="100%", stop_color="#00000000"),
+        ],
+    )
+    return_blur = svg.LinearGradient(
+        id="return_blur", 
+        x1="0%",
+        y1="100%",
+        x2="100%",
+        y2="0%",
+        elements=[
+            svg.Stop(offset="0%", stop_color="#00000080"),
+            svg.Stop(offset="25%", stop_color="#00000080"),
+            svg.Stop(offset="75%", stop_color="#00000000"),
+            svg.Stop(offset="100%", stop_color="#00000000"),
+        ],
+    )
+
+    full_width = 300 * length + 1400
+    full_height = 200 * height + 1300 
     elements = [
+        svg.Defs(elements=[into_blur, outof_blur, inandoutof_blur, return_blur]),
         svg.Rect(
             x=0,
             y=0,
             width=full_width,
             height=full_height,
             fill="black",
-        ),
-        svg.Rect(
-            x=750 + (-150 if "wise" in name else 0),
-            y=680,
-            width=full_width - 1200 + (0 if "wise" in name else - 300),
-            height=40,
-            fill=color,
         ),
         svg.ForeignObject(
             x=0,
@@ -297,14 +357,52 @@ def service_map(name, line, stations, color, current_station=None):
         ),
     ]
 
+    if "wise" in name:
+        elements += [
+            svg.Rect(
+                x=550,
+                y=700,
+                width=full_width - 1100,
+                height=full_height - 1100,
+                fill="black",
+                style=f"stroke: {color}; stroke-width: 20px",
+                rx=20,
+                ry=20
+            ),
+            svg.Rect(
+                x=(full_width - 40) / 2,
+                y=full_height - 410,
+                width=40 * 2 ** 0.5,
+                height=20,
+                fill=color,
+                rx=10,
+                ry=10,
+                transform=f"rotate(-45 {(full_width - 40) / 2} {full_height - 400})"
+            ),
+            svg.Rect(
+                x=(full_width - 40) / 2,
+                y=full_height - 410,
+                width=40 * 2 ** 0.5,
+                height=20,
+                fill=color,
+                rx=10,
+                ry=10,
+                transform=f"rotate(45 {(full_width - 40) / 2} {full_height - 400})"
+            ),
+        ]
+    else:
+        elements.append(
+            svg.Rect(
+                x=750,
+                y=690,
+                width=full_width - 1700,
+                height=20,
+                fill=color,
+            )
+        )
+
     for i, (station_code, station_name) in enumerate(station_info):
-        if current_station:
-            if "wise" in name:
-                blur = current_station not in [station_info[(i - j) % length][1] for j in range(length // 2 + 1)]
-            else:
-                blur = i < [i for i in range(length) if station_info[i][1] == current_station][0] 
-        else:
-            blur = False
+        blur = blurred(i, station_info, name, current_station)
 
         cursor.execute(
             """
@@ -330,21 +428,21 @@ def service_map(name, line, stations, color, current_station=None):
                 href=href(f"../assets/codes/{station_code}.svg"),
                 width=200,
                 height=200,
-                x=300 * i + 650,
+                x=300 * i + 750,
                 y=600
             )
         )
 
         elements.append(
             svg.ForeignObject(
-                x=300 * i + 750,
-                y=550,
+                x=300 * i + 900,
+                y=650,
                 width=1000,
-                height=200,
+                height=100,
                 text=html_station_name(
                     station_name, current_station, blur
                 ),
-                transform=f"rotate(-45 {300 * i + 650} 600)"
+                transform=f"rotate(-45 {300 * i + 650} 700)"
             ),
         )
 
@@ -354,21 +452,82 @@ def service_map(name, line, stations, color, current_station=None):
                     href=href(f"../assets/codes/{code}.svg"),
                     width=200,
                     height=200,
-                    x=300 * i + 650,
+                    x=300 * i + 750,
                     y=200 * j + 800,
                 )
             )
 
+        if i:
+            arrow_length = 40 * 2 ** 0.5
+            elements += [
+                svg.Rect(
+                    x=300 * i + 720 - arrow_length,
+                    y=690,
+                    width=arrow_length,
+                    height=20,
+                    fill=color,
+                    rx=10,
+                    ry=10,
+                    transform=f"rotate(-45 {300 * i + 720} {700})"
+                ),
+                svg.Rect(
+                    x=300 * i + 720 - arrow_length,
+                    y=690,
+                    width=arrow_length,
+                    height=20,
+                    fill=color,
+                    rx=10,
+                    ry=10,
+                    transform=f"rotate(45 {300 * i + 720} {700})"
+                )
+            ]
+
         if blur:
+            prev_blur = blurred(i-1, station_info, name, current_station)
+            post_blur = blurred(i+1, station_info, name, current_station)
+            if prev_blur and post_blur:
+                fill = "#00000080"
+            elif prev_blur and not post_blur:
+                fill = "url(#outof_blur)"
+            elif not prev_blur and post_blur:
+                fill = "url(#into_blur)"
+            else:
+                fill = "url(#inandoutof_blur)"
+
             elements.append(
                 svg.Rect(
-                    x=300 * i + 600,
+                    x=300 * i + 675,
                     y=600,
                     width=300,
-                    height=full_height - 900,
-                    fill="#00000080",
+                    height=full_height - 1100,
+                    fill=fill
                 )
             )
+
+    if "wise" in name and blurred(length-1, station_info, name, current_station):
+        elements += [
+            svg.Rect(
+                x=300 * length + 675,
+                y=600,
+                width=300,
+                height=full_height - 1100,
+                fill="#00000080"
+            ),
+            svg.Rect(
+                x=0,
+                y=full_height - 500,
+                width=full_width,
+                height=200,
+                fill="#00000080"
+            ),
+            svg.Rect(
+                x=525,
+                y=600,
+                width=150,
+                height=full_height - 1100,
+                fill="url(#return_blur)"
+            ),
+        ]
 
     drawing = svg.SVG(
         width=full_width,

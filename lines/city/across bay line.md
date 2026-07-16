@@ -28,6 +28,6 @@ notes:
 
 |name|stations|diagram|
 |-|-|-|
-|southbound|A01...14|![[assets/service_maps/across bay line southbound.svg]]|
-|northbound|A14...01|![[assets/service_maps/across bay line northbound.svg]]|
+|southbound|A01...14|![[assets/service_maps/general/across bay line southbound.svg\|1500]]|
+|northbound|A14...01|![[assets/service_maps/general/across bay line northbound.svg\|1500]]|
 

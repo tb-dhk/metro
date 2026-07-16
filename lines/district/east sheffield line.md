@@ -25,6 +25,6 @@ district: east sheffield
 
 |name|stations|diagram|
 |-|-|-|
-|clockwise|ES01...09, ES01|![[assets/service_maps/east sheffield line clockwise.svg]]|
-|anticlockwise|ES01, ES09...01|![[assets/service_maps/east sheffield line anticlockwise.svg]]|
+|clockwise|ES01...09, ES01|![[assets/service_maps/general/east sheffield line clockwise.svg\|1500]]|
+|anticlockwise|ES01, ES09...01|![[assets/service_maps/general/east sheffield line anticlockwise.svg\|1500]]|
 

@@ -29,6 +29,6 @@ borough: 5
 
 |name|stations|diagram|
 |-|-|-|
-|southbound|5B01...14|![[assets/service_maps/line 5B southbound.svg]]|
-|northbound|5B14...01|![[assets/service_maps/line 5B northbound.svg]]|
+|southbound|5B01...14|![[assets/service_maps/general/line 5B southbound.svg\|1500]]|
+|northbound|5B14...01|![[assets/service_maps/general/line 5B northbound.svg\|1500]]|
 

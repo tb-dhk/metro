@@ -22,6 +22,6 @@ district: long island
 
 |name|stations|diagram|
 |-|-|-|
-|clockwise|LI01...06, LI01|![[assets/service_maps/long island line clockwise.svg]]|
-|anticlockwise|LI01, LI06...01|![[assets/service_maps/long island line anticlockwise.svg]]|
+|clockwise|LI01...06, LI01|![[assets/service_maps/general/long island line clockwise.svg\|1500]]|
+|anticlockwise|LI01, LI06...01|![[assets/service_maps/general/long island line anticlockwise.svg\|1500]]|
 
