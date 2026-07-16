@@ -24,6 +24,6 @@ district: central sheffield
 
 |name|stations|diagram|
 |-|-|-|
-|anticlockwise|CS01, CS08...01|![[assets/service_map/central sheffield line anticlockwise.svg]]|
-|clockwise|CS01...08, CS01|![[assets/service_map/central sheffield line clockwise.svg]]|
+|clockwise|CS01...08, CS01|![[assets/service_maps/central sheffield line clockwise.svg]]|
+|anticlockwise|CS01, CS08...01|![[assets/service_maps/central sheffield line anticlockwise.svg]]|
 

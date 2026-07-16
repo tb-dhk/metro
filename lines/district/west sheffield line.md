@@ -22,6 +22,6 @@ district: west sheffield
 
 |name|stations|diagram|
 |-|-|-|
-|anticlockwise|WS01, WS06...01|![[assets/service_map/west sheffield line anticlockwise.svg]]|
-|clockwise|WS01...06, WS01|![[assets/service_map/west sheffield line clockwise.svg]]|
+|clockwise|WS01...06, WS01|![[assets/service_maps/west sheffield line clockwise.svg]]|
+|anticlockwise|WS01, WS06...01|![[assets/service_maps/west sheffield line anticlockwise.svg]]|
 

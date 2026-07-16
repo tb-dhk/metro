@@ -24,8 +24,8 @@ district: fairview
 
 |name|stations|diagram|
 |-|-|-|
-|west anticlockwise|FV01, FV05...01|![[assets/service_map/fairview line west anticlockwise.svg]]|
-|east clockwise|FV01, FV06...08, FV02...01|![[assets/service_map/fairview line east clockwise.svg]]|
-|east anticlockwise|FV01...02, FV08...06, FV01|![[assets/service_map/fairview line east anticlockwise.svg]]|
-|west clockwise|FV01...05, FV01|![[assets/service_map/fairview line west clockwise.svg]]|
+|west clockwise|FV01...05, FV01|![[assets/service_maps/fairview line west clockwise.svg]]|
+|west anticlockwise|FV01, FV05...01|![[assets/service_maps/fairview line west anticlockwise.svg]]|
+|east clockwise|FV01, FV06...08, FV02...01|![[assets/service_maps/fairview line east clockwise.svg]]|
+|east anticlockwise|FV01...02, FV08...06, FV01|![[assets/service_maps/fairview line east anticlockwise.svg]]|
 

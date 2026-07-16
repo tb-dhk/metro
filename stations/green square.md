@@ -5,10 +5,10 @@ district: central sheffield
 ![[assets/stations/green square.svg\|2500]]
 # services
 
-|platform|line|<|service|previous station|<|next station|<|
-|-|-|-|-|-|-|-|-|
-|1|[[central sheffield line]]|![[assets/lines/central sheffield line.svg\|40]]|clockwise|[[cherry heights]]|![[assets/codes/CS03.svg\|40]]|[[holly square]]|![[assets/codes/CS05.svg\|40]]|
-|2|^|^|anticlockwise|[[holly square]]|![[assets/codes/CS05.svg\|40]]|[[cherry heights]]|![[assets/codes/CS03.svg\|40]]|
+|platform|line|<|service|diagram|previous station|<|next station|<|
+|-|-|-|-|-|-|-|-|-|
+|1|[[central sheffield line]]|![[assets/lines/central sheffield line.svg\|40]]|clockwise|![[assets/service_maps/green square/central sheffield line clockwise.svg\|1000]]|[[cherry heights]]|![[assets/codes/CS03.svg\|40]]|[[holly square]]|![[assets/codes/CS05.svg\|40]]|
+|2|^|^|anticlockwise|![[assets/service_maps/green square/central sheffield line anticlockwise.svg\|1000]]|[[holly square]]|![[assets/codes/CS05.svg\|40]]|[[cherry heights]]|![[assets/codes/CS03.svg\|40]]|
 
 
 ![[assets/navigation/green square.svg\|2500]]

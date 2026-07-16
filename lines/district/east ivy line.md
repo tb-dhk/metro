@@ -22,6 +22,6 @@ district: east ivy
 
 |name|stations|diagram|
 |-|-|-|
-|anticlockwise|EI01...02, EI06...01|![[assets/service_map/east ivy line anticlockwise.svg]]|
-|clockwise|EI01...06, EI02...01|![[assets/service_map/east ivy line clockwise.svg]]|
+|clockwise|EI01...06, EI02...01|![[assets/service_maps/east ivy line clockwise.svg]]|
+|anticlockwise|EI01...02, EI06...01|![[assets/service_maps/east ivy line anticlockwise.svg]]|
 

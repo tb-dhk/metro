@@ -20,6 +20,6 @@ district: pointer island
 
 |name|stations|diagram|
 |-|-|-|
-|anticlockwise|PI01, PI04...01|![[assets/service_map/pointer island line anticlockwise.svg]]|
-|clockwise|PI01...04, PI01|![[assets/service_map/pointer island line clockwise.svg]]|
+|clockwise|PI01...04, PI01|![[assets/service_maps/pointer island line clockwise.svg]]|
+|anticlockwise|PI01, PI04...01|![[assets/service_maps/pointer island line anticlockwise.svg]]|
 

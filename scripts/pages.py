@@ -239,12 +239,11 @@ for i, t_pe in enumerate(TYPES):
             SELECT Name, Stations
             FROM Service
             WHERE LineCode = ?
-            ORDER BY Stations ASC
         """,
             (line[i + 1],),
         )
         services = [
-            [*i, f"![[assets/service_map/{line[-4]} {i[0]}.svg]]"]
+            [*i, f"![[assets/service_maps/{line[-4]} {i[0]}.svg]]"]
             for i in cursor.fetchall()
         ]
         services_string = "# services" + markdownify(
@@ -299,6 +298,7 @@ for borough, district, station in stations:
                         line,
                         rf"![[assets/lines/{line}.svg\|40]]",
                         service,
+                        rf"![[assets/service_maps/{station}/{line} {service}.svg\|1000]]",
                         get_station_from_code(prev),
                         rf"![[assets/codes/{prev}.svg\|40]]"
                         if prev != "none"
@@ -317,6 +317,7 @@ for borough, district, station in stations:
             "line",
             "<",
             "service",
+            "diagram",
             "previous station",
             "<",
             "next station",

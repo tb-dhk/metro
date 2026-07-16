@@ -2,6 +2,7 @@ import svg
 import sqlite3
 import subprocess
 import base64
+import math
 from misc import *
 
 print("clearing old assets...")
@@ -91,6 +92,26 @@ def html_line_service(name, service):
                 white-space: nowrap;
                 height: 100%;">
          {station_text}
+    </div>
+    """
+
+def html_station_name(name, current_station, blur):
+    return f"""
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-family: 'Altone', sans-serif;
+                font-size: 65px;
+                font-weight: 500;
+                white-space: nowrap;
+                color: {"grey" if blur else "black" if name == current_station else "white"}; 
+                background-color: {"white" if name == current_station else "black"};"
+            >
+         {name}
     </div>
     """
 
@@ -209,74 +230,155 @@ def platform_logos():
             f.write(str(drawing))
 
 
-subprocess.call(["mkdir", "../assets/service_map"])
+subprocess.call(["mkdir", "-p", "../assets/service_maps/general"])
 
+def service_map(name, line, stations, color, current_station=None):
+    station_list = service_string_to_list(stations)
 
-def service_maps():
-    def service_map(service):
-        name, line, stations, color = service
-        station_list = service_string_to_list(stations)
-        elements = [
-            svg.Rect(
-                x=0,
-                y=0,
-                width=300 * len(station_list) + 500,
-                height=1200,
-                fill="black",
-            ),
-            svg.Rect(
-                x=350,
-                y=680,
-                width=300 * len(station_list) - 300,
-                height=40,
-                fill=color,
-            ),
-            svg.ForeignObject(
-                x=0,
-                y=900,
-                width=300 * len(station_list) + 500,
+    placeholders = ",".join(["?" for _ in station_list])
+    cursor.execute(
+        f"""
+        SELECT COUNT(*) AS total_freq
+        FROM StationCode
+        WHERE StationName IN (
+            SELECT StationName
+            FROM StationCode
+            WHERE LineCode || Number IN ({placeholders})
+        )
+        GROUP BY StationName
+        ORDER BY total_freq DESC;
+    """,
+        station_list,
+    )
+    height = cursor.fetchone()[0]
+
+    station_names = []
+    for code in station_list:
+        cursor.execute(
+            """
+            SELECT StationName
+            FROM StationCode WHERE LineCode || Number = ?
+        """,
+            (code,),
+        )
+        station_names.append(cursor.fetchone()[0])
+
+    
+    station_info = list(zip(station_list, station_names))
+    if "wise" in name and current_station:
+        station_info = station_info[:-1]
+        index = station_names.index(current_station)
+        station_info = station_info[index:] + station_info[:index]
+    length = len(station_info)
+
+    full_width = 300 * length + 1200
+    full_height = 200 * height + 1000
+    elements = [
+        svg.Rect(
+            x=0,
+            y=0,
+            width=full_width,
+            height=full_height,
+            fill="black",
+        ),
+        svg.Rect(
+            x=750 + (-150 if "wise" in name else 0),
+            y=680,
+            width=full_width - 1200 + (0 if "wise" in name else - 300),
+            height=40,
+            fill=color,
+        ),
+        svg.ForeignObject(
+            x=0,
+            y=full_height - 300,
+            width=full_width,
+            height=200,
+            text=html_line_service(line, name),
+        ),
+    ]
+
+    for i, (station_code, station_name) in enumerate(station_info):
+        if current_station:
+            if "wise" in name:
+                blur = current_station not in [station_info[(i - j) % length][1] for j in range(length // 2 + 1)]
+            else:
+                blur = i < [i for i in range(length) if station_info[i][1] == current_station][0] 
+        else:
+            blur = False
+
+        cursor.execute(
+            """
+            SELECT sc2.LineCode || sc2.Number
+            FROM StationCode sc1
+            INNER JOIN StationCode sc2 ON sc1.StationName = sc2.StationName
+            INNER JOIN Line ON sc2.LineCode = Line.Code
+            WHERE sc1.LineCode || sc1.Number = ?
+            AND sc1.LineCode || sc1.Number != sc2.LineCode || sc2.Number
+            ORDER BY CASE Line.Type
+                WHEN 'city'   THEN 1
+                WHEN 'borough' THEN 2
+                WHEN 'district'    THEN 3
+                ELSE 4 -- Catches any other values
+            END ASC
+        """,
+            (station_code,),
+        )
+        station_codes = [i[0] for i in cursor.fetchall()]
+
+        elements.append(
+            svg.Image(
+                href=href(f"../assets/codes/{station_code}.svg"),
+                width=200,
                 height=200,
-                text=html_line_service(line, name),
-            ),
-        ]
-        for i, station in enumerate(station_list):
-            cursor.execute(
-                """
-                SELECT StationName FROM StationCode WHERE LineCode || Number = ?
-            """,
-                (station,),
+                x=300 * i + 650,
+                y=600
             )
-
-            elements += [
-                svg.Image(
-                    href=href(f"../assets/codes/{station}.svg"),
-                    width=200,
-                    height=200,
-                    x=300 * i + 250,
-                    y=600,
-                ),
-                svg.Text(
-                    text=cursor.fetchone()[0],
-                    x=300 * i + 350,
-                    y=600,
-                    dominant_baseline="middle",
-                    font_size="60px",
-                    fill="white",
-                    font_family="Altone",
-                    font_weight=500,
-                    transform=f"rotate(-45 {300 * i + 250} 600)",
-                ),
-            ]
-        drawing = svg.SVG(
-            width=300 * len(station_list) + 500, height=1200, elements=elements
         )
 
-        filename = f"../assets/service_map/{line} {name}.svg"
-        subprocess.call(["/usr/bin/sudo", "touch", filename])
-        subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
-        with open(filename, "w") as f:
-            f.write(str(drawing))
+        elements.append(
+            svg.ForeignObject(
+                x=300 * i + 750,
+                y=550,
+                width=1000,
+                height=200,
+                text=html_station_name(
+                    station_name, current_station, blur
+                ),
+                transform=f"rotate(-45 {300 * i + 650} 600)"
+            ),
+        )
 
+        for j, code in enumerate(station_codes):
+            elements.append(
+                svg.Image(
+                    href=href(f"../assets/codes/{code}.svg"),
+                    width=200,
+                    height=200,
+                    x=300 * i + 650,
+                    y=200 * j + 800,
+                )
+            )
+
+        if blur:
+            elements.append(
+                svg.Rect(
+                    x=300 * i + 600,
+                    y=600,
+                    width=300,
+                    height=full_height - 900,
+                    fill="#00000080",
+                )
+            )
+
+    drawing = svg.SVG(
+        width=full_width,
+        height=full_height,
+        elements=elements,
+    )
+
+    return drawing
+
+def service_maps():
     cursor.execute("""
         SELECT Service.Name, Line.Name, Stations, Line.Color
         FROM Service INNER JOIN Line
@@ -284,7 +386,13 @@ def service_maps():
     """)
     services = cursor.fetchall()
     for service in services:
-        service_map(service)
+        name, line, stations, color = service
+        drawing = service_map(name, line, stations, color)        
+        filename = f"../assets/service_maps/general/{line} {name}.svg"
+        subprocess.call(["/usr/bin/sudo", "touch", filename])
+        subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
+        with open(filename, "w") as f:
+            f.write(str(drawing))
 
 
 def station_navigation():
@@ -639,7 +747,6 @@ def station_navigation():
                         ),
                     ]
                 else:
-                    length = 8 + len(name)
                     elements += [
                         svg.Text(
                             text=name,
@@ -676,6 +783,23 @@ def station_navigation():
         subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
         with open(filename, "w") as f:
             f.write(str(navigation_drawing))
+
+        subprocess.call(["mkdir", "-p", f"../assets/service_maps/{station}"])
+        flat_services = [s for p in services for s in p]
+        for name, line_code, line, _ in flat_services:
+            cursor.execute("""
+                SELECT Stations, Color
+                FROM Service INNER JOIN Line
+                ON LineCode = Line.Code
+                WHERE Service.Name = ? AND LineCode = ?
+            """, (name, line_code))
+            service_stations, color = cursor.fetchone()
+            drawing = service_map(name, line, service_stations, color, current_station=station)        
+            filename = f"../assets/service_maps/{station}/{line} {name}.svg"
+            subprocess.call(["/usr/bin/sudo", "touch", filename])
+            subprocess.call(["/usr/bin/sudo", "chmod", "777", filename])
+            with open(filename, "w") as f:
+                f.write(str(drawing))
 
 
 line_logos()

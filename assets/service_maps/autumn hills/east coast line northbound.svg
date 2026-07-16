@@ -1,0 +1,205 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4500" height="1800"><rect x="0" y="0" width="4500" height="1800" fill="black"/><rect x="750" y="680" width="3000" height="40" fill="#0099ff"/><foreignObject x="0" y="1500" width="4500" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="display: flex; 
+                align-items: center; 
+                justify-content: center;
+                gap: 25px; 
+                font-family: 'Altone', sans-serif; 
+                font-size: 65px; 
+                font-weight: 500; 
+                color: white; 
+                white-space: nowrap;
+                height: 100%;">
+         
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwOTlmZiIvPjx0ZXh0IGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iOTBweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iMTA1Ij5DPC90ZXh0Pjwvc3ZnPg==" style="height: 100px; width: auto;" />
+    <span>east coast line - northbound</span>
+    
+    </div>
+    </foreignObject><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwOTlmZiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkM8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjExPC90ZXh0Pjwvc3ZnPg==" x="650" y="600" width="200" height="200"/><foreignObject transform="rotate(-45 650 600)" x="750" y="550" width="1000" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-family: 'Altone', sans-serif;
+                font-size: 65px;
+                font-weight: 500;
+                white-space: nowrap;
+                color: grey; 
+                background-color: black;"
+            >
+         south coast
+    </div>
+    </foreignObject><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB0cmFuc2Zvcm09InJvdGF0ZSg0NSwgMTAwLCAxMDApIiB4PSIxNC4yMTM1NjIzNzMwOTUwNDYiIHk9IjE0LjIxMzU2MjM3MzA5NTA0NiIgd2lkdGg9IjE3MS41NzI4NzUyNTM4MDk5IiBoZWlnaHQ9IjE3MS41NzI4NzUyNTM4MDk5IiByeD0iNTEuNDcxODYyNTc2MTQyOTc1IiByeT0iNTEuNDcxODYyNTc2MTQyOTc1IiBmaWxsPSIjNTQzMGJmIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI4NXB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSI5NSI+NUI8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjE0PC90ZXh0Pjwvc3ZnPg==" x="650" y="800" width="200" height="200"/><rect x="600" y="600" width="300" height="900" fill="#00000080"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwOTlmZiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkM8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjEwPC90ZXh0Pjwvc3ZnPg==" x="950" y="600" width="200" height="200"/><foreignObject transform="rotate(-45 950 600)" x="1050" y="550" width="1000" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-family: 'Altone', sans-serif;
+                font-size: 65px;
+                font-weight: 500;
+                white-space: nowrap;
+                color: black; 
+                background-color: white;"
+            >
+         autumn hills
+    </div>
+    </foreignObject><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgcng9IjYwIiByeT0iNjAiIGZpbGw9IiM4MDgwODAiLz48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9Ijg1cHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9Ijk1Ij5CSTwvdGV4dD48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9IjYwcHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9IjE2NSI+MDM8L3RleHQ+PC9zdmc+" x="950" y="800" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwOTlmZiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkM8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjA5PC90ZXh0Pjwvc3ZnPg==" x="1250" y="600" width="200" height="200"/><foreignObject transform="rotate(-45 1250 600)" x="1350" y="550" width="1000" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-family: 'Altone', sans-serif;
+                font-size: 65px;
+                font-weight: 500;
+                white-space: nowrap;
+                color: white; 
+                background-color: black;"
+            >
+         prospect square
+    </div>
+    </foreignObject><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgcng9IjYwIiByeT0iNjAiIGZpbGw9IiM4MDgwODAiLz48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9Ijg1cHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9Ijk1Ij5CSTwvdGV4dD48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9IjYwcHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9IjE2NSI+MDI8L3RleHQ+PC9zdmc+" x="1250" y="800" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwOTlmZiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkM8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjA4PC90ZXh0Pjwvc3ZnPg==" x="1550" y="600" width="200" height="200"/><foreignObject transform="rotate(-45 1550 600)" x="1650" y="550" width="1000" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-family: 'Altone', sans-serif;
+                font-size: 65px;
+                font-weight: 500;
+                white-space: nowrap;
+                color: white; 
+                background-color: black;"
+            >
+         elizabeth district
+    </div>
+    </foreignObject><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iI2ZmN2MwMCIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkI8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjA4PC90ZXh0Pjwvc3ZnPg==" x="1550" y="800" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB0cmFuc2Zvcm09InJvdGF0ZSg0NSwgMTAwLCAxMDApIiB4PSIxNC4yMTM1NjIzNzMwOTUwNDYiIHk9IjE0LjIxMzU2MjM3MzA5NTA0NiIgd2lkdGg9IjE3MS41NzI4NzUyNTM4MDk5IiBoZWlnaHQ9IjE3MS41NzI4NzUyNTM4MDk5IiByeD0iNTEuNDcxODYyNTc2MTQyOTc1IiByeT0iNTEuNDcxODYyNTc2MTQyOTc1IiBmaWxsPSIjYmY3ZjMwIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI4NXB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSI5NSI+STwvdGV4dD48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9IjYwcHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9IjE2NSI+MDM8L3RleHQ+PC9zdmc+" x="1550" y="1000" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgcng9IjYwIiByeT0iNjAiIGZpbGw9IiM4MDgwODAiLz48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9Ijg1cHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9Ijk1Ij5CSTwvdGV4dD48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9IjYwcHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9IjE2NSI+MDE8L3RleHQ+PC9zdmc+" x="1550" y="1200" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwOTlmZiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkM8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjA3PC90ZXh0Pjwvc3ZnPg==" x="1850" y="600" width="200" height="200"/><foreignObject transform="rotate(-45 1850 600)" x="1950" y="550" width="1000" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-family: 'Altone', sans-serif;
+                font-size: 65px;
+                font-weight: 500;
+                white-space: nowrap;
+                color: white; 
+                background-color: black;"
+            >
+         maple island
+    </div>
+    </foreignObject><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iI2ZmN2MwMCIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkI8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjA3PC90ZXh0Pjwvc3ZnPg==" x="1850" y="800" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB0cmFuc2Zvcm09InJvdGF0ZSg0NSwgMTAwLCAxMDApIiB4PSIxNC4yMTM1NjIzNzMwOTUwNDYiIHk9IjE0LjIxMzU2MjM3MzA5NTA0NiIgd2lkdGg9IjE3MS41NzI4NzUyNTM4MDk5IiBoZWlnaHQ9IjE3MS41NzI4NzUyNTM4MDk5IiByeD0iNTEuNDcxODYyNTc2MTQyOTc1IiByeT0iNTEuNDcxODYyNTc2MTQyOTc1IiBmaWxsPSIjYmY3ZjMwIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI4NXB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSI5NSI+STwvdGV4dD48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9IjYwcHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9IjE2NSI+MDI8L3RleHQ+PC9zdmc+" x="1850" y="1000" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwOTlmZiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkM8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjA2PC90ZXh0Pjwvc3ZnPg==" x="2150" y="600" width="200" height="200"/><foreignObject transform="rotate(-45 2150 600)" x="2250" y="550" width="1000" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-family: 'Altone', sans-serif;
+                font-size: 65px;
+                font-weight: 500;
+                white-space: nowrap;
+                color: white; 
+                background-color: black;"
+            >
+         oak island
+    </div>
+    </foreignObject><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iI2ZmN2MwMCIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkI8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjA2PC90ZXh0Pjwvc3ZnPg==" x="2150" y="800" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB0cmFuc2Zvcm09InJvdGF0ZSg0NSwgMTAwLCAxMDApIiB4PSIxNC4yMTM1NjIzNzMwOTUwNDYiIHk9IjE0LjIxMzU2MjM3MzA5NTA0NiIgd2lkdGg9IjE3MS41NzI4NzUyNTM4MDk5IiBoZWlnaHQ9IjE3MS41NzI4NzUyNTM4MDk5IiByeD0iNTEuNDcxODYyNTc2MTQyOTc1IiByeT0iNTEuNDcxODYyNTc2MTQyOTc1IiBmaWxsPSIjYmY3ZjMwIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI4NXB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSI5NSI+STwvdGV4dD48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9IjYwcHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9IjE2NSI+MDE8L3RleHQ+PC9zdmc+" x="2150" y="1000" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwOTlmZiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkM8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjA1PC90ZXh0Pjwvc3ZnPg==" x="2450" y="600" width="200" height="200"/><foreignObject transform="rotate(-45 2450 600)" x="2550" y="550" width="1000" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-family: 'Altone', sans-serif;
+                font-size: 65px;
+                font-weight: 500;
+                white-space: nowrap;
+                color: white; 
+                background-color: black;"
+            >
+         briarwood heights
+    </div>
+    </foreignObject><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB0cmFuc2Zvcm09InJvdGF0ZSg0NSwgMTAwLCAxMDApIiB4PSIxNC4yMTM1NjIzNzMwOTUwNDYiIHk9IjE0LjIxMzU2MjM3MzA5NTA0NiIgd2lkdGg9IjE3MS41NzI4NzUyNTM4MDk5IiBoZWlnaHQ9IjE3MS41NzI4NzUyNTM4MDk5IiByeD0iNTEuNDcxODYyNTc2MTQyOTc1IiByeT0iNTEuNDcxODYyNTc2MTQyOTc1IiBmaWxsPSIjMzBiZjk0Ii8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI4NXB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSI5NSI+UDwvdGV4dD48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9IjYwcHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9IjE2NSI+MDg8L3RleHQ+PC9zdmc+" x="2450" y="800" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwOTlmZiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkM8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjA0PC90ZXh0Pjwvc3ZnPg==" x="2750" y="600" width="200" height="200"/><foreignObject transform="rotate(-45 2750 600)" x="2850" y="550" width="1000" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-family: 'Altone', sans-serif;
+                font-size: 65px;
+                font-weight: 500;
+                white-space: nowrap;
+                color: white; 
+                background-color: black;"
+            >
+         garland square
+    </div>
+    </foreignObject><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB0cmFuc2Zvcm09InJvdGF0ZSg0NSwgMTAwLCAxMDApIiB4PSIxNC4yMTM1NjIzNzMwOTUwNDYiIHk9IjE0LjIxMzU2MjM3MzA5NTA0NiIgd2lkdGg9IjE3MS41NzI4NzUyNTM4MDk5IiBoZWlnaHQ9IjE3MS41NzI4NzUyNTM4MDk5IiByeD0iNTEuNDcxODYyNTc2MTQyOTc1IiByeT0iNTEuNDcxODYyNTc2MTQyOTc1IiBmaWxsPSIjMzBiZjk0Ii8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI4NXB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSI5NSI+UDwvdGV4dD48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9IjYwcHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9IjE2NSI+MDY8L3RleHQ+PC9zdmc+" x="2750" y="800" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwOTlmZiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkM8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjAzPC90ZXh0Pjwvc3ZnPg==" x="3050" y="600" width="200" height="200"/><foreignObject transform="rotate(-45 3050 600)" x="3150" y="550" width="1000" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-family: 'Altone', sans-serif;
+                font-size: 65px;
+                font-weight: 500;
+                white-space: nowrap;
+                color: white; 
+                background-color: black;"
+            >
+         beechwood heights
+    </div>
+    </foreignObject><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iI2ZmMDAwMCIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkE8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjAxPC90ZXh0Pjwvc3ZnPg==" x="3050" y="800" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB0cmFuc2Zvcm09InJvdGF0ZSg0NSwgMTAwLCAxMDApIiB4PSIxNC4yMTM1NjIzNzMwOTUwNDYiIHk9IjE0LjIxMzU2MjM3MzA5NTA0NiIgd2lkdGg9IjE3MS41NzI4NzUyNTM4MDk5IiBoZWlnaHQ9IjE3MS41NzI4NzUyNTM4MDk5IiByeD0iNTEuNDcxODYyNTc2MTQyOTc1IiByeT0iNTEuNDcxODYyNTc2MTQyOTc1IiBmaWxsPSIjMzBiZjk0Ii8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI4NXB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSI5NSI+UDwvdGV4dD48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9IjYwcHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9IjE2NSI+MDQ8L3RleHQ+PC9zdmc+" x="3050" y="1000" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwOTlmZiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkM8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjAyPC90ZXh0Pjwvc3ZnPg==" x="3350" y="600" width="200" height="200"/><foreignObject transform="rotate(-45 3350 600)" x="3450" y="550" width="1000" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-family: 'Altone', sans-serif;
+                font-size: 65px;
+                font-weight: 500;
+                white-space: nowrap;
+                color: white; 
+                background-color: black;"
+            >
+         sycamore district
+    </div>
+    </foreignObject><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48cmVjdCB0cmFuc2Zvcm09InJvdGF0ZSg0NSwgMTAwLCAxMDApIiB4PSIxNC4yMTM1NjIzNzMwOTUwNDYiIHk9IjE0LjIxMzU2MjM3MzA5NTA0NiIgd2lkdGg9IjE3MS41NzI4NzUyNTM4MDk5IiBoZWlnaHQ9IjE3MS41NzI4NzUyNTM4MDk5IiByeD0iNTEuNDcxODYyNTc2MTQyOTc1IiByeT0iNTEuNDcxODYyNTc2MTQyOTc1IiBmaWxsPSIjMzBiZjk0Ii8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI4NXB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSI5NSI+UDwvdGV4dD48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQWx0b25lIiBmb250LXNpemU9IjYwcHgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB4PSIxMDAiIHk9IjE2NSI+MDI8L3RleHQ+PC9zdmc+" x="3350" y="800" width="200" height="200"/><image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwOTlmZiIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJBbHRvbmUiIGZvbnQtc2l6ZT0iODVweCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHg9IjEwMCIgeT0iOTUiPkM8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFsdG9uZSIgZm9udC1zaXplPSI2MHB4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgeD0iMTAwIiB5PSIxNjUiPjAxPC90ZXh0Pjwvc3ZnPg==" x="3650" y="600" width="200" height="200"/><foreignObject transform="rotate(-45 3650 600)" x="3750" y="550" width="1000" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" 
+         style="
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                padding: 10px 20px;
+                font-family: 'Altone', sans-serif;
+                font-size: 65px;
+                font-weight: 500;
+                white-space: nowrap;
+                color: white; 
+                background-color: black;"
+            >
+         north coast
+    </div>
+    </foreignObject></svg>
