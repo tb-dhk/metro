@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "stations/elizabeth district.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "720aea09317ee5be",
@@ -186,29 +185,7 @@
   },
   "active": "989580a260906780",
   "lastOpenFiles": [
-    "stations/robin cross.md",
     "stations/elizabeth district.md",
-    "assets/service_maps/cozy heights/across bay line northbound.svg",
-    "assets/service_maps/cozy heights/across bay line southbound.svg",
-    "assets/service_maps/cozy heights",
-    "assets/navigation/cozy heights.svg",
-    "assets/stations/cozy heights.svg",
-    "assets/service_maps/concord hills/west sheffield line anticlockwise.svg",
-    "assets/service_maps/concord hills/west sheffield line clockwise.svg",
-    "assets/service_maps/concord hills",
-    "assets/navigation/concord hills.svg",
-    "assets/stations/concord hills.svg",
-    "assets/service_maps/chestnut park/east sheffield line anticlockwise.svg",
-    "assets/service_maps/chestnut park/east sheffield line clockwise.svg",
-    "assets/service_maps/chestnut park",
-    "assets/service_maps/cherry hills",
-    "assets/service_maps/cherry heights",
-    "assets/service_maps/butler heights",
-    "assets/service_maps/brook park",
-    "assets/codes",
-    "assets/navigation",
-    "assets/stations",
-    "lines/city/sunset bay loop.md",
     "stations/magnolia district.md",
     "stations/chester square.md",
     "stations/hawthorne heights.md",
@@ -231,6 +208,28 @@
     "stations/linden park.md",
     "stations/cypress square.md",
     "stations/myrtle district.md",
-    "stations/barlow heights.md"
+    "stations/barlow heights.md",
+    "stations/smith square.md",
+    "stations/high park.md",
+    "assets/navigation/woodland square.svg",
+    "assets/stations/woodland square.svg",
+    "assets/navigation/victoria heights.svg",
+    "assets/stations/victoria heights.svg",
+    "assets/navigation/underhill grove.svg",
+    "assets/stations/underhill grove.svg",
+    "assets/navigation/thumb district.svg",
+    "assets/stations/thumb district.svg",
+    "assets/navigation/thornton park.svg",
+    "assets/stations/thornton park.svg",
+    "assets/navigation",
+    "assets/stations",
+    "assets/platforms",
+    "assets/codes",
+    "scripts/metro.db-journal",
+    "assets/service_maps/cozy heights",
+    "assets/service_maps/concord hills",
+    "assets/service_maps/chestnut park",
+    "assets/service_maps/cherry hills",
+    "assets/service_maps/cherry heights"
   ]
 }
