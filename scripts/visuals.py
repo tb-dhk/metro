@@ -2,7 +2,6 @@ import svg
 import sqlite3
 import subprocess
 import base64
-import math
 from misc import *
 
 print("clearing old assets...")
@@ -322,7 +321,7 @@ def service_map(name, line, stations, color, current_station=None):
         y2="0%",
         elements=[
             svg.Stop(offset="0%", stop_color="#00000000"),
-            svg.Stop(offset="75%", stop_color="#00000040"),
+            svg.Stop(offset="25%", stop_color="#00000040"),
             svg.Stop(offset="100%", stop_color="#00000080"),
         ],
     )
