@@ -33,7 +33,7 @@ the planned timeline for this phase is as follows:
 
 as planned, the first two stages of the east coast line opened with the island and peninsula line respectively. while both the east coast line and sunset bay loop were initially slated to stop at all stations along the peninsula, this plan was changed such that both lines would provide express services across the peninsula. stage 1 of the sunset bay loop opened before stage 3 of the east coast line and took the even-numbered stations while the east coast line took the odd-numbered stations.
 
-it was then decided that the fairview line would take precedence over the remaining stages of the two city lines, and it was completed and opened first. it was around this time that the plan for phase 2 was released.
+it was then decided that the fairview line would take precedence over the remaining stages of the two city lines, and it was completed and opened first. it was around this time that the plan for phase 2 was released. the 3 borough 2 stations then opened as stage 2 of the sunset bay loop, and their district was named farland fields.
 
 
 # phase 2

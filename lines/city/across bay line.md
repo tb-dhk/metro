@@ -21,13 +21,14 @@ notes:
 |^|^|![[assets/codes/A11.svg\|40]]|![[assets/codes/5B05.svg\|40]]|[[holly park]]|
 |the islands|pointer island|![[assets/codes/A12.svg\|40]]|![[assets/codes/PI01.svg\|40]]|[[pointer park]]|
 |^|^|![[assets/codes/A13.svg\|40]]|![[assets/codes/I05.svg\|40]]![[assets/codes/PI02.svg\|40]]|[[knuckle hills]]|
-|5|south coast (tbc)|![[assets/codes/A14.svg\|40]]|![[assets/codes/5B12.svg\|40]]|[[empire district]]|
+|^|^|![[assets/codes/A14.svg\|40]]|![[assets/codes/PI03.svg\|40]]|[[thumb district]]|
+|5|south coast (tbc)|![[assets/codes/A15.svg\|40]]|![[assets/codes/5B12.svg\|40]]|[[empire district]]|
 
 
 # services
 
 |name|stations|diagram|
 |-|-|-|
-|southbound|A01...14|![[assets/service_maps/general/across bay line southbound.svg\|1500]]|
-|northbound|A14...01|![[assets/service_maps/general/across bay line northbound.svg\|1500]]|
+|southbound|A01...15|![[assets/service_maps/general/across bay line southbound.svg\|1500]]|
+|northbound|A15...01|![[assets/service_maps/general/across bay line northbound.svg\|1500]]|
 

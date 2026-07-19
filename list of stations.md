@@ -2,12 +2,12 @@
 
 |borough|district|station|city codes|borough codes|district codes|
 |-|-|-|-|-|-|
-|1|north coast (tbc)|[[north coast]]|![[assets/codes/C01.svg\|100]]|||
-|^|unknown district in borough 1|[[crest park]]|![[assets/codes/B01.svg\|100]]|^|^|
-|^|^|[[emerson hills]]|![[assets/codes/B20.svg\|100]]|^|^|
+|1|north coast (tbc)|[[crest park]]|![[assets/codes/B01.svg\|100]]|||
+|^|^|[[north coast]]|![[assets/codes/C01.svg\|100]]|^|^|
+|^|unknown district in borough 1|[[emerson hills]]|![[assets/codes/B20.svg\|100]]|^|^|
 |^|^|[[woodland square]]|![[assets/codes/B21.svg\|100]]|^|^|
 |^|^|[[broad park]]|![[assets/codes/B22.svg\|100]]|^|^|
-|2|unknown district in borough 2|[[dean hills]]|![[assets/codes/B17.svg\|100]]|^|^|
+|2|farland fields|[[dean hills]]|![[assets/codes/B17.svg\|100]]|^|^|
 |^|^|[[heather heights]]|![[assets/codes/B18.svg\|100]]|^|^|
 |^|^|[[kent ridge]]|![[assets/codes/B19.svg\|100]]|^|^|
 |3|east ivy|[[briar rose heights]]|![[assets/codes/B16.svg\|100]]![[assets/codes/A02.svg\|100]]|^|![[assets/codes/EI01.svg\|100]]|
@@ -58,7 +58,7 @@
 |^|^|[[thornton park]]||^|![[assets/codes/LI05.svg\|100]]|
 |^|^|[[moore square]]|^|^|![[assets/codes/LI06.svg\|100]]|
 |^|south coast (tbc)|[[crescent hills]]|^|![[assets/codes/5B11.svg\|100]]||
-|^|^|[[empire district]]|![[assets/codes/A14.svg\|100]]|![[assets/codes/5B12.svg\|100]]|^|
+|^|^|[[empire district]]|![[assets/codes/A15.svg\|100]]|![[assets/codes/5B12.svg\|100]]|^|
 |^|^|[[fawn park]]||![[assets/codes/5B13.svg\|100]]|^|
 |^|^|[[south coast]]|![[assets/codes/C11.svg\|100]]|![[assets/codes/5B14.svg\|100]]|^|
 |^|unknown district in borough 5|[[primrose park]]||![[assets/codes/5B07.svg\|100]]|^|
@@ -80,8 +80,8 @@
 |^|oak island|[[oak island]]|![[assets/codes/B06.svg\|100]]![[assets/codes/C06.svg\|100]]|![[assets/codes/I01.svg\|100]]|^|
 |^|pointer island|[[pointer park]]|![[assets/codes/A12.svg\|100]]||![[assets/codes/PI01.svg\|100]]|
 |^|^|[[knuckle hills]]|![[assets/codes/A13.svg\|100]]|![[assets/codes/I05.svg\|100]]|![[assets/codes/PI02.svg\|100]]|
-|^|^|[[thumb district]]|||![[assets/codes/PI03.svg\|100]]|
-|^|^|[[finger park]]|^|![[assets/codes/I06.svg\|100]]|![[assets/codes/PI04.svg\|100]]|
+|^|^|[[thumb district]]|![[assets/codes/A14.svg\|100]]||![[assets/codes/PI03.svg\|100]]|
+|^|^|[[finger park]]||![[assets/codes/I06.svg\|100]]|![[assets/codes/PI04.svg\|100]]|
 |the peninsula|the peninsula|[[oriental heights]]|![[assets/codes/B02.svg\|100]]|![[assets/codes/P01.svg\|100]]||
 |^|^|[[sycamore district]]|![[assets/codes/C02.svg\|100]]|![[assets/codes/P02.svg\|100]]|^|
 |^|^|[[hickory park]]|![[assets/codes/B03.svg\|100]]|![[assets/codes/P03.svg\|100]]|^|

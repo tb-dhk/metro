@@ -8,7 +8,7 @@ notes: express service across peninsula line
 
 |borough|district|code|other codes|name|
 |-|-|-|-|-|
-|1|unknown district in borough 1|![[assets/codes/B01.svg\|40]]||[[crest park]]|
+|1|north coast (tbc)|![[assets/codes/B01.svg\|40]]||[[crest park]]|
 |the peninsula|the peninsula|![[assets/codes/B02.svg\|40]]|![[assets/codes/P01.svg\|40]]|[[oriental heights]]|
 |^|^|![[assets/codes/B03.svg\|40]]|![[assets/codes/P03.svg\|40]]|[[hickory park]]|
 |^|^|![[assets/codes/B04.svg\|40]]|![[assets/codes/P05.svg\|40]]|[[elk hills]]|
@@ -24,7 +24,7 @@ notes: express service across peninsula line
 |^|^|![[assets/codes/B14.svg\|40]]|![[assets/codes/LI03.svg\|40]]|[[spruce district]]|
 |^|^|![[assets/codes/B15.svg\|40]]|![[assets/codes/LI02.svg\|40]]|[[birch park]]|
 |3|east ivy|![[assets/codes/B16.svg\|40]]|![[assets/codes/A02.svg\|40]]![[assets/codes/EI01.svg\|40]]|[[briar rose heights]]|
-|2|unknown district in borough 2|![[assets/codes/B17.svg\|40]]||[[dean hills]]|
+|2|farland fields|![[assets/codes/B17.svg\|40]]||[[dean hills]]|
 |^|^|![[assets/codes/B18.svg\|40]]|^|[[heather heights]]|
 |^|^|![[assets/codes/B19.svg\|40]]|^|[[kent ridge]]|
 |1|unknown district in borough 1|![[assets/codes/B20.svg\|40]]|^|[[emerson hills]]|

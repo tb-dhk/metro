@@ -20,7 +20,7 @@ borough: 5
 |^|![[assets/codes/5B09.svg\|40]]|^|[[summit valley]]|
 |^|![[assets/codes/5B10.svg\|40]]|^|[[meadow hills]]|
 |south coast (tbc)|![[assets/codes/5B11.svg\|40]]|^|[[crescent hills]]|
-|^|![[assets/codes/5B12.svg\|40]]|![[assets/codes/A14.svg\|40]]|[[empire district]]|
+|^|![[assets/codes/5B12.svg\|40]]|![[assets/codes/A15.svg\|40]]|[[empire district]]|
 |^|![[assets/codes/5B13.svg\|40]]||[[fawn park]]|
 |^|![[assets/codes/5B14.svg\|40]]|![[assets/codes/C11.svg\|40]]|[[south coast]]|
 

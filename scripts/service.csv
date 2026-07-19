@@ -27,5 +27,5 @@ west clockwise,FV,"FV01...05, FV01",1
 west anticlockwise,FV,"FV01, FV05...01",2
 east clockwise,FV,"FV01, FV06...08, FV02...01",1
 east anticlockwise,FV,"FV01...02, FV08...06, FV01",2
-southbound,A,A01...14,1
-northbound,A,A14...01,2
+southbound,A,A01...15,1
+northbound,A,A15...01,2
