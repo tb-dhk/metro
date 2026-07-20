@@ -1,11 +1,11 @@
 # representative codes, shapes and colors
 each type of line has its own shape and code format.
 
-| type     | shape   | code                                                      | color                         |
-| -------- | ------- | --------------------------------------------------------- | ----------------------------- |
-| city     | circle  | single letter                                             | 100% lightness and saturation |
-| borough  | diamond | single letter or number with optional alphanumeric suffix | 75% lightness and saturation  |
-| district | square  | two letters                                               | #808080 (grey)                |
+| type     | shape   | code                                                      | color                     |
+| -------- | ------- | --------------------------------------------------------- | ------------------------- |
+| city     | circle  | single letter                                             | 100% value and saturation |
+| borough  | diamond | single letter or number with optional alphanumeric suffix | 75% value and saturation  |
+| district | square  | two letters                                               | #808080 (grey)            |
 each line also has its own color and code, with borough lines sharing colors across the borough. see [[list of lines]] for more information.
 # symbols
 ## font
