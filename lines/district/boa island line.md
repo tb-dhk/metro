@@ -10,9 +10,9 @@ district: boa island
 
 |code|other codes|name|
 |-|-|-|
-|![[assets/codes/BI01.svg\|40]]|![[assets/codes/B08.svg\|40]]![[assets/codes/C08.svg\|40]]![[assets/codes/I03.svg\|40]]|[[elizabeth district]]|
-|![[assets/codes/BI02.svg\|40]]|![[assets/codes/C09.svg\|40]]|[[prospect square]]|
-|![[assets/codes/BI03.svg\|40]]|![[assets/codes/C10.svg\|40]]|[[autumn hills]]|
+|![[assets/codes/BI01.svg\|40]]|![[assets/codes/B09.svg\|40]]![[assets/codes/C09.svg\|40]]![[assets/codes/I03.svg\|40]]|[[elizabeth district]]|
+|![[assets/codes/BI02.svg\|40]]|![[assets/codes/C10.svg\|40]]|[[prospect square]]|
+|![[assets/codes/BI03.svg\|40]]|![[assets/codes/C11.svg\|40]]|[[autumn hills]]|
 |![[assets/codes/BI04.svg\|40]]|![[assets/codes/I04.svg\|40]]|[[sycamore heights]]|
 |![[assets/codes/BI05.svg\|40]]||[[elm heights]]|
 
@@ -22,5 +22,5 @@ district: boa island
 |name|stations|diagram|
 |-|-|-|
 |clockwise|BI01...05, BI01|![[assets/service_maps/general/boa island line clockwise.svg\|1500]]|
-|anticlockwise|BI01, BI05...01|![[assets/service_maps/general/boa island line anticlockwise.svg\|1500]]|
+|anticlockwise|BI05...01, BI05|![[assets/service_maps/general/boa island line anticlockwise.svg\|1500]]|
 

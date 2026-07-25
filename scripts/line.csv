@@ -1,16 +1,17 @@
-Code,Name,Type,Area,Color,Notes
-B,sunset bay loop,city,all,#ff7c00,express service across peninsula line
-C,east coast line,city,all,#0099ff,express service across peninsula line; to be extended into city loop
-5B,line 5B,borough,5,#5430bf,also known as the pointer bay line
-P,peninsula line,borough,P,#30bf94,full overlap with both sunset bay loop and east coast line
-I,island line,borough,I,#bf7f30,
-EI,east ivy line,district,EI,#808080,
-LI,long island line,district,LI,#808080,
-ES,east sheffield line,district,ES,#808080,
-CS,central sheffield line,district,CS,#808080,
-WS,west sheffield line,district,WS,#808080,
-BI,boa island line,district,BI,#808080,
-PI,pointer island line,district,PI,#808080,
-FV,fairview line,district,FV,#808080,
-HH,holly heights line,district,HH,#808080,
-A,across bay line,city,all,#ff0000,
+Code,Name,Type,Area,Color,Hue,Notes
+C,east coast line,city,all,#0080ff,210,express service across peninsula line; to be extended into city loop
+B,sunset bay loop,city,all,#ff8000,30,express service across peninsula line
+A,across bay line,city,all,#ff0000,0,
+X,airport express,city,all,#0000ff,240,
+5B,pointer bay line,borough,5,#5430bf,255,
+P,peninsula line,borough,P,#30bf9b,165,full overlap with both sunset bay loop and east coast line
+I,island line,borough,I,#bf9b30,45,
+EI,east ivy line,district,EI,#808080,0,
+LI,long island line,district,LI,#808080,0,
+ES,east sheffield line,district,ES,#808080,0,
+CS,central sheffield line,district,CS,#808080,0,
+WS,west sheffield line,district,WS,#808080,0,
+BI,boa island line,district,BI,#808080,0,
+PI,pointer island line,district,PI,#808080,0,
+FV,fairview line,district,FV,#808080,0,
+HH,holly heights line,district,HH,#808080,0,

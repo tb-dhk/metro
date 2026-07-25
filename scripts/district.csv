@@ -12,8 +12,8 @@ PE,the peninsula,P
 PI,pointer island,I
 WI,west ivy,3
 WS,west sheffield,5
-NC,north coast (tbc),1
-SC,south coast (tbc),5
+NC,north coast,1
+SC,south coast,5
 FV,fairview,5
 FF,farland fields,2
 U1,unknown district in borough 1,1
@@ -21,3 +21,5 @@ U2,unknown district in borough 2,2
 U3,unknown district in borough 3,3
 U4,unknown district in borough 4,4
 U5,unknown district in borough 5,5
+SB,sunset bay,S
+WL,woodlands,1

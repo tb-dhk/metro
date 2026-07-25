@@ -10,9 +10,18 @@ LINES_PAGE_FIELDS = [
     "Line.Name",
     "Line.Code",
     "Color",
+    "Hue",
     "Notes",
 ]
-LINES_PAGE_HEADERS = ["borough", "district", "name", "code", "color", "notes"]
+LINES_PAGE_HEADERS = [
+    "borough",
+    "district",
+    "name",
+    "code",
+    "color",
+    "hue",
+    "notes",
+]
 INDIV_LINE_FIELDS = [
     "Borough.Name",
     "District.Name",
@@ -56,7 +65,11 @@ cursor = connection.cursor()
 print("updating list of lines page...")
 lines_fragments = [
     """
-there are three tiers of metro lines; city, borough and district. each station has up to three tracks, where trains of each tier share the same track. each line and station has a logo. this symbol is in the line color and shape. see [[graphic design|here]] for more on metro-related design.
+there are three tiers of metro lines; city, borough and district. each station has up to three tracks, where trains of each tier share the same track. 
+
+each line and station has a logo. this symbol is in the line color and shape. see [[graphic design|here]] for more on metro-related design.
+
+each line is often referred to by its code. for example, the sunset bay loop is often called the "B line" (mostly for lettered lines) or "line B".
 
 # city
 city lines travel across boroughs.
@@ -93,7 +106,7 @@ for i, t_pe in enumerate(TYPES):
 
     cursor.execute(
         f"""
-        SELECT {", ".join(LINES_PAGE_FIELDS[-i - 4 :])} 
+        SELECT {", ".join(LINES_PAGE_FIELDS[-i - 5 :])} 
         FROM Line {inner_join_string}
         WHERE Type = ? 
         {sort_string} 
@@ -103,7 +116,7 @@ for i, t_pe in enumerate(TYPES):
     lines[t_pe] = [list(i) for i in cursor.fetchall()]
     modified = deepcopy(lines[t_pe])
     for row in modified:
-        row[-3] = rf"![[assets/lines/{row[-4]}.svg\|40]]"
+        row[-3] = rf"![[assets/lines/{row[-5]}.svg\|40]]"
     tables[t_pe] = markdownify(
         modified, headers=specific_headers, linkify=["name"]
     )
@@ -163,8 +176,8 @@ subprocess.run([f"sudo rm -rf ../lines/district/*"], shell=True)
 for i, t_pe in enumerate(TYPES):
     for line in lines[t_pe]:
         properties = {
-            "code": line[-3],
-            "color (hex)": line[-2][1:],
+            "code": line[-4],
+            "color (hex)": line[-3][1:],
             "type": t_pe,
             "notes": line[-1],
         }
@@ -245,7 +258,7 @@ for i, t_pe in enumerate(TYPES):
         services = [
             [
                 *i,
-                rf"![[assets/service_maps/general/{line[-4]} {i[0]}.svg\|1500]]",
+                rf"![[assets/service_maps/general/{line[-5]} {i[0]}.svg\|1500]]",
             ]
             for i in cursor.fetchall()
         ]
@@ -253,7 +266,7 @@ for i, t_pe in enumerate(TYPES):
             services, headers=["name", "stations", "diagram"]
         )
 
-        filename = f"../lines/{t_pe}/{line[-4]}.md"
+        filename = f"../lines/{t_pe}/{line[-5]}.md"
         subprocess.call(["touch", filename])
         subprocess.call(["chmod", "777", filename])
         with open(filename, "w") as f:

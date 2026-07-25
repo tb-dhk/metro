@@ -134,7 +134,7 @@ def line_logos():
                 svg.Text(
                     text=code,
                     x=100,
-                    y=105,
+                    y=102.5,
                     text_anchor="middle",
                     dominant_baseline="middle",
                     font_size="90px",
@@ -352,7 +352,7 @@ def service_map(name, line, stations, color, current_station=None):
     )
 
     full_width = 300 * length + 1400
-    full_height = 200 * height + 1300
+    full_height = 200 * height + 1500
     elements = [
         svg.Defs(
             elements=[into_blur, outof_blur, inandoutof_blur, return_blur]
@@ -377,9 +377,9 @@ def service_map(name, line, stations, color, current_station=None):
         elements += [
             svg.Rect(
                 x=550,
-                y=700,
+                y=900,
                 width=full_width - 1100,
-                height=full_height - 1100,
+                height=full_height - 1300,
                 fill="black",
                 style=f"stroke: {color}; stroke-width: 20px",
                 rx=20,
@@ -410,7 +410,7 @@ def service_map(name, line, stations, color, current_station=None):
         elements.append(
             svg.Rect(
                 x=750,
-                y=690,
+                y=890,
                 width=full_width - 1700,
                 height=20,
                 fill=color,
@@ -445,18 +445,18 @@ def service_map(name, line, stations, color, current_station=None):
                 width=200,
                 height=200,
                 x=300 * i + 750,
-                y=600,
+                y=800,
             )
         )
 
         elements.append(
             svg.ForeignObject(
                 x=300 * i + 900,
-                y=650,
+                y=850,
                 width=1000,
                 height=100,
                 text=html_station_name(station_name, current_station, blur),
-                transform=f"rotate(-45 {300 * i + 650} 700)",
+                transform=f"rotate(-45 {300 * i + 650} 900)",
             ),
         )
 
@@ -467,7 +467,7 @@ def service_map(name, line, stations, color, current_station=None):
                     width=200,
                     height=200,
                     x=300 * i + 750,
-                    y=200 * j + 800,
+                    y=200 * j + 1000,
                 )
             )
 
@@ -476,23 +476,23 @@ def service_map(name, line, stations, color, current_station=None):
             elements += [
                 svg.Rect(
                     x=300 * i + 1020 - arrow_length,
-                    y=690,
+                    y=890,
                     width=arrow_length,
                     height=20,
                     fill=color,
                     rx=10,
                     ry=10,
-                    transform=f"rotate(-45 {300 * i + 1020} {700})",
+                    transform=f"rotate(-45 {300 * i + 1020} {900})",
                 ),
                 svg.Rect(
                     x=300 * i + 1020 - arrow_length,
-                    y=690,
+                    y=890,
                     width=arrow_length,
                     height=20,
                     fill=color,
                     rx=10,
                     ry=10,
-                    transform=f"rotate(45 {300 * i + 1020} {700})",
+                    transform=f"rotate(45 {300 * i + 1020} {900})",
                 ),
             ]
 
@@ -511,9 +511,9 @@ def service_map(name, line, stations, color, current_station=None):
             elements.append(
                 svg.Rect(
                     x=300 * i + 750,
-                    y=600,
+                    y=800,
                     width=300,
-                    height=full_height - 1100,
+                    height=full_height - 1300,
                     fill=fill,
                 )
             )
@@ -524,9 +524,9 @@ def service_map(name, line, stations, color, current_station=None):
         elements += [
             svg.Rect(
                 x=300 * length + 750,
-                y=600,
+                y=800,
                 width=300,
-                height=full_height - 1100,
+                height=full_height - 1300,
                 fill="#00000080",
             ),
             svg.Rect(
@@ -538,9 +538,9 @@ def service_map(name, line, stations, color, current_station=None):
             ),
             svg.Rect(
                 x=525,
-                y=800,
+                y=900,
                 width=150,
-                height=full_height - 1300,
+                height=full_height - 1400,
                 fill="url(#return_blur)",
             ),
         ]

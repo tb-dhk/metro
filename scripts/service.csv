@@ -6,26 +6,26 @@ eastbound,I,I06...01,2
 clockwise,EI,"EI01...06, EI02...01",1
 anticlockwise,EI,"EI01...02, EI06...01",2
 clockwise,LI,"LI01...06, LI01",1
-anticlockwise,LI,"LI01, LI06...01",2
+anticlockwise,LI,"LI06...01, LI06",2
 clockwise,ES,"ES01...09, ES01",1
-anticlockwise,ES,"ES01, ES09...01",2
+anticlockwise,ES,"ES09...01, ES09",2
 clockwise,CS,"CS01...08, CS01",1
-anticlockwise,CS,"CS01, CS08...01",2
+anticlockwise,CS,"CS08...01, CS08",2
 clockwise,WS,"WS01...06, WS01",1
-anticlockwise,WS,"WS01, WS06...01",2
+anticlockwise,WS,"WS06...01, WS06",2
 clockwise,BI,"BI01...05, BI01",1
-anticlockwise,BI,"BI01, BI05...01",2
+anticlockwise,BI,"BI05...01, BI05",2
 clockwise,PI,"PI01...04, PI01",1
-anticlockwise,PI,"PI01, PI04...01",2
-clockwise,B,"B01...22, B01",1
-anticlockwise,B,"B01, B22...01",2
-southbound,C,C01...11,1
-northbound,C,C11...01,2
+anticlockwise,PI,"PI04...01, PI04",2
+clockwise,B,"B01...23, B01",1
+anticlockwise,B,"B23...01, B23",2
+southbound,C,C01...12,1
+northbound,C,C12...01,2
 southbound,5B,5B01...14,1
 northbound,5B,5B14...01,2
 west clockwise,FV,"FV01...05, FV01",1
-west anticlockwise,FV,"FV01, FV05...01",2
+west anticlockwise,FV,"FV05...01, FV05",2
 east clockwise,FV,"FV01, FV06...08, FV02...01",1
-east anticlockwise,FV,"FV01...02, FV08...06, FV01",2
-southbound,A,A01...15,1
-northbound,A,A15...01,2
+east anticlockwise,FV,"FV08...06, FV01...02, FV01",2
+southbound,A,A01...18,1
+northbound,A,A18...01,2

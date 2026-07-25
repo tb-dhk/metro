@@ -11,6 +11,7 @@ district: fairview
 |^|^|^|east clockwise|![[assets/service_maps/pine hills/fairview line east clockwise.svg\|1000]]|[[myrtle district]]|![[assets/codes/FV02.svg\|40]]|[[smith square]]|![[assets/codes/FV06.svg\|40]]|
 |2|^|^|west anticlockwise|![[assets/service_maps/pine hills/fairview line west anticlockwise.svg\|1000]]|^|^|[[barlow heights]]|![[assets/codes/FV05.svg\|40]]|
 |^|^|^|east anticlockwise|![[assets/service_maps/pine hills/fairview line east anticlockwise.svg\|1000]]|[[smith square]]|![[assets/codes/FV06.svg\|40]]|[[myrtle district]]|![[assets/codes/FV02.svg\|40]]|
+|^|^|^|^|^|[[myrtle district]]|![[assets/codes/FV02.svg\|40]]|[[fairview square]]|![[assets/codes/FV08.svg\|40]]|
 
 
 ![[assets/navigation/pine hills.svg\|2500]]

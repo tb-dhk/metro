@@ -15,7 +15,7 @@ cursor.execute("PRAGMA foreign_keys = ON;")
 
 cursor.execute("""
     CREATE TABLE Borough (
-        Code TEXT PRIMARY KEY CHECK (Code IN ('1', '2', '3', '4', '5', 'P', 'I')),
+        Code TEXT PRIMARY KEY CHECK (Code IN ('1', '2', '3', '4', '5', 'P', 'I', 'S')),
         Name TEXT NOT NULL
     )
 """)
@@ -44,6 +44,7 @@ cursor.execute("""
         Type TEXT NOT NULL CHECK (Type IN ('city', 'borough', 'district')),
         Area TEXT NOT NULL,
         Color TEXT NOT NULL CHECK (Color LIKE '#%'),
+        Hue INTEGER,
         Notes TEXT,
         PRIMARY KEY (Code)
     )
@@ -94,7 +95,7 @@ data_pipeline = [
     {
         "file": "line.csv",
         "table": "Line",
-        "query": "INSERT INTO Line (Code, Name, Type, Area, Color, Notes) VALUES (?, ?, ?, ?, ?, ?)",
+        "query": "INSERT INTO Line (Code, Name, Type, Area, Color, Hue, Notes) VALUES (?, ?, ?, ?, ?, ?, ?)",
     },
     {
         "file": "service.csv",
