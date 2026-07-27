@@ -1,11 +1,11 @@
 # representative codes, shapes and colors
 each type of line has its own shape and code format.
 
-| type     | shape   | code                                                      | hue                                                                                                     | value and saturation      |
+| type     | shape   | code                                                      | hue                                                                                                   | value and saturation      |
 | -------- | ------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------- |
-| city     | circle  | single letter                                           multiples of 30, except:<br>- 60 (lack of contrast)<br>- 150 and 330 (both too close to other colors) d  ,  | 100% value and saturation |
-| borough  | diamond | single letter or number with optional alphanumeric suffix | odd multiples                                                                                           | 75% value and saturation  |
-| district | square  | two letters                                                                                                                                                         | #808080 (grey)            |
+| city     | circle  | single letter                                             | multiples of 30, except:<br>- 60 (lack of contrast)<br>- 150 and 330 (both too close to other colors) | 100% value and saturation |
+| borough  | diamond | single letter or number with optional alphanumeric suffix | odd multiples                                                                                         | 75% value and saturation  |
+| district | square  | two letters                                               | #808080 (grey)                                                                                        |                           |
 each line also has its own color and code, with borough lines sharing colors across the borough. see [[list of lines]] for more information.
 # symbols
 ## font
@@ -44,9 +44,10 @@ navigation signs contain a list of services, each assigned to a platform. they t
 
 the arrows are on the very end (left or right) of the rows of the services corresponding to that direction. the platform numbers are next to the arrows, although more towards the middle. neither arrows nor platform numbers repeat, so they will only appear in the top row corresponding to them. the services on the same platforms and directions are thus expected to be grouped together.
 
-for loops, each service name is either clockwise or anticlockwise, and the next station is indicated below the service name. for non-loops, the service name indicates the cardinal direction in which the service goes. the end destination is indicated below the service name, unless the service ends there, in which case the text below simply says "ends here".
-
+for loops, each service name is either clockwise or anticlockwise, and the next station is indicated below the service name. for non-loops, the service name indicates the cardinal direction in which the service goes.
 ![[assets/navigation/elizabeth district.svg]]
+
+the end destination is indicated below the service name, unless the service ends there, in which case the text below simply says "ends here".
 ![[assets/navigation/south coast.svg]]
 
 for stations which are passed through more than once by the same service, the service will be repeated once for each pass, indicating the corresponding next station.
