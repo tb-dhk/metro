@@ -2,7 +2,7 @@
 code: 5B
 color (hex): 5430bf
 type: borough
-notes: 
+notes: also known as line 5B
 borough: 5
 ---
 # stations

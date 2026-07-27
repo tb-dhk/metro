@@ -3,7 +3,7 @@ C,east coast line,city,all,#0080ff,210,express service across peninsula line; to
 B,sunset bay loop,city,all,#ff8000,30,express service across peninsula line
 A,across bay line,city,all,#ff0000,0,
 X,airport express,city,all,#0000ff,240,
-5B,pointer bay line,borough,5,#5430bf,255,
+5B,pointer bay line,borough,5,#5430bf,255,also known as line 5B
 P,peninsula line,borough,P,#30bf9b,165,full overlap with both sunset bay loop and east coast line
 I,island line,borough,I,#bf9b30,45,
 EI,east ivy line,district,EI,#808080,0,

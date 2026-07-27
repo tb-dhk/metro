@@ -19,8 +19,8 @@ borough lines travel within boroughs, but across districts.
 
 |district|name|code|color|hue|notes|
 |-|-|-|-|-|-|
-|5|[[pointer bay line]]|5B|![[assets/lines/pointer bay line.svg\|40]]|255||
-|I|[[island line]]|I|![[assets/lines/island line.svg\|40]]|45|^|
+|5|[[pointer bay line]]|5B|![[assets/lines/pointer bay line.svg\|40]]|255|also known as line 5B|
+|I|[[island line]]|I|![[assets/lines/island line.svg\|40]]|45||
 |P|[[peninsula line]]|P|![[assets/lines/peninsula line.svg\|40]]|165|full overlap with both sunset bay loop and east coast line|
 
 ## district
