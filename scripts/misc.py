@@ -8,10 +8,10 @@ def service_string_to_list(string):
     segments = string.split(", ")
     final = []
     for s in segments:
-        if "..." in s:
-            start = int(s.split("...")[0][-2:])
-            end = int(s.split("...")[1])
-            code = s.split("...")[0][:-2]
+        if "." in s:
+            start = int(s.split(".")[0][-2:])
+            end = int(s.split(".")[1])
+            code = s.split(".")[0][:-2]
             interval = -1 if start > end else 1
             for i in range(start, end + interval, interval):
                 final.append(code + str(i).rjust(2, "0"))

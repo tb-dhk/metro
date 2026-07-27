@@ -6,8 +6,8 @@ notes:
 ---
 # stations
 
-|borough|district|code|other codes|name|
-|-|-|-|-|-|
+|borough|district|stage|code|other codes|name|
+|-|-|-|-|-|-|
 
 
 # services

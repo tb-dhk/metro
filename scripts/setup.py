@@ -72,6 +72,16 @@ cursor.execute("""
     )
 """)
 
+cursor.execute("""
+    CREATE TABLE Stage (
+        LineCode TEXT NOT NULL,
+        Number INTEGER NOT NULL,
+        Stations TEXT NOT NULL,
+        PRIMARY KEY (LineCode, Number),
+        FOREIGN KEY (LineCode) REFERENCES Line(Code)
+    )
+""")
+
 connection.commit()
 
 print("tables created successfully! adding data...")
@@ -105,7 +115,12 @@ data_pipeline = [
     {
         "file": "stationcode.csv",
         "table": "StationCode",
-        "query": "INSERT INTO StationCode (LineCode, Number, StationName) VALUES (?, ?, ?)",
+        "query": "INSERT INTO StationCode (LineCode, Number, StationName) values (?, ?, ?)",
+    },
+    {
+        "file": "stage.csv",
+        "table": "Stage",
+        "query": "INSERT INTO Stage (LineCode, Number, Stations) values (?, ?, ?)",
     },
 ]
 
@@ -114,7 +129,7 @@ for step in data_pipeline:
     table_name = step["table"]
     insert_query = step["query"]
 
-    with open(file_path, mode="r", encoding="utf-8-sig") as csv_file:
+    with open("data/" + file_path, mode="r", encoding="utf-8-sig") as csv_file:
         csv_reader = csv.reader(csv_file)
         header = next(csv_reader)
         data_rows = [tuple(row) for row in csv_reader]

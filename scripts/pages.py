@@ -28,7 +28,14 @@ INDIV_LINE_FIELDS = [
     "LineCode || Number",
     "Station.Name",
 ]
-INDIV_LINE_HEADERS = ["borough", "district", "code", "other codes", "name"]
+INDIV_LINE_HEADERS = [
+    "borough",
+    "district",
+    "stage",
+    "code",
+    "other codes",
+    "name",
+]
 
 
 def markdownify(data, headers=[], linkify=[]):
@@ -216,8 +223,23 @@ for i, t_pe in enumerate(TYPES):
             (line[i + 1],),
         )
         stations = [list(i) for i in cursor.fetchall()]
+
+        cursor.execute(
+            """
+            SELECT Number, Stations FROM Stage WHERE LineCode = ?
+        """,
+            (line[i + 1],),
+        )
+        stages = cursor.fetchall()
+        stage_dict = {}
+        for number, codes in stages:
+            codes = service_string_to_list(codes)
+            for code in codes:
+                stage_dict[code] = number
+
         for row in stations:
-            row[-2] = rf"![[assets/codes/{row[-2]}.svg\|40]]"
+            code = row[-2]
+            row[-2] = rf"![[assets/codes/{code}.svg\|40]]"
             cursor.execute(
                 """
                 SELECT LineCode, Number 
@@ -242,6 +264,7 @@ for i, t_pe in enumerate(TYPES):
                     ]
                 ),
             )
+            row.insert(-3, stage_dict.get(code, 1))
 
         stations_string = "# stations" + markdownify(
             stations, headers=INDIV_LINE_HEADERS[i:], linkify=["name"]

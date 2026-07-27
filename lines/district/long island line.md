@@ -8,20 +8,20 @@ district: long island
 ---
 # stations
 
-|code|other codes|name|
-|-|-|-|
-|![[assets/codes/LI01.svg\|40]]||[[belmont district]]|
-|![[assets/codes/LI02.svg\|40]]|![[assets/codes/B16.svg\|40]]|[[birch park]]|
-|![[assets/codes/LI03.svg\|40]]|![[assets/codes/B15.svg\|40]]|[[spruce district]]|
-|![[assets/codes/LI04.svg\|40]]|![[assets/codes/B14.svg\|40]]|[[poplar square]]|
-|![[assets/codes/LI05.svg\|40]]||[[thornton park]]|
-|![[assets/codes/LI06.svg\|40]]|^|[[moore square]]|
+|stage|code|other codes|name|
+|-|-|-|-|
+|1|![[assets/codes/LI01.svg\|40]]||[[belmont district]]|
+|^|![[assets/codes/LI02.svg\|40]]|![[assets/codes/B16.svg\|40]]|[[birch park]]|
+|^|![[assets/codes/LI03.svg\|40]]|![[assets/codes/B15.svg\|40]]|[[spruce district]]|
+|^|![[assets/codes/LI04.svg\|40]]|![[assets/codes/B14.svg\|40]]|[[poplar square]]|
+|^|![[assets/codes/LI05.svg\|40]]||[[thornton park]]|
+|^|![[assets/codes/LI06.svg\|40]]|^|[[moore square]]|
 
 
 # services
 
 |name|stations|diagram|
 |-|-|-|
-|clockwise|LI01...06, LI01|![[assets/service_maps/general/long island line clockwise.svg\|1500]]|
-|anticlockwise|LI06...01, LI06|![[assets/service_maps/general/long island line anticlockwise.svg\|1500]]|
+|clockwise|LI01.06, LI01|![[assets/service_maps/general/long island line clockwise.svg\|1500]]|
+|anticlockwise|LI06.01, LI06|![[assets/service_maps/general/long island line anticlockwise.svg\|1500]]|
 

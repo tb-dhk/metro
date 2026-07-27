@@ -1,6 +1,6 @@
 ---
 borough: 5
-district: unknown district in borough 5
+district: everdeen
 ---
 ![[assets/stations/primrose park.svg\|2500]]
 # services

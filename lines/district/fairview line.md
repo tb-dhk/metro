@@ -8,24 +8,24 @@ district: fairview
 ---
 # stations
 
-|code|other codes|name|
-|-|-|-|
-|![[assets/codes/FV01.svg\|40]]||[[pine hills]]|
-|![[assets/codes/FV02.svg\|40]]|![[assets/codes/5B02.svg\|40]]|[[myrtle district]]|
-|![[assets/codes/FV03.svg\|40]]|![[assets/codes/5B03.svg\|40]]|[[cypress square]]|
-|![[assets/codes/FV04.svg\|40]]||[[hawthorne heights]]|
-|![[assets/codes/FV05.svg\|40]]|^|[[barlow heights]]|
-|![[assets/codes/FV06.svg\|40]]|![[assets/codes/B12.svg\|40]]|[[smith square]]|
-|![[assets/codes/FV07.svg\|40]]|![[assets/codes/B11.svg\|40]]|[[high park]]|
-|![[assets/codes/FV08.svg\|40]]|![[assets/codes/B10.svg\|40]]![[assets/codes/5B01.svg\|40]]|[[fairview square]]|
+|stage|code|other codes|name|
+|-|-|-|-|
+|1|![[assets/codes/FV01.svg\|40]]||[[pine hills]]|
+|^|![[assets/codes/FV02.svg\|40]]|![[assets/codes/5B02.svg\|40]]|[[myrtle district]]|
+|^|![[assets/codes/FV03.svg\|40]]|![[assets/codes/5B03.svg\|40]]|[[cypress square]]|
+|^|![[assets/codes/FV04.svg\|40]]||[[hawthorne heights]]|
+|^|![[assets/codes/FV05.svg\|40]]|^|[[barlow heights]]|
+|^|![[assets/codes/FV06.svg\|40]]|![[assets/codes/B12.svg\|40]]|[[smith square]]|
+|^|![[assets/codes/FV07.svg\|40]]|![[assets/codes/B11.svg\|40]]|[[high park]]|
+|^|![[assets/codes/FV08.svg\|40]]|![[assets/codes/B10.svg\|40]]![[assets/codes/5B01.svg\|40]]|[[fairview square]]|
 
 
 # services
 
 |name|stations|diagram|
 |-|-|-|
-|west clockwise|FV01...05, FV01|![[assets/service_maps/general/fairview line west clockwise.svg\|1500]]|
-|west anticlockwise|FV05...01, FV05|![[assets/service_maps/general/fairview line west anticlockwise.svg\|1500]]|
-|east clockwise|FV01, FV06...08, FV02...01|![[assets/service_maps/general/fairview line east clockwise.svg\|1500]]|
-|east anticlockwise|FV08...06, FV01...02, FV01|![[assets/service_maps/general/fairview line east anticlockwise.svg\|1500]]|
+|west clockwise|FV01.05, FV01|![[assets/service_maps/general/fairview line west clockwise.svg\|1500]]|
+|west anticlockwise|FV05.01, FV05|![[assets/service_maps/general/fairview line west anticlockwise.svg\|1500]]|
+|east clockwise|FV01, FV06.08, FV02.01|![[assets/service_maps/general/fairview line east clockwise.svg\|1500]]|
+|east anticlockwise|FV08.06, FV01.02, FV01|![[assets/service_maps/general/fairview line east anticlockwise.svg\|1500]]|
 

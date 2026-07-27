@@ -38,7 +38,11 @@
 |^|^|[[chestnut park]]|^|^|![[assets/codes/ES07.svg\|100]]|
 |^|^|[[briarwood district]]|^|^|![[assets/codes/ES08.svg\|100]]|
 |^|^|[[sheffield hills]]|![[assets/codes/A07.svg\|100]]|^|![[assets/codes/ES09.svg\|100]]|
-|^|fairview|[[pine hills]]||^|![[assets/codes/FV01.svg\|100]]|
+|^|everdeen|[[primrose park]]||![[assets/codes/5B07.svg\|100]]||
+|^|^|[[cherry hills]]|^|![[assets/codes/5B08.svg\|100]]|^|
+|^|^|[[summit valley]]|^|![[assets/codes/5B09.svg\|100]]|^|
+|^|^|[[meadow hills]]|^|![[assets/codes/5B10.svg\|100]]|^|
+|^|fairview|[[pine hills]]|^||![[assets/codes/FV01.svg\|100]]|
 |^|^|[[myrtle district]]|^|![[assets/codes/5B02.svg\|100]]|![[assets/codes/FV02.svg\|100]]|
 |^|^|[[cypress square]]|^|![[assets/codes/5B03.svg\|100]]|![[assets/codes/FV03.svg\|100]]|
 |^|^|[[hawthorne heights]]|^||![[assets/codes/FV04.svg\|100]]|
@@ -61,11 +65,7 @@
 |^|^|[[empire district]]|![[assets/codes/A18.svg\|100]]|![[assets/codes/5B12.svg\|100]]|^|
 |^|^|[[fawn park]]||![[assets/codes/5B13.svg\|100]]|^|
 |^|^|[[south coast]]|![[assets/codes/C12.svg\|100]]|![[assets/codes/5B14.svg\|100]]|^|
-|^|unknown district in borough 5|[[primrose park]]||![[assets/codes/5B07.svg\|100]]|^|
-|^|^|[[cherry hills]]|^|![[assets/codes/5B08.svg\|100]]|^|
-|^|^|[[summit valley]]|^|![[assets/codes/5B09.svg\|100]]|^|
-|^|^|[[meadow hills]]|^|![[assets/codes/5B10.svg\|100]]|^|
-|^|west sheffield|[[butler heights]]|^||![[assets/codes/WS01.svg\|100]]|
+|^|west sheffield|[[butler heights]]|||![[assets/codes/WS01.svg\|100]]|
 |^|^|[[moore park]]|![[assets/codes/A11.svg\|100]]|^|![[assets/codes/WS02.svg\|100]]|
 |^|^|[[sunset park]]|![[assets/codes/A12.svg\|100]]|^|![[assets/codes/WS03.svg\|100]]|
 |^|^|[[concord hills]]||^|![[assets/codes/WS04.svg\|100]]|

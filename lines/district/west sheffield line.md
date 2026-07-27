@@ -8,20 +8,20 @@ district: west sheffield
 ---
 # stations
 
-|code|other codes|name|
-|-|-|-|
-|![[assets/codes/WS01.svg\|40]]||[[butler heights]]|
-|![[assets/codes/WS02.svg\|40]]|![[assets/codes/A11.svg\|40]]|[[moore park]]|
-|![[assets/codes/WS03.svg\|40]]|![[assets/codes/A12.svg\|40]]|[[sunset park]]|
-|![[assets/codes/WS04.svg\|40]]||[[concord hills]]|
-|![[assets/codes/WS05.svg\|40]]|^|[[pleasant park]]|
-|![[assets/codes/WS06.svg\|40]]|^|[[madison park]]|
+|stage|code|other codes|name|
+|-|-|-|-|
+|1|![[assets/codes/WS01.svg\|40]]||[[butler heights]]|
+|^|![[assets/codes/WS02.svg\|40]]|![[assets/codes/A11.svg\|40]]|[[moore park]]|
+|^|![[assets/codes/WS03.svg\|40]]|![[assets/codes/A12.svg\|40]]|[[sunset park]]|
+|^|![[assets/codes/WS04.svg\|40]]||[[concord hills]]|
+|^|![[assets/codes/WS05.svg\|40]]|^|[[pleasant park]]|
+|^|![[assets/codes/WS06.svg\|40]]|^|[[madison park]]|
 
 
 # services
 
 |name|stations|diagram|
 |-|-|-|
-|clockwise|WS01...06, WS01|![[assets/service_maps/general/west sheffield line clockwise.svg\|1500]]|
-|anticlockwise|WS06...01, WS06|![[assets/service_maps/general/west sheffield line anticlockwise.svg\|1500]]|
+|clockwise|WS01.06, WS01|![[assets/service_maps/general/west sheffield line clockwise.svg\|1500]]|
+|anticlockwise|WS06.01, WS06|![[assets/service_maps/general/west sheffield line anticlockwise.svg\|1500]]|
 
