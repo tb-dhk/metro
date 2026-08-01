@@ -10,9 +10,9 @@ district: pointer island
 
 |stage|code|other codes|name|
 |-|-|-|-|
-|1|![[assets/codes/PI01.svg\|40]]|![[assets/codes/A15.svg\|40]]|[[pointer park]]|
-|^|![[assets/codes/PI02.svg\|40]]|![[assets/codes/A16.svg\|40]]![[assets/codes/I05.svg\|40]]|[[knuckle hills]]|
-|^|![[assets/codes/PI03.svg\|40]]|![[assets/codes/A17.svg\|40]]|[[thumb district]]|
+|1|![[assets/codes/PI01.svg\|40]]|![[assets/codes/A16.svg\|40]]|[[pointer park]]|
+|^|![[assets/codes/PI02.svg\|40]]|![[assets/codes/A17.svg\|40]]![[assets/codes/I05.svg\|40]]|[[knuckle hills]]|
+|^|![[assets/codes/PI03.svg\|40]]|![[assets/codes/A18.svg\|40]]|[[thumb district]]|
 |^|![[assets/codes/PI04.svg\|40]]|![[assets/codes/I06.svg\|40]]|[[finger park]]|
 
 

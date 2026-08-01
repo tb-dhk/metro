@@ -2,7 +2,7 @@
 code: C
 color (hex): 0080ff
 type: city
-notes: express service across peninsula line; to be extended into city loop
+notes: runs along the east coast with express service across peninsula line; to be extended into city loop
 ---
 # stations
 

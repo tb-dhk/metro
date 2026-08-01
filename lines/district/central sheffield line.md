@@ -10,13 +10,13 @@ district: central sheffield
 
 |stage|code|other codes|name|
 |-|-|-|-|
-|1|![[assets/codes/CS01.svg\|40]]|![[assets/codes/A08.svg\|40]]|[[cozy heights]]|
+|1|![[assets/codes/CS01.svg\|40]]|![[assets/codes/A09.svg\|40]]|[[cozy heights]]|
 |^|![[assets/codes/CS02.svg\|40]]||[[underhill grove]]|
 |^|![[assets/codes/CS03.svg\|40]]|^|[[cherry heights]]|
 |^|![[assets/codes/CS04.svg\|40]]|^|[[green square]]|
 |^|![[assets/codes/CS05.svg\|40]]|^|[[holly square]]|
-|^|![[assets/codes/CS06.svg\|40]]|![[assets/codes/A10.svg\|40]]|[[mulberry park]]|
-|^|![[assets/codes/CS07.svg\|40]]|![[assets/codes/A09.svg\|40]]|[[maple park]]|
+|^|![[assets/codes/CS06.svg\|40]]|![[assets/codes/A11.svg\|40]]|[[mulberry park]]|
+|^|![[assets/codes/CS07.svg\|40]]|![[assets/codes/A10.svg\|40]]|[[maple park]]|
 |^|![[assets/codes/CS08.svg\|40]]||[[amity heights]]|
 
 

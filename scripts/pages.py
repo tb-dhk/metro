@@ -328,7 +328,7 @@ for borough, district, station in stations:
     services = get_station_services(station)
     platform_data = []
     for i, platform in enumerate(services):
-        for service, code, line in platform:
+        for service, _, code, line in platform:
             surrounding = surrounding_stations(station, code, service)
             for prev, next in surrounding:
                 platform_data.append(

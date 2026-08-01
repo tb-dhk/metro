@@ -75,7 +75,7 @@ def html_with_station(text, station=None, right=False):
 
 def html_line_service(name, service):
     station_text = f"""
-    <img src="{href(f"../assets/lines/{name}.svg")}" style="height: 100px; width: auto;" />
+    <img src="{href(f"../assets/lines/{name}.svg")}" style="height: 200px; width: auto;" />
     <span>{name} - {service}</span>
     """
     return f"""
@@ -83,9 +83,9 @@ def html_line_service(name, service):
          style="display: flex; 
                 align-items: center; 
                 justify-content: center;
-                gap: 25px; 
+                gap: 50px; 
                 font-family: 'Altone', sans-serif; 
-                font-size: 65px; 
+                font-size: 100px; 
                 font-weight: 500; 
                 color: white; 
                 white-space: nowrap;
@@ -352,7 +352,7 @@ def service_map(name, line, stations, color, current_station=None):
     )
 
     full_width = 300 * length + 1400
-    full_height = 200 * height + 1500
+    full_height = 200 * height + 1700
     elements = [
         svg.Defs(
             elements=[into_blur, outof_blur, inandoutof_blur, return_blur]
@@ -366,7 +366,7 @@ def service_map(name, line, stations, color, current_station=None):
         ),
         svg.ForeignObject(
             x=0,
-            y=full_height - 300,
+            y=full_height - 450,
             width=full_width,
             height=200,
             text=html_line_service(line, name),
@@ -379,7 +379,7 @@ def service_map(name, line, stations, color, current_station=None):
                 x=550,
                 y=900,
                 width=full_width - 1100,
-                height=full_height - 1300,
+                height=full_height - 1600,
                 fill="black",
                 style=f"stroke: {color}; stroke-width: 20px",
                 rx=20,
@@ -387,23 +387,23 @@ def service_map(name, line, stations, color, current_station=None):
             ),
             svg.Rect(
                 x=(full_width - 40) / 2,
-                y=full_height - 410,
+                y=full_height - 710,
                 width=40 * 2**0.5,
                 height=20,
                 fill=color,
                 rx=10,
                 ry=10,
-                transform=f"rotate(-45 {(full_width - 40) / 2} {full_height - 400})",
+                transform=f"rotate(-45 {(full_width - 40) / 2} {full_height - 700})",
             ),
             svg.Rect(
                 x=(full_width - 40) / 2,
-                y=full_height - 410,
+                y=full_height - 710,
                 width=40 * 2**0.5,
                 height=20,
                 fill=color,
                 rx=10,
                 ry=10,
-                transform=f"rotate(45 {(full_width - 40) / 2} {full_height - 400})",
+                transform=f"rotate(45 {(full_width - 40) / 2} {full_height - 700})",
             ),
         ]
     else:
@@ -513,7 +513,7 @@ def service_map(name, line, stations, color, current_station=None):
                     x=300 * i + 750,
                     y=800,
                     width=300,
-                    height=full_height - 1300,
+                    height=full_height - 1600,
                     fill=fill,
                 )
             )
@@ -526,21 +526,21 @@ def service_map(name, line, stations, color, current_station=None):
                 x=300 * length + 750,
                 y=800,
                 width=300,
-                height=full_height - 1300,
+                height=full_height - 1600,
                 fill="#00000080",
             ),
             svg.Rect(
                 x=0,
-                y=full_height - 500,
+                y=full_height - 800,
                 width=full_width,
                 height=200,
                 fill="#00000080",
             ),
             svg.Rect(
                 x=525,
-                y=900,
+                y=1000,
                 width=150,
-                height=full_height - 1400,
+                height=full_height - 1800,
                 fill="url(#return_blur)",
             ),
         ]
@@ -635,7 +635,7 @@ def station_navigation():
             f.write(str(station_drawing))
 
         services = []
-        raw_services = get_station_services(station, with_next=True)
+        raw_services = get_station_services(station)
         for platform in raw_services:
             services.append([])
             for raw_service in platform:
@@ -643,12 +643,12 @@ def station_navigation():
                     next_stations = [
                         i[1]
                         for i in surrounding_stations(
-                            station, raw_service[1], raw_service[0]
+                            station, raw_service[2], raw_service[0]
                         )
                     ]
                 else:
                     next_stations = [
-                        end_destination(raw_service[1], raw_service[0])
+                        end_destination(raw_service[2], raw_service[0])
                     ]
                 for next_station in next_stations:
                     services[-1].append([*raw_service, next_station])
@@ -822,7 +822,7 @@ def station_navigation():
         # services
         offsets = [0, top_rows, top_rows, 0]
         for d in range(2):
-            for i, (name, code, line, station_code) in enumerate(directions[d]):
+            for i, (name, service_stations, code, line, station_code) in enumerate(directions[d]):
                 station_name = get_station_from_code(station_code)
                 elements.append(
                     svg.Image(
@@ -857,7 +857,6 @@ def station_navigation():
                         ),
                     ]
                 else:
-                    length = 8 + len(name)
                     elements += [
                         svg.Text(
                             text=name,
@@ -884,7 +883,7 @@ def station_navigation():
                     ]
 
         for d in range(3, 1, -1):
-            for i, (name, code, line, station_code) in enumerate(directions[d]):
+            for i, (name, service_stations, code, line, station_code) in enumerate(directions[d]):
                 station_name = get_station_from_code(station_code)
                 elements.append(
                     svg.Image(
@@ -897,7 +896,6 @@ def station_navigation():
                 )
                 # loop line
                 if "wise" in name:
-                    length = 4 + len(name)
                     elements += [
                         svg.Text(
                             text=name,
@@ -962,17 +960,17 @@ def station_navigation():
 
         subprocess.call(["mkdir", "-p", f"../assets/service_maps/{station}"])
         flat_services = [s for p in services for s in p]
-        for name, line_code, line, _ in flat_services:
+        for name, service_stations, line_code, line, _ in flat_services:
             cursor.execute(
                 """
-                SELECT Stations, Color
+                SELECT Color
                 FROM Service INNER JOIN Line
                 ON LineCode = Line.Code
                 WHERE Service.Name = ? AND LineCode = ?
             """,
                 (name, line_code),
             )
-            service_stations, color = cursor.fetchone()
+            color = cursor.fetchone()[0]
             drawing = service_map(
                 name, line, service_stations, color, current_station=station
             )

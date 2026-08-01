@@ -10,7 +10,7 @@ district: east sheffield
 
 |stage|code|other codes|name|
 |-|-|-|-|
-|1|![[assets/codes/ES01.svg\|40]]|![[assets/codes/A06.svg\|40]]|[[brook park]]|
+|1|![[assets/codes/ES01.svg\|40]]|![[assets/codes/A07.svg\|40]]|[[brook park]]|
 |^|![[assets/codes/ES02.svg\|40]]||[[olive heights]]|
 |^|![[assets/codes/ES03.svg\|40]]|^|[[smith park]]|
 |^|![[assets/codes/ES04.svg\|40]]|^|[[poplar heights]]|
@@ -18,7 +18,7 @@ district: east sheffield
 |^|![[assets/codes/ES06.svg\|40]]||[[victoria heights]]|
 |^|![[assets/codes/ES07.svg\|40]]|^|[[chestnut park]]|
 |^|![[assets/codes/ES08.svg\|40]]|^|[[briarwood district]]|
-|^|![[assets/codes/ES09.svg\|40]]|![[assets/codes/A07.svg\|40]]|[[sheffield hills]]|
+|^|![[assets/codes/ES09.svg\|40]]|![[assets/codes/A08.svg\|40]]|[[sheffield hills]]|
 
 
 # services

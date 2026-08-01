@@ -9,17 +9,17 @@ city lines travel across boroughs.
 
 |name|code|color|hue|notes|
 |-|-|-|-|-|
-|[[east coast line]]|C|![[assets/lines/east coast line.svg\|40]]|210|express service across peninsula line; to be extended into city loop|
-|[[sunset bay loop]]|B|![[assets/lines/sunset bay loop.svg\|40]]|30|express service across peninsula line|
-|[[across bay line]]|A|![[assets/lines/across bay line.svg\|40]]|0||
-|[[airport express]]|X|![[assets/lines/airport express.svg\|40]]|240|^|
+|[[east coast line]]|C|![[assets/lines/east coast line.svg\|40]]|210|runs along the east coast with express service across peninsula line; to be extended into city loop|
+|[[sunset bay loop]]|B|![[assets/lines/sunset bay loop.svg\|40]]|30|loops around the sunset bay with express service across peninsula line|
+|[[across bay line]]|A|![[assets/lines/across bay line.svg\|40]]|0|designed to cut across sunset bay and pointer bay and improve connectivity within eastern borough 5 and pointer island|
+|[[airport express]]|X|![[assets/lines/airport express.svg\|40]]|240||
 
 # borough
 borough lines travel within boroughs, but across districts.
 
 |district|name|code|color|hue|notes|
 |-|-|-|-|-|-|
-|5|[[pointer bay line]]|5B|![[assets/lines/pointer bay line.svg\|40]]|255|also known as line 5B|
+|5|[[pointer bay line]]|5B|![[assets/lines/pointer bay line.svg\|40]]|255|connects the neighbourhoods surrounding pointer bay; also known as line 5B|
 |I|[[island line]]|I|![[assets/lines/island line.svg\|40]]|45||
 |P|[[peninsula line]]|P|![[assets/lines/peninsula line.svg\|40]]|165|full overlap with both sunset bay loop and east coast line|
 

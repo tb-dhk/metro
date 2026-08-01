@@ -2,7 +2,7 @@
 code: B
 color (hex): ff8000
 type: city
-notes: express service across peninsula line
+notes: loops around the sunset bay with express service across peninsula line
 ---
 # stations
 
@@ -12,7 +12,7 @@ notes: express service across peninsula line
 |the peninsula|the peninsula|1|![[assets/codes/B02.svg\|40]]|![[assets/codes/C02.svg\|40]]![[assets/codes/P01.svg\|40]]|[[oriental heights]]|
 |^|^|^|![[assets/codes/B03.svg\|40]]|![[assets/codes/A01.svg\|40]]![[assets/codes/P03.svg\|40]]|[[hickory park]]|
 |^|^|^|![[assets/codes/B04.svg\|40]]|![[assets/codes/P05.svg\|40]]|[[elk hills]]|
-|^|^|^|![[assets/codes/B05.svg\|40]]|![[assets/codes/P07.svg\|40]]|[[green park]]|
+|^|^|^|![[assets/codes/B05.svg\|40]]|![[assets/codes/A63.svg\|40]]![[assets/codes/P07.svg\|40]]|[[green park]]|
 |^|^|^|![[assets/codes/B06.svg\|40]]|![[assets/codes/C06.svg\|40]]![[assets/codes/P08.svg\|40]]|[[briarwood heights]]|
 |the islands|oak island|^|![[assets/codes/B07.svg\|40]]|![[assets/codes/C07.svg\|40]]![[assets/codes/I01.svg\|40]]|[[oak island]]|
 |^|maple island|^|![[assets/codes/B08.svg\|40]]|![[assets/codes/C08.svg\|40]]![[assets/codes/I02.svg\|40]]|[[maple island]]|
@@ -23,7 +23,7 @@ notes: express service across peninsula line
 |^|east sheffield|^|![[assets/codes/B13.svg\|40]]|![[assets/codes/ES05.svg\|40]]|[[dale hills]]|
 |^|long island|^|![[assets/codes/B14.svg\|40]]|![[assets/codes/LI04.svg\|40]]|[[poplar square]]|
 |^|^|^|![[assets/codes/B15.svg\|40]]|![[assets/codes/LI03.svg\|40]]|[[spruce district]]|
-|^|^|^|![[assets/codes/B16.svg\|40]]|![[assets/codes/LI02.svg\|40]]|[[birch park]]|
+|^|^|^|![[assets/codes/B16.svg\|40]]|![[assets/codes/A61.svg\|40]]![[assets/codes/LI02.svg\|40]]|[[birch park]]|
 |3|east ivy|^|![[assets/codes/B17.svg\|40]]|![[assets/codes/A05.svg\|40]]![[assets/codes/EI01.svg\|40]]|[[briar rose heights]]|
 |2|farland fields|2|![[assets/codes/B18.svg\|40]]||[[dean hills]]|
 |^|^|^|![[assets/codes/B19.svg\|40]]|^|[[heather heights]]|

@@ -82,12 +82,12 @@ def end_destination(line, service):
     return list_of_service_stations(line, service)[-1]
 
 
-def get_station_services(station, with_next=False):
+def get_station_services(station):
     services = []
     for t_pe in ["city", "borough", "district"]:
         cursor.execute(
             """
-            SELECT LineCode 
+            SELECT LineCode, Number
             FROM StationCode INNER JOIN Line ON LineCode = Line.Code
             WHERE StationName = ? AND Type = ?
         """,
@@ -102,7 +102,7 @@ def get_station_services(station, with_next=False):
             placeholders = ",".join(["?"] * len(lines))
             cursor.execute(
                 f"""
-                SELECT Service.Name, Line.Code, Line.Name
+                SELECT Service.Name, Service.Stations, Line.Code, Line.Name
                 FROM Service INNER JOIN Line on Service.LineCode = Line.Code
                 WHERE LineCode IN ({placeholders}) AND Platform = ?
             """,
@@ -111,5 +111,10 @@ def get_station_services(station, with_next=False):
                     i + 1,
                 ),
             )
-            services.append(cursor.fetchall())
+            found = cursor.fetchall()
+            platform = []
+            for service in found:
+                if any(i[0] + i[1] in service_string_to_list(service[1]) for i in lines):
+                    platform.append(service)
+            services.append(platform)
     return services

@@ -11,8 +11,8 @@ district: west sheffield
 |stage|code|other codes|name|
 |-|-|-|-|
 |1|![[assets/codes/WS01.svg\|40]]||[[butler heights]]|
-|^|![[assets/codes/WS02.svg\|40]]|![[assets/codes/A11.svg\|40]]|[[moore park]]|
-|^|![[assets/codes/WS03.svg\|40]]|![[assets/codes/A12.svg\|40]]|[[sunset park]]|
+|^|![[assets/codes/WS02.svg\|40]]|![[assets/codes/A12.svg\|40]]|[[moore park]]|
+|^|![[assets/codes/WS03.svg\|40]]|![[assets/codes/A13.svg\|40]]|[[sunset park]]|
 |^|![[assets/codes/WS04.svg\|40]]||[[concord hills]]|
 |^|![[assets/codes/WS05.svg\|40]]|^|[[pleasant park]]|
 |^|![[assets/codes/WS06.svg\|40]]|^|[[madison park]]|
