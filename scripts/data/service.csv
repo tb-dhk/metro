@@ -29,5 +29,5 @@ east clockwise,FV,"FV01, FV06.08, FV02.01",1
 east anticlockwise,FV,"FV08.06, FV01.02, FV01",2
 southbound,A,A01.19,1
 northbound,A,A19.01,2
-eastbound branch,A,"A06, A61.63",1
-westbound branch,A,"A63.61, A06",2
+branch eastbound,A,"A06, A61.63",1
+branch westbound,A,"A63.61, A06",2

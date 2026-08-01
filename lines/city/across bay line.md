@@ -38,6 +38,6 @@ notes: designed to cut across sunset bay and pointer bay and improve connectivit
 |-|-|-|
 |southbound|A01.19|![[assets/service_maps/general/across bay line southbound.svg\|1500]]|
 |northbound|A19.01|![[assets/service_maps/general/across bay line northbound.svg\|1500]]|
-|eastbound branch|A06, A61.63|![[assets/service_maps/general/across bay line eastbound branch.svg\|1500]]|
-|westbound branch|A63.61, A06|![[assets/service_maps/general/across bay line westbound branch.svg\|1500]]|
+|branch eastbound|A06, A61.63|![[assets/service_maps/general/across bay line branch eastbound.svg\|1500]]|
+|branch westbound|A63.61, A06|![[assets/service_maps/general/across bay line branch westbound.svg\|1500]]|
 
