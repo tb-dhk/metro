@@ -90,7 +90,7 @@
 |^|^|[[hickory park]]|![[assets/codes/B03.svg\|100]]![[assets/codes/A01.svg\|100]]|![[assets/codes/P03.svg\|100]]|^|
 |^|^|[[beechwood heights]]|![[assets/codes/C04.svg\|100]]|![[assets/codes/P04.svg\|100]]|^|
 |^|^|[[elk hills]]|![[assets/codes/B04.svg\|100]]|![[assets/codes/P05.svg\|100]]|^|
-|^|^|[[garland square]]|![[assets/codes/C05.svg\|100]]|![[assets/codes/P06.svg\|100]]|^|
-|^|^|[[green park]]|![[assets/codes/B05.svg\|100]]![[assets/codes/A63.svg\|100]]|![[assets/codes/P07.svg\|100]]|^|
+|^|^|[[garland square]]|![[assets/codes/C05.svg\|100]]![[assets/codes/A63.svg\|100]]|![[assets/codes/P06.svg\|100]]|^|
+|^|^|[[green park]]|![[assets/codes/B05.svg\|100]]|![[assets/codes/P07.svg\|100]]|^|
 |^|^|[[briarwood heights]]|![[assets/codes/C06.svg\|100]]![[assets/codes/B06.svg\|100]]|![[assets/codes/P08.svg\|100]]|^|
 

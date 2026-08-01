@@ -12,7 +12,7 @@ notes: loops around the sunset bay with express service across peninsula line
 |the peninsula|the peninsula|1|![[assets/codes/B02.svg\|40]]|![[assets/codes/C02.svg\|40]]![[assets/codes/P01.svg\|40]]|[[oriental heights]]|
 |^|^|^|![[assets/codes/B03.svg\|40]]|![[assets/codes/A01.svg\|40]]![[assets/codes/P03.svg\|40]]|[[hickory park]]|
 |^|^|^|![[assets/codes/B04.svg\|40]]|![[assets/codes/P05.svg\|40]]|[[elk hills]]|
-|^|^|^|![[assets/codes/B05.svg\|40]]|![[assets/codes/A63.svg\|40]]![[assets/codes/P07.svg\|40]]|[[green park]]|
+|^|^|^|![[assets/codes/B05.svg\|40]]|![[assets/codes/P07.svg\|40]]|[[green park]]|
 |^|^|^|![[assets/codes/B06.svg\|40]]|![[assets/codes/C06.svg\|40]]![[assets/codes/P08.svg\|40]]|[[briarwood heights]]|
 |the islands|oak island|^|![[assets/codes/B07.svg\|40]]|![[assets/codes/C07.svg\|40]]![[assets/codes/I01.svg\|40]]|[[oak island]]|
 |^|maple island|^|![[assets/codes/B08.svg\|40]]|![[assets/codes/C08.svg\|40]]![[assets/codes/I02.svg\|40]]|[[maple island]]|

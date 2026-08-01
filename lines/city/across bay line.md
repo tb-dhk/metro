@@ -29,7 +29,7 @@ notes: designed to cut across sunset bay and pointer bay and improve connectivit
 |5|south coast|^|![[assets/codes/A19.svg\|40]]|![[assets/codes/5B12.svg\|40]]|[[empire district]]|
 |^|long island|4|![[assets/codes/A61.svg\|40]]|![[assets/codes/B16.svg\|40]]![[assets/codes/LI02.svg\|40]]|[[birch park]]|
 |sunset bay|sunset bay|^|![[assets/codes/A62.svg\|40]]||[[bridge island]]|
-|the peninsula|the peninsula|^|![[assets/codes/A63.svg\|40]]|![[assets/codes/B05.svg\|40]]![[assets/codes/P07.svg\|40]]|[[green park]]|
+|the peninsula|the peninsula|^|![[assets/codes/A63.svg\|40]]|![[assets/codes/C05.svg\|40]]![[assets/codes/P06.svg\|40]]|[[garland square]]|
 
 
 # services
