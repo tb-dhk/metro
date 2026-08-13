@@ -1,6 +1,6 @@
 ---
 code: 5B
-color (hex): 5430bf
+color (hex): 6000bf
 type: borough
 notes: connects the neighbourhoods surrounding pointer bay; also known as line 5B
 borough: 5
@@ -13,14 +13,14 @@ borough: 5
 |^|^|![[assets/codes/5B02.svg\|40]]|![[assets/codes/FV02.svg\|40]]|[[myrtle district]]|
 |^|^|![[assets/codes/5B03.svg\|40]]|![[assets/codes/FV03.svg\|40]]|[[cypress square]]|
 |holly heights|^|![[assets/codes/5B04.svg\|40]]||[[linden park]]|
-|^|^|![[assets/codes/5B05.svg\|40]]|![[assets/codes/A15.svg\|40]]|[[holly park]]|
+|^|^|![[assets/codes/5B05.svg\|40]]|![[assets/codes/A13.svg\|40]]|[[holly park]]|
 |^|^|![[assets/codes/5B06.svg\|40]]||[[orchard hills]]|
 |everdeen|2|![[assets/codes/5B07.svg\|40]]|^|[[primrose park]]|
 |^|^|![[assets/codes/5B08.svg\|40]]|^|[[cherry hills]]|
-|^|^|![[assets/codes/5B09.svg\|40]]|^|[[summit valley]]|
-|^|^|![[assets/codes/5B10.svg\|40]]|^|[[meadow hills]]|
+|^|^|![[assets/codes/5B09.svg\|40]]|![[assets/codes/I12.svg\|40]]|[[summit valley]]|
+|^|^|![[assets/codes/5B10.svg\|40]]||[[meadow hills]]|
 |south coast|3|![[assets/codes/5B11.svg\|40]]|^|[[crescent hills]]|
-|^|^|![[assets/codes/5B12.svg\|40]]|![[assets/codes/A19.svg\|40]]|[[empire district]]|
+|^|^|![[assets/codes/5B12.svg\|40]]|![[assets/codes/A17.svg\|40]]|[[empire district]]|
 |^|^|![[assets/codes/5B13.svg\|40]]||[[fawn park]]|
 |^|^|![[assets/codes/5B14.svg\|40]]|![[assets/codes/C12.svg\|40]]|[[south coast]]|
 

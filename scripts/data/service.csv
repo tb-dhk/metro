@@ -1,8 +1,8 @@
 name,line,stations,platform
 southbound,P,P01.08,1
 northbound,P,P08.01,2
-westbound,I,I01.06,1
-eastbound,I,I06.01,2
+westbound,I,I01.12,1
+eastbound,I,I12.01,2
 clockwise,EI,"EI01.06, EI02.01",1
 anticlockwise,EI,"EI01.02, EI06.01",2
 clockwise,LI,"LI01.06, LI01",1
@@ -27,7 +27,7 @@ west clockwise,FV,"FV01.05, FV01",1
 west anticlockwise,FV,"FV05.01, FV05",2
 east clockwise,FV,"FV01, FV06.08, FV02.01",1
 east anticlockwise,FV,"FV08.06, FV01.02, FV01",2
-southbound,A,A01.19,1
-northbound,A,A19.01,2
-branch eastbound,A,"A06, A61.63",1
-branch westbound,A,"A63.61, A06",2
+southbound,A,A01.17,1
+northbound,A,A17.01,2
+branch eastbound,A,"A04, A41.43",1
+branch westbound,A,"A43.41, A04",2

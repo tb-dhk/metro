@@ -1,11 +1,11 @@
 # representative codes, shapes and colors
 each type of line has its own shape and code format.
 
-| type     | shape   | code                                                      | hue                                                                                                   | value and saturation      |
-| -------- | ------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------- |
-| city     | circle  | single letter                                             | multiples of 30, except:<br>- 60 (lack of contrast)<br>- 150 and 330 (both too close to other colors) | 100% value and saturation |
-| borough  | diamond | single letter or number with optional alphanumeric suffix | odd multiples                                                                                         | 75% value and saturation  |
-| district | square  | two letters                                               | #808080 (grey)                                                                                        |                           |
+| type     | shape   | code                                                      | hue                                         | value and saturation                                                                          |
+| -------- | ------- | --------------------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| city     | circle  | single letter                                             | 0, 30, 45, 75, 120, 165, 210, 240, 270, 300 | 100% saturation, highest possible value that allow for a WCAG contrast score of 3.0 and above |
+| borough  | diamond | single letter or number with optional alphanumeric suffix | ^                                           | ^                                                                                             |
+| district | square  | two letters                                               | #808080 (grey)                              | <                                                                                             |
 each line also has its own color and code, with borough lines sharing colors across the borough. see [[list of lines]] for more information.
 # symbols
 ## font

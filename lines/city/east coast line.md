@@ -1,6 +1,6 @@
 ---
 code: C
-color (hex): 0080ff
+color (hex): 0040ff
 type: city
 notes: runs along the east coast with express service across peninsula line; to be extended into city loop
 ---
@@ -12,11 +12,11 @@ notes: runs along the east coast with express service across peninsula line; to 
 |the peninsula|the peninsula|2|![[assets/codes/C02.svg\|40]]|![[assets/codes/B02.svg\|40]]![[assets/codes/P01.svg\|40]]|[[oriental heights]]|
 |^|^|^|![[assets/codes/C03.svg\|40]]|![[assets/codes/P02.svg\|40]]|[[sycamore district]]|
 |^|^|^|![[assets/codes/C04.svg\|40]]|![[assets/codes/P04.svg\|40]]|[[beechwood heights]]|
-|^|^|^|![[assets/codes/C05.svg\|40]]|![[assets/codes/A63.svg\|40]]![[assets/codes/P06.svg\|40]]|[[garland square]]|
+|^|^|^|![[assets/codes/C05.svg\|40]]|![[assets/codes/P06.svg\|40]]|[[garland square]]|
 |^|^|1|![[assets/codes/C06.svg\|40]]|![[assets/codes/B06.svg\|40]]![[assets/codes/P08.svg\|40]]|[[briarwood heights]]|
-|the islands|oak island|^|![[assets/codes/C07.svg\|40]]|![[assets/codes/B07.svg\|40]]![[assets/codes/I01.svg\|40]]|[[oak island]]|
-|^|maple island|^|![[assets/codes/C08.svg\|40]]|![[assets/codes/B08.svg\|40]]![[assets/codes/I02.svg\|40]]|[[maple island]]|
-|^|boa island|^|![[assets/codes/C09.svg\|40]]|![[assets/codes/B09.svg\|40]]![[assets/codes/I03.svg\|40]]![[assets/codes/BI01.svg\|40]]|[[elizabeth district]]|
+|the islands|oak island|^|![[assets/codes/C07.svg\|40]]|![[assets/codes/B07.svg\|40]]![[assets/codes/I06.svg\|40]]|[[oak island]]|
+|^|maple island|^|![[assets/codes/C08.svg\|40]]|![[assets/codes/B08.svg\|40]]![[assets/codes/I07.svg\|40]]|[[maple island]]|
+|^|boa island|^|![[assets/codes/C09.svg\|40]]|![[assets/codes/B09.svg\|40]]![[assets/codes/I08.svg\|40]]![[assets/codes/BI01.svg\|40]]|[[elizabeth district]]|
 |^|^|^|![[assets/codes/C10.svg\|40]]|![[assets/codes/BI02.svg\|40]]|[[prospect square]]|
 |^|^|^|![[assets/codes/C11.svg\|40]]|![[assets/codes/BI03.svg\|40]]|[[autumn hills]]|
 |5|south coast|3|![[assets/codes/C12.svg\|40]]|![[assets/codes/5B14.svg\|40]]|[[south coast]]|

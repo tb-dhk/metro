@@ -1,11 +1,11 @@
 Code,Name,Type,Area,Color,Hue,Notes
-C,east coast line,city,all,#0080ff,210,runs along the east coast with express service across peninsula line; to be extended into city loop
-B,sunset bay loop,city,all,#ff8000,30,loops around the sunset bay with express service across peninsula line
+C,east coast line,city,all,#0040ff,180,runs along the east coast with express service across peninsula line; to be extended into city loop
+B,sunset bay loop,city,all,#e87400,30,loops around the sunset bay with express service across peninsula line
 A,across bay line,city,all,#ff0000,0,designed to cut across sunset bay and pointer bay and improve connectivity within eastern borough 5 and pointer island
-X,airport express,city,all,#0000ff,240,
-5B,pointer bay line,borough,5,#5430bf,255,connects the neighbourhoods surrounding pointer bay; also known as line 5B
-P,peninsula line,borough,P,#30bf9b,165,full overlap with both sunset bay loop and east coast line
-I,island line,borough,I,#bf9b30,45,
+I,island line,city,I,#bd8e00,45,previously borough line for the islands; extended and took over part of originally planned across bay line
+X,airport express,city,all,#000080,240,
+5B,pointer bay line,borough,5,#6000bf,270,connects the neighbourhoods surrounding pointer bay; also known as line 5B
+P,peninsula line,borough,P,#008075,165,full overlap with both sunset bay loop and east coast line
 EI,east ivy line,district,EI,#808080,0,
 LI,long island line,district,LI,#808080,0,
 ES,east sheffield line,district,ES,#808080,0,

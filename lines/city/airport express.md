@@ -1,6 +1,6 @@
 ---
 code: X
-color (hex): 0000ff
+color (hex): 000080
 type: city
 notes: 
 ---

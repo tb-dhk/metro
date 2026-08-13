@@ -10,8 +10,8 @@ district: long island
 
 |stage|code|other codes|name|
 |-|-|-|-|
-|1|![[assets/codes/LI01.svg\|40]]|![[assets/codes/A06.svg\|40]]|[[belmont district]]|
-|^|![[assets/codes/LI02.svg\|40]]|![[assets/codes/B16.svg\|40]]![[assets/codes/A61.svg\|40]]|[[birch park]]|
+|1|![[assets/codes/LI01.svg\|40]]|![[assets/codes/A04.svg\|40]]|[[belmont district]]|
+|^|![[assets/codes/LI02.svg\|40]]|![[assets/codes/B16.svg\|40]]![[assets/codes/A41.svg\|40]]|[[birch park]]|
 |^|![[assets/codes/LI03.svg\|40]]|![[assets/codes/B15.svg\|40]]|[[spruce district]]|
 |^|![[assets/codes/LI04.svg\|40]]|![[assets/codes/B14.svg\|40]]|[[poplar square]]|
 |^|![[assets/codes/LI05.svg\|40]]||[[thornton park]]|

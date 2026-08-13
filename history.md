@@ -41,36 +41,61 @@ it was then decided that the fairview line would take precedence over the remain
 the masterplan for phase 2a was released right after the opening of the fairview line. this phase shifted the focus back to district lines.
 - city lines
 	- [[across bay line]] - a line that cuts both the sunset and pointer bays, passing through sheffield and holly heights in the process. shortens trips on the northern side of the sunset bay loop, cutting directly from the peninsula to woodlands to east ivy through two new islands.
+	- conversion of [[island line]] into city line
 - borough lines
 	- [[pointer bay line]] - a line that goes around pointer bay. also known as line 5B.
 - district lines
 	- [[holly heights line]]
 	- [[everdeen line]]
 	- [[south coast line]]
-	- [[oyster's pearl line]]
-	- [[west ivy line]]
-	- [[north ivy line]]
-
+### original timeline
 the planned timeline for this phase is as follows:
 - across bay line stage 1 (hickory park to briar rose heights) opens
 - across bay line stage 2 (brook park to sunset park) opens shortly after
 - holly heights line opens
-- across bay line stage 3 (magnolia district to empire district) opens
 - pointer bay line stage 1 (fairview square to orchard hills) opens
+- across bay line stage 3 (magnolia district to empire district) opens
 - everdeen line opens 
 - pointer bay line stage 2 (primrose park to meadow hills) opens
 - south coast line opens
 - pointer bay line stage 3 (crescent hills to south coast) opens
-- west ivy line opens
-- oyster's pearl line opens
-- north ivy line opens
+the conversion of the island line was not initially slated to be completed in this phase, but was expedited due to last-minute changes.
 
 the initial plan was for the across bay line to directly cut across the whole of sunset bay to go from beechwood heights to briar rose heights. however, upon noticing that the completion of the sunset bay loop had not relieved any traffic on the bridge between hickory park and woodland square, the line was re-routed to go from hickory park to woodland square, and then to briar rose heights. it was then decided that two new islands would be created in between woodland square and briar rose heights, partially to make use of the huge space in sunset bay as well as to reduce the distance between stops.
 
 right before stage 3 of the east coast line opened, two new islands were created in sunset bay. these two islands became known as north and south sunset island. shortly after the completion of phase 1b, they were developed and the first phase of the across bay line opened.
+
+### revisions
+after stage 1 of the across bay line opened, studies were done on subsequent stages of the line and to further increase connectivity between the islands and surrounding neighborhoods. it was decided that to create a new connection with the southern peninsula, a station would be added at belmont district and a branch line would be added to green park. this branch line would pass through a new island called bridge island. an extension of either the island line or across bay line westward from pointer park to borough 5 was also considered. this would either turn the island line into a city line or add a second extension to the across bay line.
+
+it was then agreed that the island line would be the one to extend to borough 5, turning it into a city line. it would also be extended further north from its northern terminus at oak island, through the newly built bridge island, taking over most of stage 1 of the across bay line, from hickory park to south sunset island. the across bay line would instead continue east from south sunset island to elk hills. because of this change and the fact that the line affected by it was already built, the extension and conversion of the island line would take precedence over remaining projects to resolve any confusion as early as possible, and both lines would be subsequently renumbered.
+
+here is the new timeline:
+- across bay line stage 1 (hickory park to briar rose heights) opens
+- island line is extended, new across bay line stage (elk hills to briar rose heights) opens
+- across bay line stage 2 (brook park to sunset park) opens shortly after
+- holly heights line opens
+- pointer bay line stage 1 (fairview square to orchard hills) opens
+- across bay line stage 3 (magnolia district to empire district) opens
+- everdeen line opens 
+- pointer bay line stage 2 (primrose park to meadow hills) opens
+- island line stage 3 (summit valley) opens
+- south coast line opens
+- pointer bay line stage 3 (crescent hills to south coast) opens
+across bay line stage 4, consisting of the branch line, was reserved for phase 2b.
+
+a few weeks after the opening of the across bay line, the island line was extended northward to hickory park (stage 2), and the across bay line's route now changed such that it started from elk hills. stage 2 of the across bay line then opened.
 ## phase 2b: 
+- city lines
+	- [[across bay line]] stage 4 (branch line)
 - borough lines
 	- [[ivy line]]
+- district lines
+	- [[oyster's pearl line]]
+	- [[west ivy line]]
+	- [[north ivy line]]
+
+
 # phase 3
 - city lines
 	- [[airport express]]
