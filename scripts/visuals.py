@@ -119,7 +119,7 @@ def html_station_name(name, current_station, blur):
 def line_logos():
     print("making line logos...")
     cursor.execute("""
-        SELECT Name, Code, Color, Type
+        SELECT Name, Code, Hex, Type
         FROM Line
     """)
     lines = cursor.fetchall()
@@ -155,7 +155,7 @@ def line_logos():
 def station_codes():
     print("making station codes...")
     cursor.execute("""
-        SELECT Number, LineCode, Color, Type
+        SELECT Number, LineCode, Hex, Type
         FROM StationCode INNER JOIN Line ON StationCode.LineCode = Line.Code
     """)
     codes = cursor.fetchall()
@@ -556,7 +556,7 @@ def service_map(name, line, stations, color, current_station=None):
 
 def service_maps():
     cursor.execute("""
-        SELECT Service.Name, Line.Name, Stations, Line.Color
+        SELECT Service.Name, Line.Name, Stations, Line.Hex
         FROM Service INNER JOIN Line
         ON LineCode = Line.Code
     """)
@@ -963,7 +963,7 @@ def station_navigation():
         for name, service_stations, line_code, line, _ in flat_services:
             cursor.execute(
                 """
-                SELECT Color
+                SELECT Hex
                 FROM Service INNER JOIN Line
                 ON LineCode = Line.Code
                 WHERE Service.Name = ? AND LineCode = ?
