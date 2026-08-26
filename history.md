@@ -61,6 +61,8 @@ the planned timeline for this phase is as follows:
 - pointer bay line stage 3 (crescent hills to south coast) opens
 the conversion of the island line was not initially slated to be completed in this phase, but was expedited due to last-minute changes.
 
+the across bay line initially started out as several ideas for a sheffield line (line 5S), a line that connected pointer island with its surroundings, and a line cutting across sunset bay. these ideas were eventually merged into the across bay line that would cut across both bays, passing through sheffield in between.
+
 the initial plan was for the across bay line to directly cut across the whole of sunset bay to go from beechwood heights to briar rose heights. however, upon noticing that the completion of the sunset bay loop had not relieved any traffic on the bridge between hickory park and woodland square, the line was re-routed to go from hickory park to woodland square, and then to briar rose heights. it was then decided that two new islands would be created in between woodland square and briar rose heights, partially to make use of the huge space in sunset bay as well as to reduce the distance between stops.
 
 right before stage 3 of the east coast line opened, two new islands were created in sunset bay. these two islands became known as north and south sunset island. shortly after the completion of phase 1b, they were developed and the first phase of the across bay line opened.
@@ -72,15 +74,15 @@ it was then agreed that the island line would be the one to extend to borough 5,
 
 here is the new timeline:
 - across bay line stage 1 (hickory park to briar rose heights) opens
-- island line is extended, new across bay line stage (elk hills to briar rose heights) opens
+- island line is extended, new across bay line stage 1 (elk hills to briar rose heights) opens
 - across bay line stage 2 (brook park to sunset park) opens shortly after
 - holly heights line opens
 - pointer bay line stage 1 (fairview square to orchard hills) opens
-- across bay line stage 3 (magnolia district to empire district) opens
 - everdeen line opens 
 - pointer bay line stage 2 (primrose park to meadow hills) opens
-- island line stage 3 (summit valley) opens
 - south coast line opens
+- island line stage 3 (summit valley) opens
+- across bay line stage 3 (magnolia district to empire district) opens
 - pointer bay line stage 3 (crescent hills to south coast) opens
 across bay line stage 4, consisting of the branch line, was reserved for phase 2b.
 

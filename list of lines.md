@@ -7,33 +7,33 @@ each line is often referred to by its code. for example, the sunset bay loop is 
 # city
 city lines travel across boroughs.
 
-|name|code|color|hue|notes|
+|name|code|hex|color|notes|
 |-|-|-|-|-|
-|[[east coast line]]|C|![[assets/lines/east coast line.svg\|40]]|180|runs along the east coast with express service across peninsula line; to be extended into city loop|
-|[[sunset bay loop]]|B|![[assets/lines/sunset bay loop.svg\|40]]|30|loops around the sunset bay with express service across peninsula line|
-|[[across bay line]]|A|![[assets/lines/across bay line.svg\|40]]|0|designed to cut across sunset bay and pointer bay and improve connectivity within eastern borough 5 and pointer island|
-|[[island line]]|I|![[assets/lines/island line.svg\|40]]|45|previously borough line for the islands; extended and took over part of originally planned across bay line|
-|[[airport express]]|X|![[assets/lines/airport express.svg\|40]]|240||
+|[[east coast line]]|![[assets/lines/east coast line.svg\|40]]|#0040ff|blue|runs along the east coast with express service across peninsula line; to be extended into city loop|
+|[[sunset bay loop]]|![[assets/lines/sunset bay loop.svg\|40]]|#e87400|orange|loops around the sunset bay with express service across peninsula line|
+|[[across bay line]]|![[assets/lines/across bay line.svg\|40]]|#ff0000|red|designed to cut across sunset bay and pointer bay and improve connectivity within eastern borough 5 and pointer island|
+|[[island line]]|![[assets/lines/island line.svg\|40]]|#bd8e00|gold|previously borough line for the islands; extended and took over part of originally planned across bay line|
+|[[airport express]]|![[assets/lines/airport express.svg\|40]]|#000080|navy||
 
 # borough
 borough lines travel within boroughs, but across districts.
 
-|district|name|code|color|hue|notes|
+|district|name|code|hex|color|notes|
 |-|-|-|-|-|-|
-|5|[[pointer bay line]]|5B|![[assets/lines/pointer bay line.svg\|40]]|270|connects the neighbourhoods surrounding pointer bay; also known as line 5B|
-|P|[[peninsula line]]|P|![[assets/lines/peninsula line.svg\|40]]|165|full overlap with both sunset bay loop and east coast line|
+|5|[[pointer bay line]]|![[assets/lines/pointer bay line.svg\|40]]|#6000bf|purple|connects the neighbourhoods surrounding pointer bay; also known as line 5B|
+|P|[[peninsula line]]|![[assets/lines/peninsula line.svg\|40]]|#008075|turquoise|full overlap with both sunset bay loop and east coast line|
 
 ## district
 each district has its own line, except for oak and maple island (only one station each) and the peninsula (only one district). district line codes are two letters.
 
-|borough|district|name|code|color|hue|notes|
+|borough|district|name|code|hex|color|notes|
 |-|-|-|-|-|-|-|
-|3|EI|[[east ivy line]]|EI|![[assets/lines/east ivy line.svg\|40]]|0||
-|5|CS|[[central sheffield line]]|CS|![[assets/lines/central sheffield line.svg\|40]]|^|^|
-|^|ES|[[east sheffield line]]|ES|![[assets/lines/east sheffield line.svg\|40]]|^|^|
-|^|FV|[[fairview line]]|FV|![[assets/lines/fairview line.svg\|40]]|^|^|
-|^|HH|[[holly heights line]]|HH|![[assets/lines/holly heights line.svg\|40]]|^|^|
-|^|LI|[[long island line]]|LI|![[assets/lines/long island line.svg\|40]]|^|^|
-|^|WS|[[west sheffield line]]|WS|![[assets/lines/west sheffield line.svg\|40]]|^|^|
-|I|BI|[[boa island line]]|BI|![[assets/lines/boa island line.svg\|40]]|^|^|
-|^|PI|[[pointer island line]]|PI|![[assets/lines/pointer island line.svg\|40]]|^|^|
+|3|EI|[[east ivy line]]|![[assets/lines/east ivy line.svg\|40]]|#808080|grey||
+|5|CS|[[central sheffield line]]|![[assets/lines/central sheffield line.svg\|40]]|^|^|^|
+|^|ES|[[east sheffield line]]|![[assets/lines/east sheffield line.svg\|40]]|^|^|^|
+|^|FV|[[fairview line]]|![[assets/lines/fairview line.svg\|40]]|^|^|^|
+|^|HH|[[holly heights line]]|![[assets/lines/holly heights line.svg\|40]]|^|^|^|
+|^|LI|[[long island line]]|![[assets/lines/long island line.svg\|40]]|^|^|^|
+|^|WS|[[west sheffield line]]|![[assets/lines/west sheffield line.svg\|40]]|^|^|^|
+|I|BI|[[boa island line]]|![[assets/lines/boa island line.svg\|40]]|^|^|^|
+|^|PI|[[pointer island line]]|![[assets/lines/pointer island line.svg\|40]]|^|^|^|

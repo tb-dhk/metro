@@ -9,8 +9,8 @@ LINES_PAGE_FIELDS = [
     "Area",
     "Line.Name",
     "Line.Code",
+    "Hex",
     "Color",
-    "Hue",
     "Notes",
 ]
 LINES_PAGE_HEADERS = [
@@ -18,8 +18,8 @@ LINES_PAGE_HEADERS = [
     "district",
     "name",
     "code",
+    "hex",
     "color",
-    "hue",
     "notes",
 ]
 INDIV_LINE_FIELDS = [
@@ -123,7 +123,7 @@ for i, t_pe in enumerate(TYPES):
     lines[t_pe] = [list(i) for i in cursor.fetchall()]
     modified = deepcopy(lines[t_pe])
     for row in modified:
-        row[-3] = rf"![[assets/lines/{row[-5]}.svg\|40]]"
+        row[-4] = rf"![[assets/lines/{row[-5]}.svg\|40]]"
     tables[t_pe] = markdownify(
         modified, headers=specific_headers, linkify=["name"]
     )

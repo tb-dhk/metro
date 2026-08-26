@@ -1,27 +1,53 @@
 # representative codes, shapes and colors
 each type of line has its own shape and code format.
 
-| type     | shape   | code                                                      | hue                                         | value and saturation                                                                          |
-| -------- | ------- | --------------------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| city     | circle  | single letter                                             | 0, 30, 45, 75, 120, 165, 210, 240, 270, 300 | 100% saturation, highest possible value that allow for a WCAG contrast score of 3.0 and above |
-| borough  | diamond | single letter or number with optional alphanumeric suffix | ^                                           | ^                                                                                             |
-| district | square  | two letters                                               | #808080 (grey)                              | <                                                                                             |
+| type     | shape   | code                                                      | hue                     | value and saturation                                                                    |
+| -------- | ------- | --------------------------------------------------------- | ----------------------- | --------------------------------------------------------------------------------------- |
+| city     | circle  | single letter                                             | from 12 standard colors | 100% saturation, lightness value that allows for a WCAG contrast score of 3.0 and above |
+| borough  | diamond | single letter or number with optional alphanumeric suffix | ^                       | ^                                                                                       |
+| district | square  | two letters                                               | standard grey           | <                                                                                       |
 each line also has its own color and code, with borough lines sharing colors across the borough. see [[list of lines]] for more information.
+## list of colors
+### 12 standard colors
+```palette
+#804000 brown
+#ff0000 red
+#e87400 orange
+#bd8e00 gold
+#78a100 lime
+#208000 green
+#008075 turquoise
+#009fd4 cyan
+#0040ff blue
+#000080 navy
+#6000bf purple
+#ff00ff pink
+```
+![[assets/lines/across bay line.svg|100]]![[assets/lines/sunset bay loop.svg|100]]![[assets/lines/island line.svg|100]]![[peninsula line.svg|100]]![[assets/lines/east coast line.svg|100]]![[assets/lines/airport express.svg|100]]![[pointer bay line.svg|100]]
+
+## standard grey
+```palette
+grey: #808080
+```
+![[assets/lines/east ivy line.svg\|100]]![[assets/lines/central sheffield line.svg\|100]]![[assets/lines/east sheffield line.svg\|100]]![[assets/lines/fairview line.svg\|100]]![[assets/lines/holly heights line.svg\|100]]![[assets/lines/long island line.svg\|100]]![[assets/lines/west sheffield line.svg\|100]]![[assets/lines/boa island line.svg\|100]]![[assets/lines/pointer island line.svg\|100]]
+
 # symbols
 ## font
 all symbols use the altone font with medium or bold weight.
 ## line symbols
-each line symbol is the representative shape of the line with the representative color of the line.
-![[sunset bay loop.svg]]![[island line.svg]]![[east sheffield line.svg]]
+each line symbol is the representative shape of the line with the representative color of the line, and contains the line's code.
+
+![[sunset bay loop.svg|100]]![[peninsula line.svg|100]]![[east sheffield line.svg|100]]
 
 ## station symbols
 station codes look similar to line symbols and are of the same size, but they also contain a station number below the line code. 
 
-![[B01.svg|200]]![[assets/codes/I01.svg]]![[assets/codes/ES01.svg|200]]
+![[B01.svg|100]]![[assets/codes/P01.svg|100]]![[assets/codes/ES01.svg|100]]
 
 ## platform logo
 platform logos are white squares with black filling, also of size 200 px by 200 px. they have a 25 px wide white border and bold text of size 300.
-![[1.svg]]
+
+![[1.svg|100]]
 ## full station logo
 the full station logo contains the name of the station next to all of its station codes (one from each line).
 ![[elizabeth district.svg|1500]]

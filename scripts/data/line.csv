@@ -1,17 +1,17 @@
-Code,Name,Type,Area,Color,Hue,Notes
-C,east coast line,city,all,#0040ff,180,runs along the east coast with express service across peninsula line; to be extended into city loop
-B,sunset bay loop,city,all,#e87400,30,loops around the sunset bay with express service across peninsula line
-A,across bay line,city,all,#ff0000,0,designed to cut across sunset bay and pointer bay and improve connectivity within eastern borough 5 and pointer island
-I,island line,city,I,#bd8e00,45,previously borough line for the islands; extended and took over part of originally planned across bay line
-X,airport express,city,all,#000080,240,
-5B,pointer bay line,borough,5,#6000bf,270,connects the neighbourhoods surrounding pointer bay; also known as line 5B
-P,peninsula line,borough,P,#008075,165,full overlap with both sunset bay loop and east coast line
-EI,east ivy line,district,EI,#808080,0,
-LI,long island line,district,LI,#808080,0,
-ES,east sheffield line,district,ES,#808080,0,
-CS,central sheffield line,district,CS,#808080,0,
-WS,west sheffield line,district,WS,#808080,0,
-BI,boa island line,district,BI,#808080,0,
-PI,pointer island line,district,PI,#808080,0,
-FV,fairview line,district,FV,#808080,0,
-HH,holly heights line,district,HH,#808080,0,
+Code,Name,Type,Area,Hex,Color,Notes
+C,east coast line,city,all,#0040ff,blue,runs along the east coast with express service across peninsula line; to be extended into city loop
+B,sunset bay loop,city,all,#e87400,orange,loops around the sunset bay with express service across peninsula line
+A,across bay line,city,all,#ff0000,red,designed to cut across sunset bay and pointer bay and improve connectivity within eastern borough 5 and pointer island
+I,island line,city,I,#bd8e00,gold,previously borough line for the islands; extended and took over part of originally planned across bay line
+X,airport express,city,all,#000080,navy,
+5B,pointer bay line,borough,5,#6000bf,purple,connects the neighbourhoods surrounding pointer bay; also known as line 5B
+P,peninsula line,borough,P,#008075,turquoise,full overlap with both sunset bay loop and east coast line
+EI,east ivy line,district,EI,#808080,grey,
+LI,long island line,district,LI,#808080,grey,
+ES,east sheffield line,district,ES,#808080,grey,
+CS,central sheffield line,district,CS,#808080,grey,
+WS,west sheffield line,district,WS,#808080,grey,
+BI,boa island line,district,BI,#808080,grey,
+PI,pointer island line,district,PI,#808080,grey,
+FV,fairview line,district,FV,#808080,grey,
+HH,holly heights line,district,HH,#808080,grey,
