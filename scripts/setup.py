@@ -15,14 +15,14 @@ cursor.execute("PRAGMA foreign_keys = ON;")
 
 cursor.execute("""
     CREATE TABLE Borough (
-        Code TEXT PRIMARY KEY CHECK (length(Code) = 1),
+        Code TEXT PRIMARY KEY,
         Name TEXT NOT NULL
     )
 """)
 
 cursor.execute("""
     CREATE TABLE District (
-        Code TEXT PRIMARY KEY CHECK (length(Code) = 2), 
+        Code TEXT PRIMARY KEY, 
         Name TEXT NOT NULL,
         BoroughCode TEXT NOT NULL,
         FOREIGN KEY (BoroughCode) REFERENCES Borough(Code)
