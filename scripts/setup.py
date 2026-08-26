@@ -15,7 +15,7 @@ cursor.execute("PRAGMA foreign_keys = ON;")
 
 cursor.execute("""
     CREATE TABLE Borough (
-        Code TEXT PRIMARY KEY CHECK (Code IN ('1', '2', '3', '4', '5', 'P', 'I', 'S')),
+        Code TEXT PRIMARY KEY CHECK (length(Code) = 1),
         Name TEXT NOT NULL
     )
 """)
