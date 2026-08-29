@@ -101,7 +101,7 @@ for i, t_pe in enumerate(TYPES):
         inner_join_string = ""
         sort_string = ""
     elif t_pe == "borough":
-        specific_headers = specific_headers[1:]
+        specific_headers = [specific_headers[0]] + specific_headers[2:]
         inner_join_string = ""
         sort_string = "ORDER BY Area ASC"
     else:

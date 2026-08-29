@@ -50,12 +50,14 @@
 |^|^|[[smith square]]|![[assets/codes/B12.svg\|100]]|^|![[assets/codes/FV06.svg\|100]]|
 |^|^|[[high park]]|![[assets/codes/B11.svg\|100]]|^|![[assets/codes/FV07.svg\|100]]|
 |^|^|[[fairview square]]|![[assets/codes/B10.svg\|100]]|![[assets/codes/5B01.svg\|100]]|![[assets/codes/FV08.svg\|100]]|
-|^|holly heights|[[chester square]]||||
-|^|^|[[magnolia district]]|![[assets/codes/A12.svg\|100]]|^|^|
-|^|^|[[linden park]]||![[assets/codes/5B04.svg\|100]]|^|
-|^|^|[[holly park]]|![[assets/codes/A13.svg\|100]]|![[assets/codes/5B05.svg\|100]]|^|
-|^|^|[[orchard hills]]||![[assets/codes/5B06.svg\|100]]|^|
-|^|long island|[[belmont district]]|![[assets/codes/A04.svg\|100]]||![[assets/codes/LI01.svg\|100]]|
+|^|holly heights|[[magnolia district]]|![[assets/codes/A12.svg\|100]]||![[assets/codes/HH01.svg\|100]]|
+|^|^|[[chester square]]||^|![[assets/codes/HH02.svg\|100]]|
+|^|^|[[linden park]]|^|![[assets/codes/5B04.svg\|100]]|![[assets/codes/HH03.svg\|100]]|
+|^|^|[[holly park]]|![[assets/codes/A13.svg\|100]]|![[assets/codes/5B05.svg\|100]]|![[assets/codes/HH04.svg\|100]]|
+|^|^|[[orchard hills]]||![[assets/codes/5B06.svg\|100]]|![[assets/codes/HH05.svg\|100]]|
+|^|^|[[mulberry district]]|^||![[assets/codes/HH06.svg\|100]]|
+|^|^|[[thomson hills]]|^|^|![[assets/codes/HH07.svg\|100]]|
+|^|long island|[[belmont district]]|![[assets/codes/A04.svg\|100]]|^|![[assets/codes/LI01.svg\|100]]|
 |^|^|[[birch park]]|![[assets/codes/B16.svg\|100]]![[assets/codes/A41.svg\|100]]|^|![[assets/codes/LI02.svg\|100]]|
 |^|^|[[spruce district]]|![[assets/codes/B15.svg\|100]]|^|![[assets/codes/LI03.svg\|100]]|
 |^|^|[[poplar square]]|![[assets/codes/B14.svg\|100]]|^|![[assets/codes/LI04.svg\|100]]|

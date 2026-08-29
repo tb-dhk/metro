@@ -135,8 +135,13 @@ for step in data_pipeline:
         data_rows = [tuple(row) for row in csv_reader]
 
         if data_rows:
-            cursor.executemany(insert_query, data_rows)
-
+            try:
+                cursor.executemany(insert_query, data_rows)
+            except Exception as e:
+                print(file_path)
+                print(data_rows)
+                raise e
+                
 print("data added successfully!")
 
 connection.commit()
